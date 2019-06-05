@@ -17,22 +17,13 @@ function getUrlVars()
 
 function loadDone()
 {
- $(".nav-link").click(function(event){
-			var parts = $(this).attr("href").split("#");   		
-			if(parts.length==1) return;
-			
-   		var target = $("#"+parts[1]);   		
-   		if($(target).length) 
-			{
-				if($(target).length)
-				{
-					event.preventDefault();
-			   	$('html, body').stop().animate({
-            		scrollTop: $(target).offset().top
-        			},500);
-        		}
-        	}
-   });
+	$("a[data-lng]").click(function()
+	{
+		lng=$(this).attr("data-lng");
+		$(".lng").hide();
+		$(".lng_"+lng).show();
+		return(false);
+	});
 }
 
 
@@ -267,13 +258,6 @@ function animate_mesh(mesh)
 $(document).ready(function()
 {
 	
-	$("a[data-lng]").click(function()
-	{
-		lng=$(this).attr("data-lng");
-		$(".lng").hide();
-		$(".lng_"+lng).show();
-		return(false);
-	});
 	
 	return;
 	

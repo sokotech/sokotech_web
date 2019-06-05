@@ -17,27 +17,20 @@ function getUrlVars()
 
 function loadDone()
 {
- $(".nav-link").click(function(event){
-			var parts = $(this).attr("href").split("#");   		
-			if(parts.length==1) return;
-			
-   		var target = $("#"+parts[1]);   		
-   		if($(target).length) 
-			{
-				if($(target).length)
-				{
-					event.preventDefault();
-			   	$('html, body').stop().animate({
-            		scrollTop: $(target).offset().top
-        			},500);
-        		}
-        	}
-   });
+	alert("pasa 2");
+	$("a[data-lng]").click(function()
+	{
+		lng=$(this).attr("data-lng");
+		$(".lng").hide();
+		$(".lng_"+lng).show();
+		return(false);
+	});
 }
 
 
 function loadHTML(items, i)
 {
+	alert("pasa 1");
 	fetch($(items[i]).attr("include-HTML")+"?"+new Date().getTime())
 		.then(function(response) {
    				 return response.text();
@@ -52,6 +45,7 @@ function loadHTML(items, i)
 }
 function includeHTML()
 {
+	alert("pasa");
   var imports=$("[include-HTML]");
   if(imports.length>1) loadHTML(imports,0); 
 }
@@ -267,12 +261,6 @@ function animate_mesh(mesh)
 $(document).ready(function()
 {
 	
-	$("a[data-lng]").click(function()
-	{
-		lng=$(this).attr("data-lng");
-		$(".lng").hide();
-		$(".lng_"+lng).show();
-	});
 	
 	return;
 	

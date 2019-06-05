@@ -144,7 +144,24 @@ h1,h2,h3{
 	width:60px;
 	padding:5px;
 }
-
+.foot_menu
+{
+	
+	atext-align:left;
+}
+.foot_menu ul
+{
+	border-left:1px solid white;
+	text-align:left;
+	list-style: none;
+	padding-left:10px;
+	margin:0;
+}
+.foot_menu li a
+{
+	color:white;
+	text-transform:uppercase;
+}
 /* ---- home content -------------- */
 
 .home_content
