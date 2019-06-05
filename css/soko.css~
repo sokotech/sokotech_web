@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto:400,700');
+
+html,body {
+    margin:0;
+    padding:0;
+    height:100%; 
+    font-family: 'Open Sans', sans-serif;
+    background:white;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3{
+	font-family: "Montserrat", sans-serif !important;
+	text-transform: uppercase;
+}
+
+.container
+{
+	min-height:100%;
+	position:relative;
+}
+.hidden
+{
+	 display:none !important;
+}
+.lng
+{
+	display:none;
+}
+.lng_en
+{
+	display:inherit;
+}
+.whiteness
+{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,0.8);
+	z-index:100;
+}
+/* ---- navbar -------------- */
+
+.navbar
+{
+	margin:0;
+	padding:13px 40px 10px 26px !important;
+	abackground:transparent !important;
+	background:white !important; /*rgba(255,255,255,0.8) !important;*/
+}
+.navbar-brand
+{
+	width:160px;
+	fill:black;
+}
+
+.nav-item a
+{
+	color:black !important;
+	text-transform:uppercase;
+	border-right:1px solid gray;
+	padding:0 10px;
+	font-size:15px;
+	line-height:1;
+}
+
+.navbar-nav :last-child a
+{
+	border:0;
+}
+
+.nav_language a
+{
+	border:0;
+	padding:0 5px !important;
+	font-size:14px;
+}
+.nav-item a:hover
+{
+	 color:#f2a252 !important;
+}
+
+/* ---- header -------------- */
+
+.header
+{
+	position:relative;
+	left:0;
+	top:0;
+	background:white;	
+	abackground-image: url("../img/sokotech_head_bg.jpg");
+	abackground-size: cover;
+	width:100%;
+	height:100%;
+	display:flex;
+}
+.header_text
+{
+	background:black;
+	font-family:'Montserrar','Sans Serif';
+	font-size:2em;
+	line-height:1.3em;
+	font-weight:700;
+	color:white;
+	width:50%;
+	max-width:550px;
+	padding:20px 30px;
+	text-transform: uppercase;
+	align-self:center;
+	margin-left:110px;
+	margin-top:50px;
+   
+}
+
+
+/* ---- foot -------------- */
+
+.foot
+{
+	background:#111111;
+	color:white;
+	margin:0;
+	width:100%;
+	padding:40px 40px 40px 40px;
+}
+.foot a
+{
+	display:inline-block !important;
+}
+.foot .logo_soko
+{
+	width:160px;	
+	display:block;
+	margin-bottom:20px;
+}
+.footer_social_item
+{
+	fill:white;
+	width:60px;
+	padding:5px;
+}
+
+/* ---- home content -------------- */
+
+.home_content
+{
+	font-size:14px;
+	padding-bottom:60px;
+}
+.h2_title
+{
+	font-weight:800;
+	text-transform:uppercase;
+	padding-bottom:20px;
+	font-size:2.5em;
+}
+.p_block_description
+{
+	font-size:1.3em;
+	line-height:1.4em;
+}
+
+.row_work_images
+{
+	margin-top:20px;
+   padding-left:20px;
+   padding-right:20px;	
+}
+.row_work_images .col_image
+{
+	padding:0;
+	position:relative;
+}
+.row_work_images img
+{
+	width:100%;
+	padding:2px;
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.work_info
+{
+	position:absolute;
+	left:2px;
+	bottom:10px;
+	background:black;
+	color:white;
+	padding:5px 10px;
+}
+.work_info a
+{
+	color:white;
+	text-decoration: underline;
+}
+.row_work h4
+{
+	color:orange;
+	font-size:20px;
+	margin:0;
+}
+.row_work h4:hover
+{
+	acolor:orange;
+}
+.row_work h5
+{
+	font-size:15px;
+	margin:0;
+}
+
+.section_logos
+{
+	margin:100px 0;
+}
+.section_events
+{
+	margin-bottom:100px;
+}
+.row_logos img
+{
+	width:80%;
+	margin:auto;
+	display:block;
+}
+
+.row_impact img
+{
+	width:100%;
+	margin:auto;
+	display:block;
+}
+
+.icons_home_title 
+{
+  color: rgb(59, 59, 59);
+  font-size: 16px !important;
+  font-weight: 600;
+  text-align:center;
+  margin:0 !important;
+}
+
+.icons_home_subtitle
+{
+  font-size: 15px !important;
+  font-weight: 400;
+  color: rgb(59, 59, 59);
+  text-align:center;
+}
+
+/*
+.row_impact img
+{
+	width:50%;
+	margin:auto;
+	display:block;
+}
+
+.icons_home_title 
+{
+  color: rgb(59, 59, 59);
+  font-size: 18px;
+  font-weight: 600;
+  text-align:center;
+}
+
+.icons_home_subtitle
+{
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(59, 59, 59);
+  text-align:center;
+}
+*/
+/*--------------------------------------------*/
+
+/* ---- contact -------------- */
+#contact
+{
+	padding:100px 100px 100px 100px;
+	background:#eee;
+}
+#contact h2
+{
+	text-transform:uppercase;
+}
+.contact_wrapper
+{
+	background:#fff;
+	padding:50px 50px 50px 50px;
+	border-radius:10px;
+}
+.contact_info
+{
+	margin-bottom:30px;
+}
+#contact_form input, #contact_form textarea
+{
+	padding:5px;
+	margin-bottom:15px;
+	aborder-radius:5px 5px 0 0;
+}
+#contact_form .custom-checkbox
+{
+	 margin-bottom:10px;
+}
+.contact_result
+{
+	display:none;
+	margin-top:30px;
+	margin-right:40px;
+	padding:10px;
+	color:white;
+	border-radius:5px;
+}
+#btn_contact
+{
+	box-shadow:none;
+}
+.sending div div
+{
+	abackground:white !important;
+}
+/* ---- head -------------- */
+
+.home-bg {
+  background-color: #111111;
+  height: 550px;
+}
+.home-bg svg
+{
+	adisplay:block;
+}
+#mesh-hero-bg-graphic {
+  width: 83%;
+  margin: 118px 0 0 5px;
+  transform: rotate(243deg)
+}
+
+#mesh-hero-title {
+  display: block;
+  position: absolute;
+  width: 150px;
+  padding: 150px 0;
+  top: 240px;
+  right: 30px;
+  color:white;
+  font-size:59px;
+  text-transform:uppercase;
+}
+
+.home-hero {
+   margin-bottom: 0px;
+   width:100%;
+   
+   background:#111111;
+   display:block;
+   position:relative;
+   min-height:100%;
+}
+
+.home-hero-img-container {
+  padding: 0 !important;
+}
+
+#home-hero-img {
+  width: auto;
+}
+
+@media (min-width: 360px) {
+  .home-bg {
+    height: 490px;
+  }
+}
+
+@media (min-width: 576px) {
+
+  .home-bg {
+    height: auto;
+  }
+
+  .home-hero {
+     margin-bottom: 0px;
+  }
+
+  #mesh-hero-bg-graphic {
+    width: 59%;
+    margin: 100px 0 70px 30px;
+    transform: rotate(0deg)
+  }
+
+  #mesh-hero-title {
+    width: 250px;
+    padding: 80px 0;
+    top: 115px;
+    right: 47px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  #mesh-hero-title {
+    width: 335px;
+    padding: 100px 0;
+  }
+
+}
+
+
+@media (min-width: 992px) {
+
+  #mesh-hero-title {
+    width: 400px;
+    padding: 150px 0;
+    top: 150px;
+  }
+
+  #mesh-hero-bg-graphic {
+    width: 65%;
+    margin: 100px 0 70px 30px;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+  #mesh-hero-title {
+    width: 473px;
+    top: 155px;
+  }
+
+}
+
+
+/* ---- projects ------------- */
+
+.loading
+{
+	text-align:center;
+}
+#projects
+{ 
+  padding-top:120px;
+}
+.projects
+{
+	padding:80px 0 80px 0;
+}
+.projects_grid
+{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.project_item
+{
+	margin-bottom:30px;
+}
+
+.project_item img
+{
+	width:100%;
+	border-radius: 5px;
+}
+.project_data_title
+{
+   margin:10px 0 0 0;
+   font-weight:normal;
+   font-size:1.5em;
+}
+.project_data_author
+{
+	afont-size:14px;
+	color:gray;
+	margin:0px 0 10px 0;
+}
+.project_data_info
+{
+	line-height:1.2;
+}
+
+.project_item a
+{
+    text-decoration:none;	
+    color:inherit;
+}
+
+.project_item a:hover
+{
+    text-decoration:none;
+}
+
+.project_item a:hover h2
+{
+	text-decoration: underline;
+}
+
+
+/* ---- project info -------------- */
+.col_project
+{
+	padding-right:40px !important;
+}
+.project_info
+{
+	 padding:120px 20px 50px 20px;
+}
+.project_wrapper
+{
+	margin-bottom:150px;
+}
+.project_video
+{
+	 position:relative;
+	 padding:52.73% 0 0 0;
+	 margin-bottom:40px;
+}
+.author_picture
+{
+	width:100%;
+	margin-bottom:20px;
+}
+
+/* ---- RESPONSIVE -----------------*/
+
+@media (max-width: 768px) {
+/* ---- head -----------------*/
+#mesh-hero-bg-graphic
+{
+	width:100%;
+}
+#mesh-hero-title
+{
+	padding:50px 10px;
+	line-height: 1;
+	font-size:50px;
+	bottom:0;
+	right:auto;
+	top:auto;
+	margin:0;
+}
+.hero-container
+{
+	overflow:hidden;
+}
+/* ---- projects -----------------*/
+.projects
+{
+	padding:60px 0 40px 0;
+}
+#projects
+{
+	padding-top:70px;
+}
+#projects h1
+{
+	margin-bottom:20px;
+}
+/* ---- contact -----------------*/
+#contact
+{
+	padding:70px 10px;
+}
+.contact_wrapper
+{
+	padding:50px 10px;
+}
+#check_subscription
+{
+	margin-bottom:20px;
+}
+.contact_result
+{
+	margin:0 0 30px 0;
+}
+
+/* ---- foot -----------------
+.foot
+{
+	padding-top:50px;
+}	
+.col_logo
+{
+	margin-bottom:60px;
+}
+
+.foot img
+{
+	width:90%;	
+	margin:auto;
+	display:block;
+}
+.foot .logo_manel
+{
+	width:50%;
+	margin:auto;
+	display:block;
+}
+.foot .logo_soko
+{
+	width:60%;
+	margin:auto;
+	display:block;
+}
+.foot .row
+{
+	margin-bottom:30px;
+}
+*/
+/* ---- project -----------------*/
+.project_info
+{
+	padding-top: 90px;
+}
+.col_project
+{
+	 padding-right:15px !important;
+}
+.col_bio
+{
+	margin-bottom:40px;
+}
+.project_wrapper
+{
+	margin-bottom:80px;
+}
+.project_wrapper h1
+{
+	margin-bottom:20px;
+}
+.project_video
+{
+	margin-bottom:20px;
+}
+}

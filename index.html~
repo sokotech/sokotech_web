@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SokoTech</title>
+  <meta charset="utf-8">
+  <meta name="description" content="SokoTEch Website">
+  <meta name="author" content="SokoTech">
+  <meta name="keywords" content="steam,education,educación,fablab,events,educational,educacional,programs,programas">  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+  <!--<link href="./css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="css/loading.css?6" rel="stylesheet">
+  
+  <!--<script src="./js/jquery.1_11_1.min.js"></script>-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/soko.css?5" rel="stylesheet">
+
+
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!--<script src="./js/bootstrap.min.js"></script>-->
+  <script src="js/soko.js?5"></script>
+
+</head>
+
+<body id="home">
+    <div include-HTML="nav.html"></div>
+   
+   <!--<div class="whiteness"></div>-->
+   <section class="header">
+			<h1 class="header_text">   		
+   			<span class="lng lng_en">
+   				We create, test & scale digital social innovation projects, programs & events in the fields of the arts, 
+   				science & technology
+   			</span>
+   				<span class="lng lng_es">
+   				Creamos, probamos y escalamos innovadores proyectos sociales digitales y eventos en los campos
+   				de arte, ciencia y tecnología
+   			</span>
+	   		<span class="lng lng_ca">
+   				We create, test & scale digital social innovation projects, programs & events in the fields of the arts, 
+   				science & technology
+   			</span> 	
+   		</h1>
+   </section>
+  	<div class="content_wrapper">
+
+		<div class="container home_content">
+			<div class="section_events">
+				<h2 class="h2_title">Working on...</h2>
+				<div class="row row_work">
+					<!--<div class="col-md-12 col-sm-12">
+							<p class="p_block_description">
+								Know the projects we are developing
+							</p>
+					</div>-->	
+					<div class="row row_work_images">
+						<div class="col-md-4 col-sm-12 col_image">
+							<img src="img/sokotech_home_workshops.jpg"/>
+							<div class="work_info">
+								<h4>Makerfair 2019</h4>
+								<h5>01/11/2019 - Barcelona</h5>							
+								<h5>Organizating the most important...</h5>	
+								<a href="#">Read more</a>						
+							</div>
+						</div>	
+						<div class="col-md-4 col-sm-12 col_image">
+							<img src="img/sokotech_home_workshops.jpg"/>
+							<div class="work_info">
+								<h4>MESH</h4>
+								<h5>01/11/2019</h5>							
+								<h5>Mentoring of the...</h5>	
+								<a href="#">Read more</a>						
+							</div>	
+						</div>	
+					</div>
+				</div>	
+				<br/>
+				<button id="btn_more_events" type="submit" class="btn btn-lg btn-warning center">
+  							<span class="lng lng_en">See more</span>
+  							<span class="lng lng_es">Ver más</span>
+  							<span class="lng lng_ca">Veure més</span>
+  					</button>	
+			</div>
+						
+			<h2 class="h2_title">Our work</h2>
+			<div class="row row_work">
+				<div class="col-md-6 col-sm-12">
+						<p class="p_block_description">
+							SokoTech is a citizen lab that thrives on the passion, curiosity & creativity of its team 
+							members with a unique and integral view on the complexity of reality. 
+							We focus our undivided attention on the ideas and solutions that create social value 
+							and cultivate knowledge to face uncertainty and challenging scenarios.
+						</p>
+				</div>	
+				<div class="col-md-6 col-sm-12">
+					<div class="row row_impact">
+						<div class="col-md-3 col-sm-6">
+							<img src="img/icons/sokotech_icons_countries_02.svg"/>
+							<h3 class="icons_home_title">
+								Countries
+							</h3>
+							<h4 class="icons_home_subtitle">
+								5+ Countries
+							</h4>
+						</div>				
+						<div class="col-md-3 col-sm-6">
+							<img src="img/icons/sokotech_icons_projects_01.svg"/>					
+							<h3 class="icons_home_title">
+								Projects
+							</h3>
+							<h4 class="icons_home_subtitle">
+								100+ Projects
+							</h4>
+						</div>				
+						<div class="col-md-3 col-sm-6">
+							<img src="img/icons/sokotech_icons_networking_01.svg"/>	
+							<h3 class="icons_home_title">
+								Network
+							</h3>
+							<h4 class="icons_home_subtitle">
+								1000+ Labs
+							</h4>
+						</div>				
+						<div class="col-md-3 col-sm-6">
+							<img src="img/icons/sokotech_icons_networking_03.svg"/>
+							<h3 class="icons_home_title">
+								Community
+							</h3>
+							<h4 class="icons_home_subtitle">
+								20k People
+							</h4>
+						</div>					
+					</div>				
+				</div>
+			</div>
+			<div class="row row_work">
+				<div class="row row_work_images">
+					<div class="col-md-6 col-sm-12 col_image">
+						<a href="#">
+							<img src="img/sokotech_home_workshops.jpg"/>
+							<div class="work_info">
+								<h4>Education</h4>
+								<h5>Programs, Workshops & Projects</h5>							
+							</div>
+						</a>
+					</div>	
+					<div class="col-md-6 col-sm-12 col_image">
+						<a href="#">						
+							<img src="img/sokotech_home_communication.jpg"/>
+							<div class="work_info">
+								<h4>Communication</h4>
+								<h5>Communication...</h5>							
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-12 col_image">
+						<a href="#">						
+							<img src="img/sokotech_home_events.jpg"/>
+							<div class="work_info">
+								<h4>Events</h4>
+								<h5>Events...</h5>							
+							</div>
+						</a>
+					</div>		
+
+					<div class="col-md-4 col-sm-12 col_image">
+							<a href="#">
+								<img src="img/sokotech_home_fablab.jpg"/>
+								<div class="work_info">
+									<h4>Lab & Design</h4>
+									<h5>Product design, 3d printing, laser cutting, etc.</h5>							
+								</div>
+							</a>
+					</div>	
+					<div class="col-md-4 col-sm-12 col_image">
+						<a href="#">						
+							<img src="img/sokotech_home_space.jpg"/>
+							<div class="work_info">
+								<h4>Space</h4>
+								<h5>Space Rental, Facilitator, Workshops</h5>							
+							</div>
+						</a>
+					</div>	
+				</div>	
+			</div>			
+			<!--
+			<h2 class="h2_title">Our impact</h2>
+			<div class="row row_impact">
+				<div class="col-md-3 col-sm-6">
+					<img src="img/icons/sokotech_icons_countries_02.svg"/>
+					<h3 class="icons_home_title">
+						Countries
+					</h3>
+					<h4 class="icons_home_subtitle">
+						5+ Countries
+					</h4>
+				</div>				
+				<div class="col-md-3 col-sm-6">
+					<img src="img/icons/sokotech_icons_projects_01.svg"/>					
+					<h3 class="icons_home_title">
+						Projects
+					</h3>
+					<h4 class="icons_home_subtitle">
+						100+ Projects
+					</h4>
+				</div>				
+				<div class="col-md-3 col-sm-6">
+					<img src="img/icons/sokotech_icons_networking_01.svg"/>	
+					<h3 class="icons_home_title">
+						Network
+					</h3>
+					<h4 class="icons_home_subtitle">
+						1000+ Labs
+					</h4>
+				</div>				
+				<div class="col-md-3 col-sm-6">
+					<img src="img/icons/sokotech_icons_networking_03.svg"/>
+					<h3 class="icons_home_title">
+						Community
+					</h3>
+					<h4 class="icons_home_subtitle">
+						20k People
+					</h4>
+				</div>					
+			</div>
+			-->
+			<div class="section_logos">
+				<h2 class="h2_title">Companies that trust us</h2>
+				<div class="row row_logos">
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_ajuntament_barcelona.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_barcelona_activa.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_la_caixa_foundation.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_carnegie_mellon.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_decode.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_decidim.svg"/>
+					</div>
+					
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_fira_barcelona.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_generalitat_de_catalunya.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_gigapan.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_mobile_world_congress.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_fablab_barcelona.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_maker_faire.svg"/>
+					</div>
+
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_mozilla_foundation.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_sonar_plus_d.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_nasa.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_fundacion_telefonica.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_orange_foundation.svg"/>
+					</div>
+					<div class="col-md-2 col-sm-3">
+							<img src="img/logos/sokotech_smashing_magazine.svg"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div include-HTML="foot.html"></div>
+		<script>includeHTML();</script>
+	</div>	
+
+</body>	
+</html>
