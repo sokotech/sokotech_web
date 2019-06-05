@@ -2,7 +2,7 @@ var projects;
 var authors;
 
 var vars=getUrlVars();
-var lng="es";
+var lng="en";
 //if(vars["lng"]) lng=vars["lng"];
 
 function getUrlVars() 
@@ -17,7 +17,6 @@ function getUrlVars()
 
 function loadDone()
 {
-	alert("pasa 2");
 	$("a[data-lng]").click(function()
 	{
 		lng=$(this).attr("data-lng");
@@ -30,7 +29,6 @@ function loadDone()
 
 function loadHTML(items, i)
 {
-	alert("pasa 1");
 	fetch($(items[i]).attr("include-HTML")+"?"+new Date().getTime())
 		.then(function(response) {
    				 return response.text();
@@ -45,7 +43,6 @@ function loadHTML(items, i)
 }
 function includeHTML()
 {
-	alert("pasa");
   var imports=$("[include-HTML]");
   if(imports.length>1) loadHTML(imports,0); 
 }
@@ -258,10 +255,24 @@ function animate_mesh(mesh)
 	}
 }
 
-$(document).ready(function()
+var iword=0;
+var header_text={
+	"en":"create,test,scale,digital,social,innovation,projects,programs,events,arts,science,technology",
+	"es":"creamos,probamos,escalamos,proyectos,digitales,innovación,social,programas,eventos,artes,ciencia,tecnología",
+	"ca":"creamos,probamos,escalamos,proyectos,digitales,innovación,social,programas,eventos,artes,ciencia,tecnología"
+	};
+
+function change_text()
 {
-	
-	
+	var words=header_text[lng].split(",");   		
+	$("#header_word").text(words[iword]);
+	iword++;
+	if(iword>=words.length) iword=0;	
+}
+
+$(document).ready(function()
+{	
+	setInterval(change_text,500);
 	return;
 	
 	$("#contact_comment").hide();	

@@ -98,25 +98,31 @@ h1,h2,h3{
 	width:100%;
 	height:100%;
 	display:flex;
+	justify-content:center;
 }
 .header_text
 {
-	background:black;
 	font-family:'Montserrar','Sans Serif';
-	font-size:2em;
+	font-size:10vw; /*8em;*/
 	line-height:1.3em;
 	font-weight:700;
-	color:white;
-	width:50%;
-	max-width:550px;
+	color:black;
 	padding:20px 30px;
 	text-transform: uppercase;
 	align-self:center;
-	margin-left:110px;
-	margin-top:50px;
-   
 }
-
+.banner_text
+{
+	font-family:'Montserrar','Sans Serif';
+	font-size:3em;
+	text-align:center;
+	line-height:1.3em;
+	font-weight:700;
+	color:black;
+	background:white;
+	padding:20px 30px;
+	margin-bottom:80px;
+}
 
 /* ---- foot -------------- */
 
@@ -197,19 +203,16 @@ h1,h2,h3{
 {
 	width:100%;
 	padding:2px;
-   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+}
+.image_gray
+{
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
    filter: grayscale(100%);
 }
-.row_work_images img:hover
+.image_gray:hover
 {
 	-webkit-filter: none;
    filter: none;
-}
-
-.section_events .row_work_images img
-{
-	-webkit-filter: none !important;
-   filter: none !important;
 }
 
 .work_info

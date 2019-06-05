@@ -16,6 +16,13 @@
           		<span class="lng lng_ca">Nosaltres</span>
           </a>
         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="index.html#projects">
+          		<span class="lng lng_en">Works</span>
+          		<span class="lng lng_es">Trabajos</span>
+          		<span class="lng lng_ca">Treballs</span>
+          </a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="index.html#contact">
            		<span class="lng lng_en">Education</span>
