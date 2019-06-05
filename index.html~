@@ -16,7 +16,7 @@
   <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="css/soko.css?5" rel="stylesheet">
+  <link href="css/soko.css?7" rel="stylesheet">
 
 
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
@@ -153,7 +153,7 @@
 				<div class="row row_work_images">
 					<div class="col-md-6 col-sm-12 col_image">
 						<a href="#">
-							<img src="img/sokotech_home_workshops.jpg"/>
+							<img class="image_gray" src="img/sokotech_home_workshops.jpg"/>
 							<div class="work_info">
 								<h4>Education</h4>
 								<h5>Programs, Workshops & Projects</h5>							
@@ -162,7 +162,7 @@
 					</div>	
 					<div class="col-md-6 col-sm-12 col_image">
 						<a href="#">						
-							<img src="img/sokotech_home_communication.jpg"/>
+							<img class="image_gray" src="img/sokotech_home_communication.jpg"/>
 							<div class="work_info">
 								<h4>Communication</h4>
 								<h5>Communication...</h5>							
@@ -171,7 +171,7 @@
 					</div>
 					<div class="col-md-4 col-sm-12 col_image">
 						<a href="#">						
-							<img src="img/sokotech_home_events.jpg"/>
+							<img class="image_gray" src="img/sokotech_home_events.jpg"/>
 							<div class="work_info">
 								<h4>Events</h4>
 								<h5>Events...</h5>							
@@ -181,7 +181,7 @@
 
 					<div class="col-md-4 col-sm-12 col_image">
 							<a href="#">
-								<img src="img/sokotech_home_fablab.jpg"/>
+								<img class="image_gray"src="img/sokotech_home_fablab.jpg"/>
 								<div class="work_info">
 									<h4>Lab & Design</h4>
 									<h5>Product design, 3d printing, laser cutting, etc.</h5>							
@@ -190,7 +190,7 @@
 					</div>	
 					<div class="col-md-4 col-sm-12 col_image">
 						<a href="#">						
-							<img src="img/sokotech_home_space.jpg"/>
+							<img class="image_gray" src="img/sokotech_home_space.jpg"/>
 							<div class="work_info">
 								<h4>Space</h4>
 								<h5>Space Rental, Facilitator, Workshops</h5>							
