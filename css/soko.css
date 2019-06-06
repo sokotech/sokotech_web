@@ -111,18 +111,6 @@ h1,h2,h3{
 	text-transform: uppercase;
 	align-self:center;
 }
-.banner_text
-{
-	font-family:'Montserrar','Sans Serif';
-	font-size:3em;
-	text-align:center;
-	line-height:1.3em;
-	font-weight:700;
-	color:black;
-	background:white;
-	padding:20px 30px;
-	margin-bottom:120px;
-}
 
 /* ---- foot -------------- */
 
@@ -134,6 +122,11 @@ h1,h2,h3{
 	width:100%;
 	padding:40px 40px 40px 40px;
 }
+.foot p
+{
+	font-size:14px;
+	line-height:1.2;
+}
 .foot a
 {
 	display:inline-block !important;
@@ -142,7 +135,7 @@ h1,h2,h3{
 {
 	width:160px;	
 	display:block;
-	margin-bottom:20px;
+	float:right;
 }
 .footer_social_item
 {
@@ -158,9 +151,9 @@ h1,h2,h3{
 .foot_menu ul
 {
 	border-left:1px solid white;
-	text-align:left;
+	text-align:center;
 	list-style: none;
-	padding-left:10px;
+	padding-right:10px;
 	margin:0;
 }
 .foot_menu li a
@@ -168,6 +161,29 @@ h1,h2,h3{
 	color:white;
 	text-transform:uppercase;
 }
+.row_subscribe
+{
+	display:block;
+	margin:0;
+	background:#444;
+	width:100%;
+	padding:20px 20px;
+}
+.row_subscribe button
+{
+	margin:0;
+	background:transparent !important;
+	border:2px solid white !important;
+	border-radius:0 !important;
+}
+.subscribe_title
+{
+	color:white;
+	font-size:20px;
+	text-transform: uppercase;
+	padding-right:50px;
+}
+
 /* ---- home content -------------- */
 
 .home_content
@@ -187,22 +203,162 @@ h1,h2,h3{
 	font-size:1.3em;
 	line-height:1.4em;
 }
+.banner_text
+{
+	font-family:'Montserrar','Sans Serif';
+	font-size:3em;
+	text-align:center;
+	line-height:1.3em;
+	font-weight:700;
+	color:black;
+	background:white;
+	apadding:0px 15% 20px 100px;
+	padding:0px 100px 20px 100px;
+	margin-bottom:80px;
+	text-transform: none;
+}
+.banner_text small
+{
+	display:block;
+	color:gray;
+	text-transform:uppercase;
+}
 
+/* ---- news ------------------*/
+.news_section
+{
+	text-align:center;
+	margin-bottom:140px;
+}
+.news_section p
+{
+	font-size:2em;
+	color:gray;
+	text-transform:uppercase;
+}
+.news_list
+{
+	padding:30px 0;
+}
+.news_list:after
+{
+	content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+/* news 4 */
+
+.new_item_4
+{
+	width:25%;
+	height:400px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+}
+
+
+.new_container
+{
+	width:100%;
+	height:400px;
+	position:relative;
+	overflow:hidden;
+}
+.new_container img
+{
+	position:absolute;
+	left:0;
+	bottom:-50%;
+	width:100%;
+	height:auto;
+}
+
+.new_info
+{
+	position:absolute;
+	left:2px;
+	bottom:10px;
+	background:black;
+	color:white;
+	padding:5px 10px;
+}
+.new_info a
+{
+	color:white;
+	text-decoration: underline;
+}
+.new_info h4
+{
+	color:orange;
+	font-size:20px;
+	margin:0;
+}
+.new_info h5
+{
+	font-size:15px;
+	margin:0;
+}
+
+.news_section button
+{
+	background:transparent !important;
+	border:2px solid black !important;
+	border-radius:0 !important;
+}
+
+//----- Services ----------------
+.services_section
+{
+	width:100%;
+}
+.service_item
+{
+	display:block;
+	float:left;
+	width:20%;
+	height:400px;
+	background:red;
+}
+.service_item img
+{
+	awidth:100%;
+	height:400px;
+}
+.services_section:after
+{
+	content:" ";
+	clear:both;
+}
+
+//------ Works -----------------
+.row_work
+{
+	margin:0;
+	width:100%;
+}
 .row_work_images
 {
 	margin-top:20px;
    padding-left:20px;
-   padding-right:20px;	
+   padding-right:20px;	 
 }
+
 .row_work_images .col_image
 {
 	padding:0;
 	position:relative;
+	aheight:400px;
+	overflow:hidden;
+	abackground:red;
 }
 .row_work_images img
 {
 	width:100%;
-	padding:2px;
+	padding:0;
 }
 .image_gray
 {
@@ -215,12 +371,15 @@ h1,h2,h3{
    filter: none;
 }
 
+
 .work_info
 {
 	position:absolute;
-	left:2px;
-	bottom:10px;
-	background:black;
+	left:5%;
+	bottom:5%;
+	font-family:'Montserrar','Sans Serif';
+	font-weight:700;
+	background:rgba(0,0,0,0.5); /*black;*/
 	color:white;
 	padding:5px 10px;
 }
@@ -233,6 +392,7 @@ h1,h2,h3{
 {
 	color:orange;
 	font-size:20px;
+	text-transform:uppercase;
 	margin:0;
 }
 .row_work h4:hover
@@ -241,13 +401,18 @@ h1,h2,h3{
 }
 .row_work h5
 {
+	adisplay:none;
 	font-size:15px;
 	margin:0;
 }
 
+
+
+/*----------- Companies -----------------*/
 .section_logos
 {
 	margin:100px 0;
+	padding:0 75px;
 }
 .section_events
 {
@@ -256,7 +421,7 @@ h1,h2,h3{
 .row_logos img
 {
 	width:80%;
-	margin:auto;
+	amargin:auto;
 	display:block;
 }
 

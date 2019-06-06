@@ -1,4 +1,4 @@
- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+ <nav class="navbar absolute-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="."><img src="img/sokotech_logo_black.svg" alt="soko logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -25,38 +25,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.html#contact">
-           		<span class="lng lng_en">Education</span>
-          		<span class="lng lng_es">Educación</span>
-          		<span class="lng lng_ca">Educació</span>
+           		<span class="lng lng_en">Services</span>
+          		<span class="lng lng_es">Servicios</span>
+          		<span class="lng lng_ca">Serveis</span>
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#contact">
-          		<span class="lng lng_en">Communication</span>
-          		<span class="lng lng_es">Comunicación</span>
-          		<span class="lng lng_ca">comunicació</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#contact">
-          		<span class="lng lng_en">Events</span>
-          		<span class="lng lng_es">Eventos</span>
-          		<span class="lng lng_ca">Events</span>          
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#contact">
-          		<span class="lng lng_en">Lab & Design</span>
-          		<span class="lng lng_es">Lab & Diseño</span>
-          		<span class="lng lng_ca">Lab & Diseny</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#contact">
-           		<span class="lng lng_en">Space</span>
-          		<span class="lng lng_es">Espacios</span>
-          		<span class="lng lng_ca">Espais</span>
-			 </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.html#contact">
