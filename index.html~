@@ -66,38 +66,48 @@
 				 Last projects
 				</p>
 				<div class="news_list">
-					<div class="new_container">
+					<div class="new_item_4">
 						<img src="img/sokotech_home_workshops.jpg"/>
 						<div class="new_info">
-							<h4>Makerfair 2019</h4>
-							<h5>01/11/2019 - Barcelona</h5>							
-							<h5>Organizating the most important...</h5>	
+							<h4>Techno workshops</h4>
+							<h5>01/07/2019 - Barcelona</h5>							
+							<h6>Technologic workshops</h6>	
 							<a href="#">Read more</a>						
 						</div>
 					</div>	
-					<div class="new_container">
+					<div class="new_item_4">
 						<img src="img/sokotech_home_mesh.jpg"/>
 						<div class="new_info">
 							<h4>MESH</h4>
 							<h5>11/06/2019</h5>							
-							<h5>Innovation project...</h5>	
+							<h6>Innovation project...</h6>	
 							<a href="#">Read more</a>						
 						</div>	
 					</div>
-					<div class="new_container">
+					<div class="new_item_4">
 						<img src="img/sokotech_home_makerfaire.jpg"/>
 						<div class="new_info">
 							<h4>Makerfaire 2019</h4>
 							<h5>01/11/2019</h5>							
-							<h5>The most important...</h5>	
+							<h6>The most important...</h6>	
 							<a href="#">Read more</a>						
 						</div>	
 					</div>
+					<div class="new_item_4">
+						<img src="img/sokotech_home_communication.jpg"/>
+						<div class="new_info">
+							<h4>STEAM Conf</h4>
+							<h5>01/11/2019 - Madrid</h5>							
+							<h6>Organizating the most important...</h6>	
+							<a href="#">Read more</a>						
+						</div>
+					</div>	
+
 				</div>
 				<button id="btn_more_events" type="submit" class="btn btn-lg btn-warning center">
-  							<span class="lng lng_en">View more works</span>
-  							<span class="lng lng_es">Ver más trabajos</span>
-  							<span class="lng lng_ca">Veure més treballs</span>
+  							<span class="lng lng_en">View more of our projetcs</span>
+  							<span class="lng lng_es">Ver más de nuestros proyectos</span>
+  							<span class="lng lng_ca">Veure més dels nostres projectes</span>
   				</button>	
 			</div>						
 			
