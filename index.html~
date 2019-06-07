@@ -10,13 +10,13 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
   <!--<link href="./css/bootstrap.min.css" rel="stylesheet">-->
-  <link href="css/loading.css?7" rel="stylesheet">
+  <link href="css/loading.css?8" rel="stylesheet">
   
   <!--<script src="./js/jquery.1_11_1.min.js"></script>-->
   <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="css/soko.css?12" rel="stylesheet">
+  <link href="css/soko.css?17" rel="stylesheet">
 
 
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
@@ -25,49 +25,79 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!--<script src="./js/bootstrap.min.js"></script>-->
-  <script src="js/soko.js?6"></script>
+  <script src="js/soko.js?9"></script>
 
 </head>
 
 <body id="home">
     <div include-HTML="nav.html"></div>
    
-   <!--<div class="whiteness"></div>-->
    <section class="header">
-   		<!--<h1 class="header_text">
-   			<span class="lng lng_en">We</span>
-				<span class="lng lng_es">Nosotros</span>
-				<span class="lng lng_ca">Nosaltres</span>
-			</h1><br/>-->
-			<h2 id="header_word" class="header_text"></h2>
+			<div class="row">
+				<div class="col-md-12 text-left">
+					<h3 class="header_text">
+						<span class="lng lng_en">We create</span>
+						<span class="lng lng_es">Creamos:</span>
+						<span class="lng lng_ca">We create:</span>						
+					</h3>
+					<h1 id="header_word" class="header_text">Things</h1>
+				</div>
+				<!--
+				<div class="col-md-6 text-right">
+					<h2 class="header_text">
+						<span class="lng lng_en">We create:</span>
+						<span class="lng lng_es">Creamos:</span>
+						<span class="lng lng_ca">We create:</span>						
+					</h2>
+				</div>
+				<div class="col-md-6 text-left">	
+					<h2 id="header_word" class="header_text">Things</h2>
+				</div>-->
+			</div>
    </section>
   	<div class="content_wrapper">
 
 		<div class="home_content">
-			<h1 class="banner_text">   		
-   			<span class="lng lng_en">
-   				<!--<small>What we do</small>-->
-   				We create, test & scale digital social innovation projects, programs & events in the fields of the arts, 
-   				science & technology
-   			</span>
-   				<span class="lng lng_es">
-   				Creamos, probamos y escalamos innovadores proyectos sociales digitales y eventos en los campos
-   				de arte, ciencia y tecnología
-   			</span>
-	   		<span class="lng lng_ca">
-   				We create, test & scale digital social innovation projects, programs & events in the fields of the arts, 
-   				science & technology
-   			</span> 	
-   		</h1>
-			
+			<div class="section">
+				<div class="section_header">
+					<h2 class="section_title">   		
+   					<span class="lng lng_en">What we do</span>
+   					<span class="lng lng_es">Qué hacemos</span>
+	  		 			<span class="lng lng_ca">Què fem</span> 	
+   				</h2>
+					<h1 class="section_subtitle">   		
+   					<span class="lng lng_en">
+   						We create, test & scale digital social innovation projects, programs & events in the fields of the arts, 
+   						science & technology.
+   					</span>
+   					<span class="lng lng_es">
+   						Creamos, probamos y escalamos innovadores proyectos sociales digitales y eventos en los campos
+   						de arte, ciencia y tecnología.
+   					</span>
+	  			 		<span class="lng lng_ca">
+   						We create, test & scale digital social innovation projects, programs & events in the fields of the arts, 
+   						science & technology.
+   					</span> 	
+   				</h1>
+   			</div>
+			</div>	
 
+		
 		<div class="news_section">
-				<p>
-				 Last projects
-				</p>
-				<div class="news_list">
-					<div class="new_item_4">
-						<img src="img/sokotech_home_workshops.jpg"/>
+		
+			<div class="section_header">
+				<h2 class="section_title">   		
+   				<span class="lng lng_en">Our last projects</span>
+   				<span class="lng lng_es">Nuestros últimos proyectos</span>
+	  	 			<span class="lng lng_ca">Els nostres ultims projectes</span> 	
+   			</h2>
+   		</div>
+			
+			<div class="items_list">
+					<div class="item_4">
+						<div class="new_img_container">
+						   <img class="new_img" src="img/sokotech_home_workshops.jpg">
+						</div>
 						<div class="new_info">
 							<h4>Techno workshops</h4>
 							<h5>01/07/2019 - Barcelona</h5>							
@@ -75,26 +105,32 @@
 							<a href="#">Read more</a>						
 						</div>
 					</div>	
-					<div class="new_item_4">
-						<img src="img/sokotech_home_mesh.jpg"/>
+					<div class="item_4">
+						<div class="new_img_container">
+							<img class="new_img" src="img/sokotech_home_mesh.jpg">
+						</div>						
 						<div class="new_info">
 							<h4>MESH</h4>
-							<h5>11/06/2019</h5>							
+							<h5>11/06/2019 - Int</h5>							
 							<h6>Innovation project...</h6>	
 							<a href="#">Read more</a>						
 						</div>	
 					</div>
-					<div class="new_item_4">
-						<img src="img/sokotech_home_makerfaire.jpg"/>
+					<div class="item_4">
+						<div class="new_img_container">
+							<img class="new_img" src="img/sokotech_home_makerfaire.jpg">
+						</div>						
 						<div class="new_info">
 							<h4>Makerfaire 2019</h4>
-							<h5>01/11/2019</h5>							
+							<h5>01/11/2019 - Barcelona</h5>							
 							<h6>The most important...</h6>	
 							<a href="#">Read more</a>						
 						</div>	
 					</div>
-					<div class="new_item_4">
-						<img src="img/sokotech_home_communication.jpg"/>
+					<div class="item_4">
+						<div class="new_img_container">
+							<img class="new_img" src="img/sokotech_home_communication.jpg">
+						</div>						
 						<div class="new_info">
 							<h4>STEAM Conf</h4>
 							<h5>01/11/2019 - Madrid</h5>							
@@ -103,14 +139,14 @@
 						</div>
 					</div>	
 
-				</div>
-				<button id="btn_more_events" type="submit" class="btn btn-lg btn-warning center">
+			</div>
+			<button id="btn_more_events" type="submit" class="btn btn-lg btn-warning center">
   							<span class="lng lng_en">View more of our projetcs</span>
   							<span class="lng lng_es">Ver más de nuestros proyectos</span>
   							<span class="lng lng_ca">Veure més dels nostres projectes</span>
-  				</button>	
-			</div>						
-			
+  			</button>	
+		</div>						
+			<!--
 			<div class="news_section">
 				<p>
 				 Last projects
@@ -150,7 +186,7 @@
   							<span class="lng lng_ca">Veure més treballs</span>
   				</button>	
 			</div>			
-		
+		-->
 			<!--						
 			<h2 class="h2_title">Our work</h2>
 			<div class="row row_work">
@@ -204,95 +240,93 @@
 				</div>
 			</div>
 			-->
-			<!--
-			<div class="service_list">
-				<a class="service_item" href="#">
-					<img class="image_gray" src="img/sokotech_home_workshops.jpg"/>
-					<div class="service_info">
-						<h4>Education</h4>
-						<h5>Programs, Workshops & Projects</h5>							
-					</div>
-				</a>
-				<a class="service_item" href="#">
-					<img class="image_gray" src="img/sokotech_home_communication.jpg"/>
-					<div class="service_info">
-						<h4>Education</h4>
-						<h5>Programs, Workshops & Projects</h5>							
-					</div>
-				</a>		
-				<a class="service_item" href="#">
-					<img class="image_gray" src="img/sokotech_home_events.jpg"/>
-					<div class="service_info">
-						<h4>Education</h4>
-						<h5>Programs, Workshops & Projects</h5>							
-					</div>
-				</a>
-				<a class="service_item" href="#">
-					<img class="image_gray" src="img/sokotech_home_fablab.jpg"/>
-					<div class="service_info">
-						<h4>Education</h4>
-						<h5>Programs, Workshops & Projects</h5>							
-					</div>
-				</a>
-				<a class="service_item" href="#">
-					<img class="image_gray" src="img/sokotech_home_space.jpg"/>
-					<div class="service_info">
-						<h4>Education</h4>
-						<h5>Programs, Workshops & Projects</h5>							
-					</div>
-				</a>
-			</div>			
-			-->
-			<div class="row row_work">
-				<div class="row row_work_images">
-					<div class="col-md-4 col-sm-12 col_image">
-						<a href="#">
-							<img class="image_gray" src="img/sokotech_home_workshops.jpg"/>
-							<div class="work_info">
-								<h4>Education</h4>
-								<h5>Programs, Workshops & Projects</h5>							
+			
+			
+			
+			<div class="section">
+					<div class="section_header">
+						<h2 class="section_title">   		
+	   					<span class="lng lng_en">Who we are</span>
+	   			</h2>
+					<h1 class="section_subtitle">   		
+		   			<span class="lng lng_en">
+   						SokoTech is a citizen lab that thrives on the passion, curiosity & creativity of its team 
+								members with a unique and integral view on the complexity of reality.
+   					</span>
+   				</h1>
+   			</div>
+   			<div class="items_list">
+	   			<a href="#">
+						<div class="item_4">				
+							<div class="anew_img_container">
+							   <img class="image_gray new_img" src="img/sokotech_home_workshops.jpg">
 							</div>
-						</a>
-					</div>	
-					<div class="col-md-4 col-sm-12 col_image">
-						<a href="#">						
-							<img class="image_gray" src="img/sokotech_home_communication.jpg"/>
 							<div class="work_info">
-								<h4>Communication</h4>
-								<h5>Communication...</h5>							
+									<div>
+										<h4>Education</h4>
+										<h5>Programs, Workshops & Projects</h5>							
+									</div>
 							</div>
-						</a>
-					</div>
-					<div class="col-md-4 col-sm-12 col_image">
-						<a href="#">						
-							<img class="image_gray" src="img/sokotech_home_events.jpg"/>
+						</div>	
+					</a>
+					<a href="#">
+						<div class="item_4">
+							<div class="anew_img_container">
+								<img class="image_gray new_img" src="img/sokotech_home_communication.jpg">
+							</div>
 							<div class="work_info">
-								<h4>Events</h4>
-								<h5>Events...</h5>							
+								<div>
+									<h4>Communication</h4>
+									<h5>Subtitle about the communication service</h5>							
+								</div>
+							</div>			
+						</div>
+					</a>
+					<a href="#">
+						<div class="item_4">
+							<div class="anew_img_container">
+								<img class="image_gray new_img" src="img/sokotech_home_events.jpg">
+							</div>						
+							<div class="work_info">
+								<div>
+									<h4>Events</h4>
+									<h5>Subtitle about the events service</h5>							
+								</div>
 							</div>
-						</a>
-					</div>		
-
-					<div class="col-md-6 col-sm-12 col_image">
-							<a href="#">
-								<img class="image_gray"src="img/sokotech_home_fablab.jpg"/>
-								<div class="work_info">
+						</div>
+					</a>
+					<a href="#">		
+						<div class="item_4">
+							<div class="anew_img_container">
+								<img class="image_gray new_img" src="img/sokotech_home_fablab.jpg">
+							</div>						
+										
+							<div class="work_info">
+								<div>
 									<h4>Lab & Design</h4>
 									<h5>Product design, 3d printing, laser cutting, etc.</h5>							
 								</div>
-							</a>
-					</div>	
-					<div class="col-md-6 col-sm-12 col_image">
-						<a href="#">						
-							<img class="image_gray" src="img/sokotech_home_space.jpg"/>
-							<div class="work_info">
-								<h4>Space</h4>
-								<h5>Space Rental, Facilitator, Workshops</h5>							
 							</div>
-						</a>
-					</div>	
-				</div>	
-			</div>			
+						</div>	
+					</a>
+					
+					<a href="#">	
+						<div class="item_1">
+							<div class="anew_img_container">
+								<img class="image_gray new_img" src="img/sokotech_home_space.jpg">
+							</div>					
+							<div class="work_info">
+								<div>
+									<h4>Space</h4>
+									<h5>Space Rental, Facilitator, Workshops</h5>							
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+   		</div>
+   		
+		
 			<!--
 			<h2 class="h2_title">Our impact</h2>
 			<div class="row row_impact">
@@ -335,7 +369,8 @@
 			</div>
 			-->
 			<div class="section_logos">
-				<h2 class="h2_title">Companies that trust us</h2>
+				<h2 class="section_title text-center">Companies that trust us</h2>
+				<br/><br/>
 				<div class="row row_logos">
 					<div class="col-md-2 col-sm-3">
 							<img src="img/logos/sokotech_ajuntament_barcelona.svg"/>

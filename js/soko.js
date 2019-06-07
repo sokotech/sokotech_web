@@ -24,6 +24,13 @@ function loadDone()
 		$(".lng_"+lng).show();
 		return(false);
 	});
+	$(window).scroll(function(){
+        if($(window).scrollTop()<=10)
+            $("nav").removeClass("navbar_background");   
+        else
+            $("nav").addClass("navbar_background");   
+    });
+
 }
 
 
@@ -257,9 +264,9 @@ function animate_mesh(mesh)
 
 var iword=0;
 var header_text={
-	"en":"we create,we test,we scale,digital,social,innovation,projects,programs,events,arts,science,technology",
-	"es":"creamos,probamos,escalamos,proyectos,digitales,innovación,social,programas,eventos,artes,ciencia,tecnología",
-	"ca":"creamos,probamos,escalamos,proyectos,digitales,innovación,social,programas,eventos,artes,ciencia,tecnología"
+	"en":"digital,social,innovation,projects,programs,events,arts,science,technology",
+	"es":"proyectos,digitales,innovación,social,programas,eventos,artes,ciencia,tecnología",
+	"ca":"proyectos,digitales,innovación,social,programas,eventos,artes,ciencia,tecnología"
 	};
 
 function change_text()
@@ -272,7 +279,7 @@ function change_text()
 
 $(document).ready(function()
 {	
-	setInterval(change_text,500);
+	setInterval(change_text,1000);
 	return;
 	
 	$("#contact_comment").hide();	
