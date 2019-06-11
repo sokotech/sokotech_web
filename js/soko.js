@@ -17,6 +17,24 @@ function getUrlVars()
 
 function loadDone()
 {
+	$(".test_landing_text").click(function()
+   {
+   	$(".header_text").removeClass("header_text_white");
+   	$(".header_text").removeClass("header_text_dark");
+   	$(".header_text").addClass("header_"+$(this).attr("data-class"));	
+   	return(false);
+	});	
+   $(".test_landing").click(function()
+   {
+   	$(".header").removeClass("header_white");
+   	$(".header").removeClass("header_dark");
+   	$(".header").removeClass("header_white_gradient");
+   	$(".header").removeClass("header_dark_gradient");
+   	$(".header").addClass("header_"+$(this).attr("data-class"));	
+   	return(false);
+	});	
+	
+	
 	$("a[data-lng]").click(function()
 	{
 		lng=$(this).attr("data-lng");
@@ -280,6 +298,7 @@ function change_text()
 $(document).ready(function()
 {	
 	setInterval(change_text,1000);
+		
 	return;
 	
 	$("#contact_comment").hide();	
