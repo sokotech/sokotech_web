@@ -42,6 +42,12 @@
  		
  		<div class="collapse navbar-collapse justify-content-end" id="navbar-items">
      		<ul class="navbar-nav nav_language">
+     			<li class="nav-item">
+          		<a class="test_landing_text nav-link" data-class="text_white" href="."><small>text white</small></a>
+        		</li>   
+				<li class="nav-item">
+          		<a class="test_landing_text nav-link" data-class="text_dark" href="."><small>text black</small></a>
+        		</li>   
 				<li class="nav-item">
           		<a class="test_landing nav-link" data-class="white" href="."><small>white</small></a>
         		</li>     		
@@ -57,13 +63,13 @@
      		
      		
         		<li class="nav-item aactive">
-          		<a class="nav-link" data-lng="en" href=".">en</a>
+          		<a class="nav-link" data-lng="en" href="."><small>en</small></a>
         		</li>
         		<li class="nav-item aactive">
-          		<a class="nav-link" data-lng="es" href=".">es</a>
+          		<a class="nav-link" data-lng="es" href="."><small>es</small></a>
         		</li>
         		<li class="nav-item">
-          		<a class="nav-link" data-lng="ca" href=".">ca</a>
+          		<a class="nav-link" data-lng="ca" href="."><small>ca</small></a>
         		</li>
       		</ul>
       </div>
