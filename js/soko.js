@@ -120,29 +120,46 @@ function show_project_info(prj)
 	$(".author_picture").attr("src","data/authors/pictures/"+authors[projects[prj].author].picture);
 }
 
-function show_projects(grid,func)
+function show_projects(grid,data,func)
 {
 	$(grid).html("");
-
-   var preload=Object.keys(projects).length;
    
-	for(var key in projects) 
+   var preload=data.length;
+   
+	for(a=0;a<data.length;a++) 
 	{
-		var prj=$("#dummy .project_item").clone();
-		prj.find(".project_data_title").text(projects[key].title);
-		prj.find(".project_data_author").text(authors[projects[key].author].name);
-		prj.find(".project_data_info").text(projects[key].description);
-	
-		prj.find(".project_link").attr("data-project",key);
-		prj.find(".project_link").attr("href","project.html?id="+key);	
-
-		prj.find("img")[0].onload=function()
+		if(data[a].gsx$home.$t==1)
 		{
-			preload--;
-			if(preload==0) func();
-		};
-		prj.find("img").attr("src","data/projects/previews/"+projects[key].preview);		
-		$(grid).append(prj);
+			var prj=$("#dummy .project_item").clone();
+			prj.find(".new_info").find("h4").text(data[a].gsx$title.$t);
+			prj.find(".new_info").find("h5").text(data[a].gsx$date.$t+" - "+data[a].gsx$place.$t);
+			prj.find(".new_info").find("h6").text(data[a]["gsx$info"+lng].$t);
+			var desc="<span class='lng lng_en'>"+data[a]["gsx$infoen"].$t+"</span>";
+			desc+="<span class='lng lng_es'>"+data[a]["gsx$infoes"].$t+"</span>";
+			desc+="<span class='lng lng_ca'>"+data[a]["gsx$infoca"].$t+"</span>";
+			prj.find(".new_info").find("h6").html(desc);
+			
+			//gsx$title.$t+":"+this["gsx$info"+lng].$t
+			
+			//prj.find(".project_data_author").text(authors[projects[key].author].name);
+			//prj.find(".project_data_info").text(projects[key].description);
+	
+			//prj.find(".project_link").attr("data-project",key);
+			//prj.find(".project_link").attr("href","project.html?id="+key);	
+
+			var img=prj.find(".new_img_container").find("img");
+			$(img).hide();
+			img[0].onload=function()
+			{
+				$(this).fadeIn();
+				preload--;
+				if(preload==0) func();
+			};
+		
+			var image=data[a].gsx$image.$t.replace("open","uc");
+			img.attr("src",image);		
+			$(grid).append(prj);
+		}
 	}
 }
 
@@ -159,127 +176,6 @@ function load_json(file,func)
      		});   
 }
 
-function load_data(func)
-{
-		load_json("data/projects/index.json?"+new Date().getTime(),function(data){
-			projects=data;
-			load_json("data/authors/index.json?"+new Date().getTime(),function(data){
-					authors=data;	
-					func();				
-				})
-		});	
-}
-
-function rand(from,to)
-{
-	return((Math.random() * to) + from);
-}
-
-var circles=[];
-var lines;
-var anim={"from":-20,"to":20,
-			 "speed_from":200,"speed_to":1000,
-			 "init_speed_from":500,"init_speed_to":1500};
-
-function get_lines(mesh,x,y,r)
-{
-	var ret=[];
-	for(var b=0;b<lines.length;b++)
-	{
-		for(var c=1;c<3;c++)
-		{
-			var cx=parseFloat($(lines[b]).attr("x"+c));
-			var cy=parseFloat($(lines[b]).attr("y"+c));
-		
-			if(((cx>parseFloat(x-r)) && (cx<parseFloat(x+r))) &&
-   			((cy>parseFloat(y-r)) && (cy<parseFloat(y+r))))
-   			{
-					//console.log("Punto encontrado ("+c+") en línea: " + b);		
-					var l=[];
-					l["index"]=b;
-					l["point"]=c;
-					ret.push(l);
-   				
-   				//$(lines[b]).css("stroke","#ff0000");
-   				//break;
-		  		}
-		}
-   }
-   return(ret);
-}
-function init_mesh(mesh)
-{
-	$(mesh).find("polyline").hide();
-	$(mesh).find("polygon").hide();
-	lines=$(mesh).find("line");	
-	//console.log("Lines: "+lines.length);
-	
-	var c=$(mesh).find("circle");
-	//console.log("Circles: "+c.length);
-	for(a=0;a<c.length;a++) //c.length;a++)
-	{
-  	   //console.log("Circle: "+a);
-		var ci=[];
-		ci["div"]=c[a];
-		ci["cx"]=$(c[a]).attr("cx");
-		ci["cy"]=$(c[a]).attr("cy");
-		ci["r"]=$(c[a]).attr("r");
-		ci["lines"]=get_lines(mesh,parseFloat(ci["cx"]),
-										   parseFloat(ci["cy"]),
-										   parseFloat(ci["r"])/2);	
-		circles.push(ci);
-		
-		$(c[a]).css("left","-100px"); //ci["cx"]+"px");
-		$(c[a]).css("top",ci["cy"]+"px");
-	}
-}
-
-function start_animation(circle,tx,ty,time)
-{
-	var x=$(circle.div).attr("cx");
-	var y=$(circle.div).attr("cy");
-	
-	$(circle.div).animate(
-        	{
-        		"left":(parseFloat(circle.cx)+tx),
-        		"top":(parseFloat(circle.cy)+ty)
-        	},
-        	{
-            step: function(val,fx){
-            	
-                 if(fx.prop=="left")
-                 		$(circle.div).attr('cx', val);
-                 else
-                 		$(circle.div).attr('cy', val);
-                 		
-                 for(var c=0;c<circle.lines.length;c++)
-                 {
-                 	   var n=circle.lines[c].point;
-                 	   var i=circle.lines[c].index;
-                 	   $(lines[i]).attr("x"+n,$(circle.div).attr('cx'));
-                 	   $(lines[i]).attr("y"+n,$(circle.div).attr('cy'));                 	   
-                 }
-                 
-            	},
-            done: function(){
-            	tx=rand(anim.from,anim.to);
-            	ty=rand(anim.from,anim.to);
-            	start_animation(circle,tx,ty,rand(anim.init_speed_from,anim.init_speed_to));
-            },
-            duration: time
-        	}
-    	);
-}
-function animate_mesh(mesh)
-{
-	init_mesh(mesh);
-	for(a=0;a<circles.length;a++) 
-	{
-		start_animation(circles[a],rand(anim.from,anim.to),
-							 rand(anim.from,anim.to),rand(anim.speed_from,anim.speed_to));            
-	}
-}
-
 var iword=0;
 var header_text={
 	"en":"digital,social,innovation,projects,programs,events,arts,science,technology",
@@ -290,15 +186,26 @@ var header_text={
 function change_text()
 {
 	var words=header_text[lng].split(",");   		
-	$("#header_word").text(words[iword]);
+	$("#header_word").text("#"+words[iword]);
 	iword++;
 	if(iword>=words.length) iword=0;	
 }
 
 $(document).ready(function()
 {	
+   change_text();
 	setInterval(change_text,1000);
-		
+	
+	var spreadsheetID = "1_5d26geyYz14Y-TUr6CQ1XIjT-4T1VEGUo-on083uHY";
+
+ 	var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
+ 	load_json(url,function (data) {
+ 		show_projects("#projects_grid",data.feed.entry,function()
+ 		{
+ 			//alert("fin carga");
+ 		});
+ 	});
+
 	return;
 	
 	$("#contact_comment").hide();	

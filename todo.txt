@@ -1,1 +1,3 @@
+- Un tamaño de fuente para página y establecer con em.
+- Suscripción con intereses.
 
