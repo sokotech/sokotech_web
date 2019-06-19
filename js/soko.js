@@ -138,26 +138,27 @@ function show_projects(grid,data,func)
 			desc+="<span class='lng lng_es'>"+data[a]["gsx$infoes"].$t+"</span>";
 			desc+="<span class='lng lng_ca'>"+data[a]["gsx$infoca"].$t+"</span>";
 			prj.find(".new_info").find("h6").html(desc);
+			prj.find(".new_info").css("background","rgba("+data[a].gsx$darkness.$t+")");
 			
-			//gsx$title.$t+":"+this["gsx$info"+lng].$t
 			
-			//prj.find(".project_data_author").text(authors[projects[key].author].name);
-			//prj.find(".project_data_info").text(projects[key].description);
-	
 			//prj.find(".project_link").attr("data-project",key);
 			//prj.find(".project_link").attr("href","project.html?id="+key);	
 
+			var image=data[a].gsx$image.$t.replace("open","uc");
+
+			$(prj).css("background","url("+image+")");
+			$(prj).css("background-position",data[a].gsx$position.$t);
+			
 			var img=prj.find(".new_img_container").find("img");
 			$(img).hide();
-			img[0].onload=function()
+			/*img[0].onload=function()
 			{
 				$(this).fadeIn();
 				preload--;
 				if(preload==0) func();
 			};
 		
-			var image=data[a].gsx$image.$t.replace("open","uc");
-			img.attr("src",image);		
+			img.attr("src",image);		*/
 			$(grid).append(prj);
 		}
 	}
