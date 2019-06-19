@@ -366,7 +366,7 @@ h1,h2,h3{
 }
 .new_info:hover
 {
-	background:rgba(200,0,0,0.5); /*black;*/
+	background:rgba(200,0,0,0.5) !important; /*black;*/
 	transition: background 0.5s;
 }
 .new_img_container:after
