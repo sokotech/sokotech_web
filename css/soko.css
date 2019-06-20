@@ -42,7 +42,7 @@ h1,h2,h3{
 	margin:0;
 	padding:13px 50px 10px 50px !important;
 	background:transparent !important;
-	abackground:white !important; /*rgba(255,255,255,0.8) !important;*/
+	color:white;
 }
 .navbar_background
 {
@@ -52,16 +52,38 @@ h1,h2,h3{
 {
 	color:#111 !important;
 }
+.nav_white .navbar
+{
+	background:white !important;
+	fill:black !important;
+	color:black !important;
+}
+
+.nav_white .navbar_background
+{
+	background:rgba(255,255,255,0.75) !important;
+}
 
 .navbar-brand
 {
 	width:90px;
-	fill:black;
 }
 
+.logo_black
+{
+	display:none;
+}
+.nav_white .logo_white
+{
+	display:none;
+}
+.nav_white .logo_black
+{
+	display:inherit;
+}
 .nav-item a
 {
-	color:white !important;
+	color:inherit !important;
 	text-transform:uppercase;
 	border-right:1px solid gray;
 	padding:0 10px;
@@ -87,7 +109,7 @@ h1,h2,h3{
 
 .nav_social_item
 {
-	fill:white;
+	fill:inherit;
 	width:30px;
 	display:inline-block;
 	amargin-top:20px;
@@ -99,6 +121,23 @@ h1,h2,h3{
 }
 
 /* ---- header -------------- */
+
+
+.header_info
+{
+	abackground-size: cover;
+	width:100%;
+	padding: 100px 50px 20px 50px;
+	color:black;
+	position:relative;
+	z-index:200;
+	display:flex;
+	font-size:14px;
+}
+.header_image
+{
+	width:100%;
+}
 
 .header
 {
@@ -230,6 +269,7 @@ h1,h2,h3{
 	color:black;
 	width:100%;
 	padding:30px 50px;
+	margin-top:100px;
 }
 .row_subscribe input
 {
@@ -530,8 +570,6 @@ h1,h2,h3{
 	margin:0;
 }
 
-
-
 /*----------- Companies -----------------*/
 .section_logos
 {
@@ -570,6 +608,142 @@ h1,h2,h3{
   font-weight: 400;
   color: rgb(59, 59, 59);
   text-align:center;
+}
+
+/* -------  pages ----------------*/
+.page_container
+{
+	padding: 50px 50px 30px 50px;
+	font-size:14px;
+}
+.page_title
+{
+	font-size:2.5em;
+	text-transform: uppercase;
+	font-weight:800;
+	line-height:1;
+	margin-bottom:5px;
+	color:#000;
+}
+.page_subtitle
+{
+	color:#f27222;
+	font-size:1.4em;
+	line-height:1;
+	margin-bottom:20px;
+	font-weight:600;
+	text-transform: none;
+}
+.page_text
+{
+	line-height:1.4;
+	font-size:1.2em;
+}
+
+/* -------  about page ----------------*/
+.team_img
+{
+	width:100%;
+} 
+.team_info h3
+{
+	font-size:1.5em;
+	font-weight: 400;
+	margin:10px 0 5px 0;
+}
+.team_info h4
+{
+	font-size:1.2em;
+	font-weight: 400;
+	margin:0px 0 10px 0;
+	color:#f27222;
+}
+.team_item
+{
+	width:20% !important;
+	height:auto !important;
+}
+
+.history_timeline
+{
+	padding-top:50px;
+	margin-left:70px;
+	border-left:2px dotted gray;
+}
+.timeline_info
+{
+	padding:20px 25% 0px 50px;
+	position:relative;
+}
+.timeline_year
+{
+	font-size:1.5em;
+	color:#888;
+	display:inline;
+	margin-right:5px;
+}
+.timeline_title
+{
+	font-size:1.5em;
+	font-weight:800;
+	display:inline;	
+}
+
+.timeline_info::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  left: 0;
+  background-color: white;
+  border: 1px dotted black;
+  top: 30px;
+  z-index: 1;
+}
+
+
+
+.item_history
+{
+	width:100%;
+	min-height:25vw;
+	overflow:hidden;
+	position:relative;
+}
+.item_history img
+{
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:0;
+	width:100%;
+}
+.history_img
+{
+	width:100%;
+	position:relative;
+	padding-top:20px;
+}
+.history_info
+{
+	position:relative;
+	z-index:1;
+	padding:20px 25% 20px 50px;
+	acolor:white;
+}
+.history_info_cell
+{
+	padding:20px 20px 20px 50px;
+}
+.history_year
+{
+	font-size:1.2em;
+}
+.history_title
+{
+	font-size:1.5em;
+	font-weight:800;
+	
 }
 
 /*

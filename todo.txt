@@ -1,3 +1,8 @@
+- About y History en la misma página?
 - Un tamaño de fuente para página y establecer con em.
-- Suscripción con intereses.
+- Suscripción con intereses... directo a formulario Mailchimp o nuestra propia página? página de contacto?
+  Hay que comprobar si el formulario de mailchimp permite varios idiomas.
+- OG tags
+
+  
 

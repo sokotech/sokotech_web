@@ -120,6 +120,42 @@ function show_project_info(prj)
 	$(".author_picture").attr("src","data/authors/pictures/"+authors[projects[prj].author].picture);
 }
 
+function show_team(grid, data, func)
+{
+	$(grid).html("");
+   
+   var preload=data.length;
+   
+	for(a=0;a<data.length;a++) 
+	{
+		
+		var member=$("#dummy .team_item").clone();
+		member.find(".team_name").text(data[a].name);
+		var work="<span class='lng lng_en'>"+data[a].work_en+"</span>";
+		work+="<span class='lng lng_es'>"+data[a].work_es+"</span>";
+		work+="<span class='lng lng_ca'>"+data[a].work_ca+"</span>";
+		member.find(".team_work").html(work);
+		var bio="<span class='lng lng_en'>"+data[a].bio_en+"</span>";
+		bio+="<span class='lng lng_es'>"+data[a].bio_es+"</span>";
+		bio+="<span class='lng lng_ca'>"+data[a].bio_ca+"</span>";
+		member.find(".team_bio").html(bio);
+		
+		var img=member.find(".team_img");
+		$(img).hide();
+		img[0].onload=function()
+		{
+			$(this).fadeIn();
+			preload--;
+			if(preload==0) func();
+		};
+		
+		img.attr("src",data[a].img);
+		
+		$(grid).append(member);
+		
+	}
+}
+
 function show_projects(grid,data,func)
 {
 	$(grid).html("");
@@ -194,18 +230,38 @@ function change_text()
 
 $(document).ready(function()
 {	
-   change_text();
-	setInterval(change_text,1000);
+	// home animation
+	if($("#header_word").length)
+	{
+   	change_text();
+		setInterval(change_text,1000);
+	}
 	
-	var spreadsheetID = "1_5d26geyYz14Y-TUr6CQ1XIjT-4T1VEGUo-on083uHY";
-
- 	var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
- 	load_json(url,function (data) {
- 		show_projects("#projects_grid",data.feed.entry,function()
- 		{
- 			//alert("fin carga");
+	// events and projects
+	if($("#projects_grid").length)
+	{
+		var spreadsheetID = "1_5d26geyYz14Y-TUr6CQ1XIjT-4T1VEGUo-on083uHY";
+ 		var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
+ 		load_json(url,function (data) {
+ 			show_projects("#projects_grid",data.feed.entry,function()
+ 			{
+ 				//alert("fin carga");
+ 			});
  		});
- 	});
+ 	}
+ 
+	// about page
+   if($("#team_grid").length)
+   {
+   	load_json("data/team.json"+"?"+new Date().getTime(),function(data)
+   	{
+   		show_team($("#team_grid"),data,function()
+   		{
+   			//alert("ya");	
+   		});
+   	});
+   	
+   }
 
 	return;
 	
