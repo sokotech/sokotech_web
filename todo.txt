@@ -1,3 +1,4 @@
+- Palabras hashtag.
 - About y History en la misma página?
 - Un tamaño de fuente para página y establecer con em.
 - Suscripción con intereses... directo a formulario Mailchimp o nuestra propia página? página de contacto?

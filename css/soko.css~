@@ -43,6 +43,7 @@ h1,h2,h3{
 	padding:13px 50px 10px 50px !important;
 	background:transparent !important;
 	color:white;
+	fill:white;
 }
 .navbar_background
 {
@@ -639,7 +640,74 @@ h1,h2,h3{
 	line-height:1.4;
 	font-size:1.2em;
 }
+blockquote
+{
+	font-size:16px;
+	font-style: italic;
+	position:relative;
+	padding:0 30px;
+	margin-top:20px;
+}
+.author
+{
+	padding-left:30px;
+}
+blockquote:before {
+    content: '\201C';
+    color: #c0c0c0;
+    font-size: 7.5em;
+    font-weight: 700;
+    opacity: .3;
+    position: absolute;
+    top: -.4em;
+    left: -.2em;    
+    text-shadow: none;
+    z-index: -300;
+}
+.row_services
+{
+	width:100%;
+	overflow:hidden;
+	margin:0 !important;
+}
+.col_service
+{
+	width:20% !important;
+	height:20vw;
+	overflow:hidden;
+	padding:0;
+	position:relative;
+}
+.col_service_4
+{
+	width:33% !important;
+	height:25vw;
+	overflow:hidden;
+	padding:0;
+	position:relative;
+}
+.col_service img, .col_service_4 img
+{
+	height:100%;
+}
 
+.btn_more
+{
+	background:transparent !important;
+	border:3px solid black !important;
+	border-radius:0 !important;
+	margin:20px 0;
+	apadding:10px 20px;
+	atext-transform: uppercase;
+}
+
+.btn_more:hover
+{
+	background:black !important;
+	color:white;
+	border:3px solid black !important;
+	border-radius:0 !important;
+}
 /* -------  about page ----------------*/
 .team_img
 {
@@ -666,6 +734,7 @@ h1,h2,h3{
 
 .history_timeline
 {
+	padding-top:50px;
 	margin-left:70px;
 	border-left:2px dotted gray;
 }
