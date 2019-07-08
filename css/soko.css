@@ -570,6 +570,66 @@ h1,h2,h3{
 	font-size:15px;
 	margin:0;
 }
+/*----------- Services fullwidth -----------------*/
+.row_service
+{
+	margin:0;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	color:black;
+	padding:0px;
+}
+.row_service:last-child
+{
+	margin-bottom:50px;
+}
+.full_service_img
+{
+	position:absolute;
+	left:0;
+	right:0;
+	width:100%;
+	display:none;
+	z-index:0;
+}
+.row_service:before
+{
+	content:"";
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgba(255,0,0,0.20);
+	z-index:100;
+	display:none;
+}
+.full_col_service
+{
+	padding:20px 100px 20px 50px !important;
+	z-index:200;
+}
+.row_service h4
+{
+	text-transform:uppercase;
+	font-weight:900;
+	font-size:2em;
+	color:inherit;
+}
+.row_service h5
+{
+	color:inherit;
+	text-transform:uppercase;
+	font-size:0.9em;
+	padding-top:0px;
+	line-height:1.4;
+}
+.row_service h6
+{
+	font-size:1.2em;
+	color:#333;
+}
 
 /*----------- Companies -----------------*/
 .section_logos

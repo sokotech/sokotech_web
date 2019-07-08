@@ -39,14 +39,16 @@
 				<!--<h2 class="page_subtitle">Programs, Workshops & Projects</h2>-->
 				<br/>
 				<p class="page_text">
-					<b>Personalized Workshops</b>: We develop ad hoc workshops to fit your needs.<br/>
+					<!--<b>Personalized Workshops</b>: We develop ad hoc workshops to fit your needs.<br/>
 					<b>Programs for Public Entities</b>: Design of annual programs for libraries, ludotecas & 
 					civic centers<br/>
 					<b>Workshops at Companies</b>: Workshops for your employees and their families.<br/>
 					<b>Fairs & Tradeshows</b>:	Workshops designed to fit your event needs.<br/>
 					<b>Educators Training</b>:	Creative technologies lifelong learning programs.<br/>
 					<b>Personalized School Visits</b>: Come visit our laboratory and be one of us!<br/>
-					
+					-->
+					Personalized Workshops | Programs for Public Entities | Workshops at Companies | 
+					Fairs & Tradeshows | Educators Training | Personalized School Visits
 					<blockquote>
 					The next phase of the Digital Revolution will bring a true fusion of technology with the 
 					creative industries. This innovation will come from people who are able to link beauty to 
@@ -226,13 +228,13 @@
     	</div>
    </section>   
   <div class="row row_services">
-    	<div class="col-md-4 col_service_4">
+    	<div class="acol-md-4 col_service_4">
     		<img src="img/services/space/sokotech_space_06.jpg"/>
 		</div>
-		<div class="col-md-4 col_service_4">
+		<div class="acol-md-4 col_service_4">
    		<img src="img/services/space/sokotech_space_05.jpg"/>
 		</div>
-		<div class="col-md-4 col_service_4">
+		<div class="acol-md-4 col_service_4">
    		<img src="img/services/space/sokotech_space_03.jpg"/>
 		</div>
 	</div>   
