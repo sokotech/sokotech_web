@@ -117,7 +117,7 @@
 
 
 		<div id="projects" class="news_section">
-		<!--
+		
 			<div class="section_header">
 				<h2 class="section_title">   		
    				<span class="lng lng_en">Some of our last projects</span>
@@ -125,11 +125,11 @@
 	  	 			<span class="lng lng_ca">Alguns dels nostres últims projectes</span> 	
    			</h2>
    		</div>
-			-->
+			
 			<div id="projects_grid" class="items_list"></div>
 			<button id="btn_more_events" type="submit" class="btn btn-lg btn-warning center">
-  							<span class="lng lng_en">View the projetcs</span>
-  							<span class="lng lng_es">Ver los proyectos</span>
+  							<span class="lng lng_en">Projects page</span>
+  							<span class="lng lng_es">Página de proyectos</span>
   							<span class="lng lng_ca">Veure els projectes</span>
   			</button>	
 		</div>						
