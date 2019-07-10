@@ -44,6 +44,11 @@ h1,h2,h3{
 	background:transparent !important;
 	color:white;
 	fill:white;
+	position:absolute !important;
+	left:0;
+	top:0;
+	width:100%;
+	z-index:200;
 }
 .navbar_background
 {
@@ -122,8 +127,18 @@ h1,h2,h3{
 }
 
 /* ---- header -------------- */
-
-
+/*
+#header_white
+{
+	display:none;
+	position:absolute;
+	top:50%;
+	left:0;
+	z-index:199;
+	width:100%;
+	aheight:50%;
+	fill:white;
+}*/
 .header_info
 {
 	abackground-size: cover;
@@ -131,7 +146,7 @@ h1,h2,h3{
 	padding: 100px 50px 20px 50px;
 	color:black;
 	position:relative;
-	z-index:200;
+	z-index:100;
 	display:flex;
 	font-size:14px;
 }
@@ -147,6 +162,7 @@ h1,h2,h3{
 	top:0;	
 	background-image: url("../img/sokotech_home_space.jpg"); 
 	background-size: cover;
+	abackground-position: center bottom;
 	width:100%;
 	height:100%;
 	display:flex;
@@ -372,12 +388,14 @@ h1,h2,h3{
 
 .item_4
 {
-	width:25%;
-	height:25vw; /*400px;*/
+	width:25%; /*33.3%;*/
+	height:25vw; /*33.3vw;*/ 
 	position:relative;
 	overflow:hidden;
 	float:left;
 	background-size: cover !important;
+	border-right:1px solid white;
+	border-bottom:1px solid white;
 }
 .item_1
 {
@@ -397,7 +415,7 @@ h1,h2,h3{
 	text-align:center;
 	margin-bottom:80px;
 	background:#f0f0f0;
-	padding:80px 0 50px 0;
+	padding:10px 0 50px 0;
 }
 .news_section p
 {
@@ -469,8 +487,8 @@ h1,h2,h3{
 	font-weight: 700;
 	margin:0;
 	text-transform:uppercase;
-	color:#333;
-	background:white;
+	acolor:#333;
+	abackground:white;
 	width:auto !important;
 	display:inline-block;	
 }
@@ -570,7 +588,7 @@ h1,h2,h3{
 }
 .row_service h6
 {
-	font-size:1.0em;
+	font-size:1.1em;
 	line-height:1.4;
 	color:#333;
 	margin:10px 0 30px 0;
@@ -655,6 +673,38 @@ h1,h2,h3{
 }
 /*----------- Services fullwidth -----------------*/
 
+.row_telling
+{
+	display:none;
+	width:100% !important;
+	margin:0;
+	aposition:absolute;
+	bottom:0;
+	left:0;
+	acolor:white;
+	color:black;
+	z-index: 250;
+	apadding:50px 45px 0px 45px;
+	padding:40px 45px 40px 45px;	
+}
+.row_telling .col
+{
+	padding:10px;
+	font-size:14px;
+	atext-transform: uppercase;
+}
+.row_telling h5
+{
+	font-size:22px;
+	font-weight:900;
+	text-transform: uppercase;
+}
+.row_telling h6
+{
+	adisplay:none;
+	font-size:15px;
+	acolor:#444;
+}
 .full_service_img
 {
 	position:absolute;
@@ -925,42 +975,42 @@ blockquote:before {
 	
 }
 
-/*
-.row_impact img
-{
-	width:50%;
-	margin:auto;
-	display:block;
-}
-
-.icons_home_title 
-{
-  color: rgb(59, 59, 59);
-  font-size: 18px;
-  font-weight: 600;
-  text-align:center;
-}
-
-.icons_home_subtitle
-{
-  font-size: 18px;
-  font-weight: 400;
-  color: rgb(59, 59, 59);
-  text-align:center;
-}
-*/
-
-
-
-
-/*--------------------------------------------*/
 
 /* ---- contact -------------- */
 #contact
 {
-	padding:100px 100px 100px 100px;
-	background:#eee;
+	padding:25px 50px 25px 50px;
+	abackground:white;
+	margin:150px 50px;
+	aborder:1px solid #444;
 }
+#contact input, #contact textarea
+{
+	border:0;
+	border-bottom:1px solid black;
+	outline:none;
+	border-radius: 0;
+}
+#contact input:focus, #contact textarea:focus
+{
+	border-color:orange;
+	outline:none;
+	shadow:none;
+}
+#contact button
+{
+	background:transparent;
+	border:1px solid black;
+	border-radius: 0;
+	color:black;
+	margin-top:20px;
+}
+#contact button:hover
+{
+	background:black;
+	color:white;
+}
+
 #contact h2
 {
 	text-transform:uppercase;
@@ -1002,6 +1052,37 @@ blockquote:before {
 {
 	abackground:white !important;
 }
+
+/*
+.row_impact img
+{
+	width:50%;
+	margin:auto;
+	display:block;
+}
+
+.icons_home_title 
+{
+  color: rgb(59, 59, 59);
+  font-size: 18px;
+  font-weight: 600;
+  text-align:center;
+}
+
+.icons_home_subtitle
+{
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(59, 59, 59);
+  text-align:center;
+}
+*/
+
+
+
+
+/*--------------------------------------------*/
+
 /* ---- head -------------- */
 
 .home-bg {

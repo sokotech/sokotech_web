@@ -1,4 +1,4 @@
- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+ <nav class="navbar static-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href=".">
         <img class="logo_white" src="img/sokotech_logo_white.svg" alt="soko logo">
     	  <img class="logo_black" src="img/sokotech_logo_black.svg" alt="soko logo">
@@ -27,14 +27,14 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">
+          <a class="nav-link" href="index.html#services">
            		<span class="lng lng_en">Services</span>
           		<span class="lng lng_es">Servicios</span>
           		<span class="lng lng_ca">Serveis</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#contact">
+          <a class="nav-link" href="contact.html">
           		<span class="lng lng_en">Contact</span>
           		<span class="lng lng_es">Contacto</span>
           		<span class="lng lng_ca">Contacte</span>          

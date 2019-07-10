@@ -71,7 +71,7 @@
 		  	</div>
   		  	<div class="form-group mx-sm-1 mb-2">
     			<input type="email" class="form-control" id="contact_remail" 
-   				placeholder="reescribir email" autocomplete="on">
+   				placeholder="retype email" autocomplete="on">
   		  	</div>
   		  	<button type="submit" class="btn btn-primary mx-sm-4 mb-2">
   					<span class="lng lng_en">Send</span>

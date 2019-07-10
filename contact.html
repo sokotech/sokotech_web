@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SokoTech</title>
+  <meta charset="utf-8">
+  <meta name="description" content="SokoTech Website">
+  <meta name="author" content="SokoTech">
+  <meta name="keywords" content="steam,education,educación,fablab,events,educational,educacional,programs,programas">  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+  <!--<link href="./css/bootstrap.min.css" rel="stylesheet">-->
+  <!--<link href="css/loading.css?8" rel="stylesheet">-->
+  
+  <!--<script src="./js/jquery.1_11_1.min.js"></script>-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/soko.css?21" rel="stylesheet">
+
+
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!--<script src="./js/bootstrap.min.js"></script>-->
+  <script src="js/soko.js?18"></script>
+
+</head>
+
+<body>
+    <div class="nav_white" include-HTML="nav.html"></div>
+    
+    <div id="contact">
+    <div class="contact_wrapper container">
+     <div class="row">
+   	<div class="col-md-6 col-xs-12">
+   			<iframe width="425" height="350" frameborder="0" scrolling="no" 
+   				marginheight="0" marginwidth="0" 
+   				src="https://www.openstreetmap.org/export/embed.html?bbox=2.187687456607819%2C41.42383173530401%2C2.189358472824097%2C41.42510482300165&amp;layer=mapnik&amp;marker=41.42450448380867%2C2.188887745141983" 
+   				style="border: 1px solid black">
+   			</iframe>
+   			<br/>
+   			<small>
+   			<a href="https://www.openstreetmap.org/#map=19/41.42447/2.18852">Ver mapa más grande</a></small>
+   			<!--<h2>Contacto</h2>-->
+      		<p class="contact_info">
+      			Rellena el formulario para ponerte en contacto con nosotros o 
+      			suscribirte a nuestra newsletter.</p>
+	  			<div class="form-group">
+					<div class="custom-control custom-checkbox" id="check_subscription">
+  						<input type="checkbox" class="custom-control-input">
+  						<label class="custom-control-label" for="customCheck1">
+  							<span class="lng lng_es">Sólo suscribirse a la newsletter</span>
+  							<span class="lng lng_en">Just subscribe to the newsletter</span>
+  							<span class="lng lng_ca">sólosuscribirse a la newsletter</span>  							
+  						</label>
+					</div>
+   			</div>
+   			<div class="contact_result result_ok bg-success">
+					<span class="btn_lbl btn_lbl_send">
+						Mensaje recibido! te responderemos lo antes posible. Gracias.
+					</span>	
+					<span class="btn_lbl btn_lbl_subscribe hidden">
+						Suscripción a newsletter realizada. Gracias.
+					</span>	
+				</div>
+				<div class="contact_result bg-warning error_empty">
+					Se deben rellenar todos los campos del formulario.
+				</div>
+				<div class="contact_result bg-warning error_email">
+					Parece que el email no es correcto.
+				</div>  		
+				<div class="contact_result bg-warning error_remail">
+					Los emails no coinciden.
+				</div>  		
+				<div class="contact_result error_server bg-danger">
+					Se ha producido un error inesperado, por favor inténtalo de nuevo.
+				</div>  	
+				<div class="loading sending text-left hidden"><div class="lds-facebook"><div></div><div></div><div></div></div></div>	
+   	</div>
+   	<div class="col-md-6 col-xs-12">
+   	     <form id="contact_form" autocomplete="on">
+   	     	  	<div class="form-group">
+		  				<input type="text" class="form-control position-static" id="contact_name"  
+    						placeholder="nombre" autocomplete="on">
+	  					<input type="email" class="form-control position-static" id="contact_email"  
+    						placeholder="email" autocomplete="on">
+    					<input type="email" class="form-control position-static" id="contact_remail" 
+    						placeholder="reescribir email" autocomplete="on">
+    					<textarea class="form-control position-static no_subscription" id="contact_message" rows="3" 
+    						placeholder="mensaje"></textarea>
+  					</div>
+ 					<button id="btn_contact" type="submit" class="btn btn-info float-right">
+  							<span class="btn_lbl btn_lbl_send">Enviar mensaje</span>
+  							<span class="btn_lbl btn_lbl_subscribe hidden">Suscribirse</span>
+  					</button>
+	 	 		</form>
+			</div>
+		</div>
+    </div>
+	</div>
+
+  
+
+	<div include-HTML="foot.html"></div>
+	<script>includeHTML();</script>
+
+</body>	
+</html>
