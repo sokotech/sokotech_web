@@ -16,7 +16,7 @@
   <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="css/soko.css?15" rel="stylesheet">
+  <link href="css/soko.css?18" rel="stylesheet">
 
 
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
@@ -57,9 +57,9 @@
 		
 			<div class="section_header">
 				<h2 class="section_title">   		
-   				<span class="lng lng_en">Projects</span>
-   				<span class="lng lng_es">Proyectos</span>
-	  	 			<span class="lng lng_ca">Projectes</span> 	
+   				<span class="lng lng_en">Some of our last projects</span>
+   				<span class="lng lng_es">Algunos de nuestros últimos proyectos</span>
+	  	 			<span class="lng lng_ca">Alguns dels nostres últims projectes</span> 	
    			</h2>
    		</div>
 			
@@ -72,12 +72,21 @@
   							<span class="lng lng_ca">Veure més projectes</span>
   			</button>	
 		</div>						
-			
-			
-		<div class="section_services">
+		
+		 <!--<object type="image/svg+xml" data-svg="img/test_web_release.svg"></object>-->
+		 <img style="padding:0 15%;width:100%;" src="img/test_web_release.svg"/>    	
+				
+		<div id="services" class="section_services">
+			<div class="section_header">
+				<h2 class="section_title" onclick="$('.row_services').toggle();">   		
+   				<span class="lng lng_en">What we do</span>
+   				<span class="lng lng_es">Qué hacemos</span>
+	  	 			<span class="lng lng_ca">Que fem</span> 	
+   			</h2>
+   		</div>
+   		
 			<div class="row row_service">
-				<img class="full_service_img" src="img/sokotech_home_workshops.jpg">
-				<div class="col-md-4 full_col_service">
+				<div class="col-md-4 col_service_left">
 					<div class="services_info">
 						<div>
 							<h4>Education</h4>
@@ -93,22 +102,35 @@
 					</div>
 				</div>
 			
-				<div class="col-md-8 full_col_service">
+				<div class="col-md-8 col_service_right">
+						 <div class="row row_services">
+    							<div class="col_img_service">
+    								<img src="img/services/education/sokotech_edu_01.jpg"/>
+								</div>
+								<div class="col_img_service">
+						   		<img src="img/services/education/sokotech_edu_02.jpg"/>
+								</div>
+								<div class="col_img_service">
+   								<img src="img/services/education/sokotech_edu_03.jpg"/>
+								</div>
+								<div class="col_img_service">
+						   		<img src="img/services/education/sokotech_edu_04.jpg"/>
+								</div>
+								<!--<div class="col_img_service">						
+   								<img src="img/services/education/sokotech_edu_05.jpg"/>
+ 								</div>-->
+							</div>
 							<h6>
-							We develop ad hoc workshops to fit your needs.
-							Design of annual programs for libraries, 
-							ludotecas & civic centers.
-							Workshops for your employees and their families.
-							Workshops designed to fit your event needs.
-							Creative technologies lifelong learning programs.
-							Come visit our laboratory and be one of us!							
-							</h6>				
-										
+							With our experience designing and developing technologic workshops, we offer 
+							ad hoc workshops to fit any need. Creative technology learning programs to any audience,
+							from kids to teachers.
+							<a href="#">View the education projects we did</a>						
+							</h6>		
 				</div>
 			</div>
+			  		
 			<div class="row row_service">
-				<img class="full_service_img" src="img/sokotech_home_communication.jpg">
-				<div class="col-md-4 full_col_service">
+				<div class="col-md-4 col_service_left">
 					<div class="services_info">
 						<div>
 							<h4>Communication</h4>
@@ -122,17 +144,36 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-8 full_col_service">
+				<div class="col-md-8 col_service_right">
+					<div class="row row_services">
+    					<div class="col_img_service">
+				    		<img src="img/services/communication/sokotech_communication_01.jpg"/>
+						</div>
+						<!--<div class="col_img_service">
+				   		<img src="img/services/communication/sokotech_communication_02.jpg"/>
+						</div>-->
+						<div class="col_img_service">
+				   		<img src="img/services/communication/sokotech_communication_03.jpg"/>
+						</div>
+						<div class="col_img_service">
+				   		<img src="img/services/communication/sokotech_communication_04.jpg"/>
+						</div>
+						<div class="col_img_service">						
+   						<img src="img/services/communication/sokotech_communication_05.jpg"/>
+						</div>
+					</div>   	
 					<h6>
 							Focusing on quality and care of detail, we offer integrated communication strategies 
 							to create a personalized product for each of the initiatives that entrust us. 
 							From the design and development of the web and the design and production of 
-							graphic material to the careful management of media and social networks.						
-					</h6>				
+							graphic material to the careful management of media and social networks.
+							<a href="#">View our communication projects</a>							
+					</h6>		
+						
 				</div>
 			</div>	
 			<div class="row row_service">
-				<div class="col-md-4 full_col_service">
+				<div class="col-md-4 col_service_left">
 					<div class="services_info">
 						<div>
 							<h4>Events</h4>
@@ -144,7 +185,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-8 full_col_service">
+				<div class="col-md-8 col_service_right">
+				
 					<h6>
 							Soko Events brings together an intersectoral team of expert curators in the set up of 
 							events related to science, technology and innovation. From the conception of the 
@@ -155,19 +197,22 @@
 				</div>
 			</div>
 			<div class="row row_service">
-				<div class="col-md-4 full_col_service">
+				<div class="col-md-4 col_service_left">
 					<div class="services_info">
 						<div>
-							<h4>Lab/Design/Fab</h4>
+							<h4>Design Lab</h4>
 							<h5>
 								Product design<br/>
+								Prototyping<br/>
+								Software development<br/>
+								Fabrication<br/>
 								3D Printing<br/>
 								Laser Cutting<br/>
 							</h5>						
 						</div>
 					</div>
 				</div>
-				<div class="col-md-8 full_col_service">
+				<div class="col-md-8 col_service_right">
 					<h6>
 							Soko Lab has a multidisciplinary team of technologists and educators that offer 
 							opportunities for youngsters and adults to participate in learning and training 
@@ -177,7 +222,7 @@
 				</div>
 			</div>
 			<div class="row row_service">
-				<div class="col-md-4 full_col_service">
+				<div class="col-md-4 col_service_left">
 					<div class="services_info">
 						<div>
 							<h4>Space</h4>
@@ -189,7 +234,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-8 full_col_service">
+				<div class="col-md-8 col_service_right">
 					<h6>
 							The ​factory, which unfolds its wings on two streets in front of a green square, is adjacent 
 							to an amazing urban network of small wooded streets, which still retains plant and 
@@ -201,109 +246,19 @@
 							Laboratory.			
 					</h6>
 				</div>
+	 <div class="row row_services">
+    	<div class="acol-md-4 col_service_4">
+    		<img src="img/services/space/sokotech_space_06.jpg"/>
+		</div>
+		<div class="acol-md-4 col_service_4">
+   		<img src="img/services/space/sokotech_space_05.jpg"/>
+		</div>
+		<div class="acol-md-4 col_service_4">
+   		<img src="img/services/space/sokotech_space_03.jpg"/>
+		</div>
+	</div>   
 			</div>		
 		</div>	
-			<!--
-			<div class="section_services">
-				<div class="section_header">
-					<h2 id="services"  class="section_title">   		
-	   				<span class="lng lng_en">Services</span>
-	   				<span class="lng lng_es">Servicios</span>
-	   				<span class="lng lng_ca">Serveis</span>
-		   		</h2>
-					<h1 class="section_subtitle">   		
-		   			<span class="lng lng_en">
-   						SokoTech is a citizen lab that thrives on the passion, curiosity & creativity of its team 
-								members with a unique and integral view on the complexity of reality.<br/><br/>
-							We focus our undivided attention on the ideas and solutions that create social value 
-							and cultivate knowledge to face uncertainty and challenging scenarios.
-   					</span>
-   					<span class="lng lng_es">
-   						SokoTech is a citizen lab that thrives on the passion, curiosity & creativity of its team 
-								members with a unique and integral view on the complexity of reality.<br/><br/>
-							We focus our undivided attention on the ideas and solutions that create social value 
-							and cultivate knowledge to face uncertainty and challenging scenarios.
-   					</span>
-						<span class="lng lng_ca">
-   						SokoTech is a citizen lab that thrives on the passion, curiosity & creativity of its team 
-								members with a unique and integral view on the complexity of reality.<br/><br/>
-							We focus our undivided attention on the ideas and solutions that create social value 
-							and cultivate knowledge to face uncertainty and challenging scenarios.
-   					</span>
-   				</h1>
-   			</div>
-   			<div class="items_list">
-	   			<a href="#">
-						<div class="item_4">				
-							<div class="service_img_container">
-							   <img class="image_gray service_img" src="img/sokotech_home_workshops.jpg">
-							</div>
-							<div class="service_info">
-									<div>
-										<h4>Education</h4>
-										<h5>Programs, Workshops & Projects</h5>							
-									</div>
-							</div>
-						</div>	
-					</a>
-					<a href="#">
-						<div class="item_4">
-							<div class="service_img_container">
-								<img class="image_gray service_img" src="img/sokotech_home_communication.jpg">
-							</div>
-							<div class="service_info">
-								<div>
-									<h4>Communication</h4>
-									<h5>Strategic, Press & Social Media</h5>							
-								</div>
-							</div>			
-						</div>
-					</a>
-					<a href="#">
-						<div class="item_4">
-							<div class="service_img_container">
-								<img class="image_gray service_img" src="img/sokotech_home_events.jpg">
-							</div>						
-							<div class="service_info">
-								<div>
-									<h4>Events</h4>
-									<h5>From concept to production</h5>							
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#">		
-						<div class="item_4">
-							<div class="service_img_container">
-								<img class="image_gray service_img" src="img/sokotech_home_fablab.jpg">
-							</div>						
-										
-							<div class="service_info">
-								<div>
-									<h4>Lab & Design</h4>
-									<h5>Product design, 3d printing, laser cutting, etc.</h5>							
-								</div>
-							</div>
-						</div>	
-					</a>
-					
-					<a href="#">	
-						<div class="item_1">
-							<div class="service_img_container">
-								<img class="image_gray service_img" src="img/sokotech_home_space.jpg">
-							</div>					
-							<div class="service_info">
-								<div>
-									<h4>Space</h4>
-									<h5>Space Rental, Facilitator, Workshops</h5>							
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-   		</div>
-   		-->
-		
 		
 			<div class="section_logos">
 				<h2 class="section_title">

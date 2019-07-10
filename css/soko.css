@@ -340,10 +340,22 @@ h1,h2,h3{
 .section_title
 {	
 	display:block;
-	color:#ddd;
-	font-weight:700;
+	color:#333;
+	font-weight:500;
 	text-transform:uppercase;
-	font-size:30px;
+	font-size:17px;
+	position:relative;
+	margin-bottom:2px;
+}
+.section_title:before
+{
+	position:absolute;
+	content:"";
+	left:-50px;
+	top:10px;
+	width:45px;
+	height:1px;
+	border-bottom:1px dotted black;
 }
 
 .items_list
@@ -384,7 +396,7 @@ h1,h2,h3{
 {
 	text-align:center;
 	margin-bottom:80px;
-	background:#f4f4f4;
+	background:#f0f0f0;
 	padding:80px 0 50px 0;
 }
 .news_section p
@@ -496,6 +508,77 @@ h1,h2,h3{
 
 .section_services
 {
+	padding:80px 0 0px 0;
+}
+.row_service
+{
+	margin:0;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	color:black;
+	padding:0px;
+}
+.row_service:last-child
+{
+	margin-bottom:50px;
+}
+
+.col_service_left
+{
+	padding:20px 50px 20px 50px !important;
+	z-index:200;
+}
+.col_service_right
+{
+	padding:20px 50px 20px 0px !important;
+	z-index:200;
+}
+
+.col_img_service
+{
+	width:25%;
+	overflow:hidden;
+	position:relative;
+	padding-top:25%;
+}
+
+.col_img_service img
+{
+	position:absolute;
+	aleft:2px;
+	atop:0;
+	right:4px;
+	bottom:4px;
+	height:100%;	
+}
+
+.row_service h4
+{
+	text-transform:uppercase;
+	font-weight:900;
+	font-size:1.8em;
+	color:inherit;
+}
+.row_service h5
+{
+	color:inherit;
+	text-transform:uppercase;
+	font-size:0.9em;
+	padding-top:0px;
+	line-height:1.4;
+}
+.row_service h6
+{
+	font-size:1.1em;
+	line-height:1.4;
+	color:#333;
+	margin:10px 0 30px 0;
+}
+.row_service h6 a
+{
+	color:inherit;
+	text-decoration: underline;
 }
 .image_gray
 {
@@ -571,19 +654,7 @@ h1,h2,h3{
 	margin:0;
 }
 /*----------- Services fullwidth -----------------*/
-.row_service
-{
-	margin:0;
-	width:100%;
-	position:relative;
-	overflow:hidden;
-	color:black;
-	padding:0px;
-}
-.row_service:last-child
-{
-	margin-bottom:50px;
-}
+
 .full_service_img
 {
 	position:absolute;
@@ -609,26 +680,6 @@ h1,h2,h3{
 {
 	padding:20px 100px 20px 50px !important;
 	z-index:200;
-}
-.row_service h4
-{
-	text-transform:uppercase;
-	font-weight:900;
-	font-size:2em;
-	color:inherit;
-}
-.row_service h5
-{
-	color:inherit;
-	text-transform:uppercase;
-	font-size:0.9em;
-	padding-top:0px;
-	line-height:1.4;
-}
-.row_service h6
-{
-	font-size:1.2em;
-	color:#333;
 }
 
 /*----------- Companies -----------------*/
