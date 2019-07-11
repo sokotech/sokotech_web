@@ -1,5 +1,4 @@
-var projects;
-var authors;
+var the_projects;
 
 var vars=getUrlVars();
 var lng="en";
@@ -135,9 +134,12 @@ function show_team(grid, data, func)
 	}
 }
 
-function show_more_projects()
+function show_more_projects(data)
 {
-	alert("más proyectos");
+	show_projects("#projects_grid",data,function()
+ 			{
+ 				//alert("fin carga");
+ 			});
 }
 function show_project(grid,data)
 {
@@ -145,20 +147,33 @@ function show_project(grid,data)
 
 function show_projects(grid,data,func)
 {
-	$(grid).html("");
    
-	var total=data.length;
-	var nohome=true;
-	if($(grid).attr("aria-home")==1) nohome=false;
-   else total=12;
+   var start=0;
+   var tag="all";
+ 
+   if(($(grid).attr("aria-home")==0))
+   {
+	   start=parseInt($(grid).attr("aria-start"));
+	   tag=$(".project_tag.selected").attr("aria-tag");
+	}
+	if(start==0)
+	{ 
+		$(grid).html("");
+		$("#btn_more_projects").show();
+   }
 
-   var preload=total;
-		
-	for(a=0;a<total;a++) 
+   //var preload=data.l;
+
+	var count=0;	
+	for(a=start;a<data.length;a++) 
 	{
-		if((nohome) || (data[a].gsx$home.$t==1))
+		if(($(grid).attr("aria-home")==1) && (data[a].gsx$home.$t==0)) break;
+
+		if((tag=="all") || (data[a].gsx$tags.$t.indexOf(tag)!=-1))
 		{
 			var prj=$("#dummy .project_item").clone();
+			
+			prj.addClass("project_width_"+data[a].gsx$width.$t);				
 			prj.find(".new_info").find("h4").text(data[a].gsx$title.$t);
 			prj.find(".new_info").find("h5").text(data[a].gsx$date.$t+" - "+data[a].gsx$place.$t);
 			prj.find(".new_info").find("h6").text(data[a]["gsx$info"+lng].$t);
@@ -168,9 +183,8 @@ function show_projects(grid,data,func)
 			prj.find(".new_info").find("h6").html(desc);
 			prj.find(".new_info").css("background","rgba("+data[a].gsx$darkness.$t+")");
 			
-			
-			//prj.find(".project_link").attr("data-project",key);
-			//prj.find(".project_link").attr("href","project.html?id="+key);	
+		//prj.find(".project_link").attr("data-project",key);
+		//prj.find(".project_link").attr("href","project.html?id="+key);	
 
 			var image=data[a].gsx$image.$t.replace("open","uc");
 
@@ -188,8 +202,19 @@ function show_projects(grid,data,func)
 		
 			img.attr("src",image);		*/
 			$(grid).append(prj);
+			
+			count+=parseInt(data[a].gsx$width.$t);	
+			if(count>=12)
+			{
+				$(grid).attr("aria-start",a+1);
+				break;
+			}
 		}
 	}
+ 	
+ 	if(a>=data.length)
+ 	 	$("#btn_more_projects").hide();
+ 	
 }
 
 function load_json(file,func)
@@ -239,11 +264,27 @@ $(document).ready(function()
  			{
  				//alert("fin carga");
  			});
+	 		if($("#btn_more_projects").length)
+	 		{
+ 				$("#btn_more_projects").click(function()
+ 				{
+ 					show_more_projects(data.feed.entry);
+ 					return(false);
+ 				});
+ 			}
+			$(".project_tag").click(function()
+			{
+				$(".project_tag").removeClass("selected");
+				$(this).addClass("selected");	
+				$("#projects_grid").attr("aria-start",0);
+				show_projects("#projects_grid",data.feed.entry,function()
+ 				{
+ 				//alert("fin carga");
+ 				});
+				return(false);
+			}); 			
+
  		});
- 		if($("#btn_more_projects").length)
- 		{
- 			$("#btn_more_projects").click(show_more_projects);
- 		}
  	}
  
 	// about page

@@ -16,7 +16,7 @@
   <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="css/soko.css?24" rel="stylesheet">
+  <link href="css/soko.css?25" rel="stylesheet">
 
 
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
@@ -25,7 +25,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!--<script src="./js/bootstrap.min.js"></script>-->
-  <script src="js/soko.js?20"></script>
+  <script src="js/soko.js?22"></script>
 
 </head>
 
@@ -64,7 +64,18 @@
    			</h2>
    		</div>
 			-->
-			<div id="projects_grid" aria-home="0" class="items_list"></div>
+			<p>
+				Proyectos más destacados que hemos desarrollado en los últimos años.
+			</p>
+			<div class="project_tag_container">
+					<a class="project_tag selected" aria-tag="all" href="#">Todos</a>
+					<a class="project_tag" aria-tag="edu" href="#">Educación</a>
+					<a class="project_tag" aria-tag="com" href="#">Comunicación</a>
+					<a class="project_tag" aria-tag="event" href="#">Eventos</a>
+					<a class="project_tag" aria-tag="fab" href="#">Diseño, desarrollo y fabricación</a>						
+					<a class="project_tag" aria-tag="space" href="#">Espacio</a>						
+			</div>
+			<div id="projects_grid" aria-start="0" aria-home="0" class="items_list"></div>
 			<button id="btn_more_projects" type="submit" class="btn btn-lg center btn_projects">
   					<span class="lng lng_en">Show more projects</span>
   					<span class="lng lng_es">Mostrar más proyectos</span>
