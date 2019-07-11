@@ -156,7 +156,7 @@ function show_projects(grid,data,func)
 		
 	for(a=0;a<total;a++) 
 	{
-		if((home) || (data[a].gsx$home.$t==1))
+		if((nohome) || (data[a].gsx$home.$t==1))
 		{
 			var prj=$("#dummy .project_item").clone();
 			prj.find(".new_info").find("h4").text(data[a].gsx$title.$t);

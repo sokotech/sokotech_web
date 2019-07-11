@@ -150,7 +150,7 @@ function show_projects(grid,data,func)
 	var total=data.length;
 	var nohome=true;
 	if($(grid).attr("aria-home")==1) nohome=false;
-   else total=10;
+   else total=12;
 
    var preload=total;
 		
