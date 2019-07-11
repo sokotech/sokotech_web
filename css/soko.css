@@ -63,6 +63,7 @@ h1,h2,h3{
 	background:white !important;
 	fill:black !important;
 	color:black !important;
+	position:relative !important;
 }
 
 .nav_white .navbar_background
@@ -409,15 +410,24 @@ h1,h2,h3{
 
 
 
-/* ---- news ------------------*/
-.news_section
+/* ---- projects home & page ---------------*/
+.projects_section
 {
 	text-align:center;
 	margin-bottom:80px;
 	background:#f0f0f0;
 	padding:10px 0 50px 0;
 }
-.news_section p
+.projects_section_page
+{
+	min-height:100vh;
+	display:block;
+	position:relative;
+	padding:50px 0 150px 0;
+	margin:0;
+	background:white;
+}
+.projects_section p
 {
 	font-size:2em;
 	color:gray;
@@ -508,20 +518,21 @@ h1,h2,h3{
 	acolor:white;
 	margin:5px 0 0 0;
 }
-.news_section button
+.projects_section .btn_projects
 {
 	background:transparent !important;
-	border:3px solid black !important;
+	border:1px solid black !important;
 	border-radius:0 !important;
 }
 
-.news_section button:hover
+.projects_section .btn_projects:hover
 {
 	background:black !important;
 	color:white;
-	border:3px solid black !important;
+	border:1px solid black !important;
 	border-radius:0 !important;
 }
+
 /*------ Services -----------------*/
 
 .section_services
@@ -1196,7 +1207,7 @@ blockquote:before {
 
 
 /* ---- projects ------------- */
-
+/*
 .loading
 {
 	text-align:center;
@@ -1211,8 +1222,6 @@ blockquote:before {
 	display:flex;
 	flex-wrap:wrap;
 }
-
-
 
 .project_data_title
 {
@@ -1230,10 +1239,10 @@ blockquote:before {
 {
 	line-height:1.2;
 }
-
+*/
 
 /* ---- project info -------------- */
-.col_project
+/*.col_project
 {
 	padding-right:40px !important;
 }
@@ -1256,6 +1265,7 @@ blockquote:before {
 	width:100%;
 	margin-bottom:20px;
 }
+*/
 
 /* ---- RESPONSIVE -----------------*/
 

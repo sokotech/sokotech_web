@@ -1,4 +1,4 @@
- <nav class="navbar static-top navbar-expand-lg navbar-dark bg-dark">
+ <nav class="navbar afixed-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href=".">
         <img class="logo_white" src="img/sokotech_logo_white.svg" alt="soko logo">
     	  <img class="logo_black" src="img/sokotech_logo_black.svg" alt="soko logo">

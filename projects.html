@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SokoTech</title>
+  <meta charset="utf-8">
+  <meta name="description" content="SokoTech Website">
+  <meta name="author" content="SokoTech">
+  <meta name="keywords" content="steam,education,educación,fablab,events,educational,educacional,programs,programas">  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+  <!--<link href="./css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="css/loading.css?8" rel="stylesheet">
+  
+  <!--<script src="./js/jquery.1_11_1.min.js"></script>-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/soko.css?24" rel="stylesheet">
+
+
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!--<script src="./js/bootstrap.min.js"></script>-->
+  <script src="js/soko.js?21"></script>
+
+</head>
+
+<body id="home">
+    <div class="nav_white" include-HTML="nav.html"></div>
+   <!--
+   <section class="header header_dark_gradient">
+			<div class="header_row">
+					<h1 id="header_word" class="header_text">&nbsp</h1>
+					<h2 class="section_subtitle">   		
+   					<span class="lng lng_en">
+   						We create, test & scale digital social innovation projects, programs & events in the fields of the arts, 
+   						science & technology.
+   					</span>
+   					<span class="lng lng_es">
+   						Creamos, probamos y escalamos innovadores proyectos sociales digitales y eventos en los campos
+   						de arte, ciencia y tecnología.
+   					</span>
+	  			 		<span class="lng lng_ca">
+   						We create, test & scale digital social innovation projects, programs & events in the fields of the arts, 
+   						science & technology.
+   					</span> 	
+   				</h2>
+			</div>
+	</section>
+-->
+  	<div class="content_wrapper">
+
+		<div id="projects" class="projects_section projects_section_page">
+			<!--
+			<div class="section_header">
+				<h2 class="section_title">   		
+   				<span class="lng lng_en">Some of our last projects</span>
+   				<span class="lng lng_es">Algunos de nuestros últimos proyectos</span>
+	  	 			<span class="lng lng_ca">Alguns dels nostres últims projectes</span> 	
+   			</h2>
+   		</div>
+			-->
+			<div id="projects_grid" aria-home="0" class="items_list"></div>
+			<button id="btn_more_projects" type="submit" class="btn btn-lg center btn_projects">
+  					<span class="lng lng_en">Show more projects</span>
+  					<span class="lng lng_es">Mostrar más proyectos</span>
+  					<span class="lng lng_ca">Veure més projectes</span>
+  			</button>	
+		</div>						
+		
+		
+		<div include-HTML="foot.html"></div>
+		<script>includeHTML();</script>
+	</div>	
+
+	<div id="dummy" class="hidden">
+		<div class="item_4 project_item">
+			<div class="new_img_container">
+				<img class="new_img" src="">
+			</div>
+			<div class="new_info">
+				<div>
+					<h4></h4>
+					<h5></h5>							
+					<h6></h6>	
+					<a href="#">
+						<span class="lng lng_es">Más info</span>
+						<span class="lng lng_en">More info</span>
+						<span class="lng lng_ca">Més info</span>
+					</a>						
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>	
+</html>

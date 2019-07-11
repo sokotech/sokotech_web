@@ -98,27 +98,6 @@ function email_isvalid(email)
   return(regex.test(email));
 }
 
-function show_project_info(prj)
-{
-	$(".project_title").text(projects[prj].title);
-	$(".project_video iframe").attr("src","https://player.vimeo.com/video/"+projects[prj].video+
-											  "?title=0&byline=0&portrait=0");
-	$(".project_dossier").attr("href","data/projects/dossiers/"+projects[prj].dossier);
-   fetch("data/projects/info/"+projects[prj].info)
-     .then(function(response){
-			 return response.text().then(function(text){
-			 		$(".project_description").html(text); 
-		    });
-     })
-     .catch(function(error){ 
-   	console.log(error); 
-     });   
-   									     
-	$(".author_name").text(authors[projects[prj].author].name);
-	$(".author_bio").html(authors[projects[prj].author].bio);
-	
-	$(".author_picture").attr("src","data/authors/pictures/"+authors[projects[prj].author].picture);
-}
 
 function show_team(grid, data, func)
 {
@@ -156,15 +135,28 @@ function show_team(grid, data, func)
 	}
 }
 
+function show_more_projects()
+{
+	alert("más proyectos");
+}
+function show_project(grid,data)
+{
+}
+
 function show_projects(grid,data,func)
 {
 	$(grid).html("");
    
-   var preload=data.length;
-   
-	for(a=0;a<data.length;a++) 
+	var total=data.length;
+	var nohome=true;
+	if($(grid).attr("aria-home")==1) nohome=false;
+   else total=12;
+
+   var preload=total;
+		
+	for(a=0;a<total;a++) 
 	{
-		if(data[a].gsx$home.$t==1)
+		if((home) || (data[a].gsx$home.$t==1))
 		{
 			var prj=$("#dummy .project_item").clone();
 			prj.find(".new_info").find("h4").text(data[a].gsx$title.$t);
@@ -248,6 +240,10 @@ $(document).ready(function()
  				//alert("fin carga");
  			});
  		});
+ 		if($("#btn_more_projects").length)
+ 		{
+ 			$("#btn_more_projects").click(show_more_projects);
+ 		}
  	}
  
 	// about page
