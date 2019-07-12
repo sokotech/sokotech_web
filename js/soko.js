@@ -14,8 +14,15 @@ function getUrlVars()
 	return(vars);
 }
 
+function translate_page(lang)
+{
+	$(".lng").hide();
+	$(".lng_"+lang).show();	
+}
+
 function loadDone()
 {
+	translate_page(lng);
 	$(".test_landing_text").click(function()
    {
    	$(".header_text").removeClass("header_text_white");
@@ -70,26 +77,6 @@ function includeHTML()
   var imports=$("[include-HTML]");
   if(imports.length>1) loadHTML(imports,0); 
 }
-  
-/*function loadHTML(elem)
-{
-	fetch($(elem).attr("include-HTML"))
-		.then(function(response) {
-   				 return response.text();
-		}).then(function(text) {
-    			$(elem).html(text);
-		});
-}
-function includeHTML()
-{
-  var imports=$("[include-HTML]");
-  for(a=0;a<imports.length;a++)
-  {
-  		loadHTML(imports[a]);
-		$(imports[a]).removeAttr("include-HTML");  	
-  }  
-}
-*/
 
 function email_isvalid(email)
 {
@@ -164,16 +151,23 @@ function show_projects(grid,data,func)
 
    //var preload=data.l;
 
+	var last_prj=0;
 	var count=0;	
+	var last_count=0;
+	
 	for(a=start;a<data.length;a++) 
 	{
 		if(($(grid).attr("aria-home")==1) && (data[a].gsx$home.$t==0)) break;
 
 		if((tag=="all") || (data[a].gsx$tags.$t.indexOf(tag)!=-1))
 		{
-			var prj=$("#dummy .project_item").clone();
+			var prj=$("#dummy .project_item").clone();			
 			
+			//last_prj=prj;
+			$(prj).attr("aria-width",data[a].gsx$width.$t);	
+					
 			prj.addClass("project_width_"+data[a].gsx$width.$t);				
+
 			prj.find(".new_info").find("h4").text(data[a].gsx$title.$t);
 			prj.find(".new_info").find("h5").text(data[a].gsx$date.$t+" - "+data[a].gsx$place.$t);
 			prj.find(".new_info").find("h6").text(data[a]["gsx$info"+lng].$t);
@@ -201,16 +195,45 @@ function show_projects(grid,data,func)
 			};
 		
 			img.attr("src",image);		*/
+
+			last_prj=$(grid).children().last();			
+			
+			
 			$(grid).append(prj);
 			
-			count+=parseInt(data[a].gsx$width.$t);	
+			last_count=count;
+			count+=parseInt(data[a].gsx$width.$t);
+
+			if((parseInt(count%4)!=0) && (parseInt(last_count/4)!=parseInt(count/4)))
+			{
+				var w=parseInt($(last_prj).attr("aria-width"));
+				var adjust=count-last_count; //5-parseInt(last_count%4);
+				last_prj.removeClass("project_width_"+w);
+				last_prj.addClass("project_width_"+adjust);				 
+				//alert("acambio:"+count+" - "+last_count+" adjust:"+adjust);
+				count-=w;
+				count+=adjust;
+				last_count-=w;
+				last_count+=adjust;
+							
+			}
+				
 			if(count>=12)
 			{
 				$(grid).attr("aria-start",a+1);
 				break;
-			}
+			}			
 		}
 	}
+
+	if(parseInt(count%4)!=0)
+	{ 
+		//alert("ajustar")
+		var w=parseInt($(prj).attr("aria-width"));
+		prj.removeClass("project_width_"+w);
+		prj.addClass("project_width_"+(5-parseInt(count%4)));				 
+	}
+				
  	
  	if(a>=data.length)
  	 	$("#btn_more_projects").hide();
