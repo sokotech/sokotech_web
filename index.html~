@@ -16,7 +16,7 @@
   <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="css/soko.css?22" rel="stylesheet">
+  <link href="css/soko.css?38" rel="stylesheet">
 
 
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
@@ -25,7 +25,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!--<script src="./js/bootstrap.min.js"></script>-->
-  <script src="js/soko.js?19"></script>
+  <script src="js/soko.js?21"></script>
 
 </head>
 
@@ -35,7 +35,7 @@
    <section class="header header_dark_gradient">
 			<div class="header_row">
 					<h1 id="header_word" class="header_text">&nbsp</h1>
-					<h2 class="section_subtitle">   		
+					<h2 class="header_subtext">   		
    					<span class="lng lng_en">
    						We create, test & scale digital social innovation projects, programs & events in the fields of the arts, 
    						science & technology.
@@ -50,282 +50,249 @@
    					</span> 	
    				</h2>
 			</div>
-			<!--
-			<svg id="header_white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.55951 105.83333">
-		 		<g transform="translate(19.654762,-185.11905)">
-    				<path d="M -19.654762,185.11905 111.12499,206.81488 241.90475,185.11905 V 290.95238 H -19.654762 Z"/>
-  				</g>
-			</svg>					
-			-->
    </section>
 
   	<div class="content_wrapper">
 
 		<div class="row row_telling">
 			<div class="col">
-				<h5>EDUCATION</h5>
+				<h5>Education</h5>
 				<h6>
-								Personalized Workshops<br/>
-								Programs for Public Entities<br/>
-								Workshops at Companies<br/>
-								Fairs & Tradeshows<br/>
-								Educators Training<br/>
-								Personalized School Visits<br/>
+					Personalized Workshops<br/>
+					Programs for Public Entities<br/>
+					Workshops at Companies<br/>
+					Fairs & Tradeshows<br/>
+					Educators Training<br/>
+					Personalized School Visits<br/>
 				</h6>	
 			</div>		
 			<div class="col">
-				<h5>COMMUNICATION</h5>
+				<h5>Communication</h5>
 				<h6>Strategic Communication<br/>
-							Press<br/>
-							Social Media<br/>
-							Web Design & Development<br/>
-							Visual Communication<br/>
-							Community Engagement<br/>
+					Press<br/>
+					Social Media<br/>
+					Web Design & Development<br/>
+					Visual Communication<br/>
+					Community Engagement<br/>
 				</h6>		
 			</div>	
 			<div class="col">
-				<h5>DESIGN LAB</h5>
+				<h5>Design Lab</h5>
 				<h6>
-								Product design<br/>
-								Prototyping<br/>
-								Software development<br/>
-								Fabrication<br/>
-								3D Printing<br/>
-								Laser Cutting<br/>
+					Product design<br/>
+					Graphic design<br/>
+					Space design<br/>
+					Prototyping<br/>
+					Software development<br/>
+					Digital Fabrication<br/>
 				</h6>	
 			</div>		
 			<div class="col">
-				<h5>EVENTS</h5>
+				<h5>Evants</h5>
 				<h6>
-							Programs<br/>
-							Workshops<br/>
-							Projects
+					Curation<br/>
+					Production<br/>
+					Conferences<br/>
+					Fairs<br/>
+					Workshops<br/>
+					Strategy<br/>
 				</h6>		
 				
 			</div>		
-				
 			<div class="col">
-				<h5>SPACE</h5>
+				<h5>Space</h5>
 				<h6>
-								Space Rental<br/>
-								Facilitation<br/>
-								Workshops<br/>
+					Space Rental<br/>
+					Facilitation<br/>
+					Workshops<br/>
 				</h6>	
 			</div>		
-		
 		</div>
 
 
 		<div id="projects" class="projects_section">
 		
 			<div class="section_header">
-				<h2 class="section_title">   		
+				<h2 class="section_title"> 
+					<span>  		
    				<span class="lng lng_en">Some of our last projects</span>
    				<span class="lng lng_es">Algunos de nuestros últimos proyectos</span>
 	  	 			<span class="lng lng_ca">Alguns dels nostres últims projectes</span> 	
+	  	 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	  	 			<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+	  	 			</span>
    			</h2>
    		</div>
 			
 			<div id="projects_grid" aria-home="1" class="items_list"></div>
-			<a href="projects.html" id="btn_go_projects" class="btn btn-lg center btn_projects">
-  							<span class="lng lng_en">Go to projects page</span>
-  							<span class="lng lng_es">Ir a página de proyectos</span>
-  							<span class="lng lng_ca">Veure els projectes</span>
-  			</a>	
-		</div>						
-		
-		
-		
-		<!-- <object type="image/svg+xml" data-svg="img/test_web_release_2.svg">
-			<h1>No</h1>		
-		 </object>-->
-		 <img style="padding:0 15%;width:100%;" src="img/test_web_release_2.svg"/>    	
-				
-		<div id="services" class="section_services">
-			<div class="section_header">
-				<h2 class="section_title" onclick="$('.row_services').toggle();">   		
-   				<span class="lng lng_en">What we do</span>
-   				<span class="lng lng_es">Qué hacemos</span>
-	  	 			<span class="lng lng_ca">Que fem</span> 	
+
+			<div class="section_header text-center">
+				<h2 class="section_title">   		
+					<a href="projects.html" id="btn_go_projects" class="link_go_projects">
+   				<span class="lng lng_en">Check out more</span>
+   				<span class="lng lng_es">Ver más</span>
+	  	 			<span class="lng lng_ca">Veure més</span> 	
+	  	 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+	  	 			</a>
    			</h2>
    		</div>
-   		
-			<div class="row row_service">
-				<div class="col-md-4 col_service_left">
-					<div class="services_info">
-						<div>
-							<h4>Education</h4>
-							<h5>
-								Personalized Workshops<br/>
-								Programs for Public Entities<br/>
-								Workshops at Companies<br/>
-								Fairs & Tradeshows<br/>
-								Educators Training<br/>
-								Personalized School Visits<br/>
-							</h5>	
-						</div>
-					</div>
-				</div>
-			
-				<div class="col-md-8 col_service_right">
-						 <div class="row row_services">
-    							<div class="col_img_service">
-    								<img src="img/services/education/sokotech_edu_01.jpg"/>
-								</div>
-								<div class="col_img_service">
-						   		<img src="img/services/education/sokotech_edu_02.jpg"/>
-								</div>
-								<div class="col_img_service">
-   								<img src="img/services/education/sokotech_edu_03.jpg"/>
-								</div>
-								<div class="col_img_service">
-						   		<img src="img/services/education/sokotech_edu_04.jpg"/>
-								</div>
-								<!--<div class="col_img_service">						
-   								<img src="img/services/education/sokotech_edu_05.jpg"/>
- 								</div>-->
-							</div>
-							<h6>
-							With our experience designing and developing technologic workshops, we offer 
-							ad hoc workshops to fit any need. Creative technology learning programs to any audience,
-							from kids to teachers.
-							<a href="#">View the education projects we did</a>						
-							</h6>		
-				</div>
-			</div>
-			  		
-			<div class="row row_service">
-				<div class="col-md-4 col_service_left">
-					<div class="services_info">
-						<div>
-							<h4>Communication</h4>
-							<h5>Strategic Communication<br/>
-							Press<br/>
-							Social Media<br/>
-							Web Design & Development<br/>
-							Visual Communication<br/>
-							Community Engagement<br/>
-							</h5>		
-						</div>
-					</div>
-				</div>
-				<div class="col-md-8 col_service_right">
-					<div class="row row_services">
-    					<div class="col_img_service">
-				    		<img src="img/services/communication/sokotech_communication_01.jpg"/>
-						</div>
-						<!--<div class="col_img_service">
-				   		<img src="img/services/communication/sokotech_communication_02.jpg"/>
-						</div>-->
-						<div class="col_img_service">
-				   		<img src="img/services/communication/sokotech_communication_03.jpg"/>
-						</div>
-						<div class="col_img_service">
-				   		<img src="img/services/communication/sokotech_communication_04.jpg"/>
-						</div>
-						<div class="col_img_service">						
-   						<img src="img/services/communication/sokotech_communication_05.jpg"/>
-						</div>
-					</div>   	
-					<h6>
-							Focusing on quality and care of detail, we offer integrated communication strategies 
-							to create a personalized product for each of the initiatives that entrust us. 
-							From the design and development of the web and the design and production of 
-							graphic material to the careful management of media and social networks.
-							<a href="#">View our communication projects</a>							
-					</h6>		
-						
-				</div>
-			</div>	
-			<div class="row row_service">
-				<div class="col-md-4 col_service_left">
-					<div class="services_info">
-						<div>
-							<h4>Events</h4>
-							<h5>
-							Programs<br/>
-							Workshops<br/>
-							Projects
-							</h5>						
-						</div>
-					</div>
-				</div>
-				<div class="col-md-8 col_service_right">
+		</div>						
+		
 				
-					<h6>
+		<div id="services" class="section_services">
+		  <table>
+			<tr>
+				<td class="col_service_left"> 			
+					<div class="service_item">
+						<h4 class="service_title">Producation & Events</h4>
+						<div class="hr"></div>
+						<p class="service_info">
 							Soko Events brings together an intersectoral team of expert curators in the set up of 
 							events related to science, technology and innovation. From the conception of the 
 							program to the final implementation, we cover all phases of the organization of 
 							small to major events. In these years we have organized quality and impact conferences, 
-							local and international, that have brought together more than 100,000 people.						
-					</h6>						
-				</div>
-			</div>
-			<div class="row row_service">
-				<div class="col-md-4 col_service_left">
-					<div class="services_info">
-						<div>
-							<h4>Design Lab</h4>
-							<h5>
-								Product design<br/>
-								Prototyping<br/>
-								Software development<br/>
-								Fabrication<br/>
-								3D Printing<br/>
-								Laser Cutting<br/>
-							</h5>						
-						</div>
+							local and international, that have brought together more than 100,000 people.							
+						</p>
+						<a href="#">
+								Check our event projects
+							  	 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+						</a>	
 					</div>
-				</div>
-				<div class="col-md-8 col_service_right">
-					<h6>
-							Soko Lab has a multidisciplinary team of technologists and educators that offer 
-							opportunities for youngsters and adults to participate in learning and training 
-							experiences at the pace of progressive technological changes. We design and implement 
-							workshops and courses for kids, youth and adults.			
-					</h6>	
-				</div>
-			</div>
-			<div class="row row_service">
-				<div class="col-md-4 col_service_left">
-					<div class="services_info">
-						<div>
-							<h4>Space</h4>
-							<h5>
-								Space Rental<br/>
-								Facilitation<br/>
-								Workshops<br/>
-							</h5>							
+				</td>
+				<td class="col_service_center" rowspan="2"> 
+					<div class="services_spinner">
+						<div class="text">
+							<span class="lng lng_en">What<br/>we do</span>
+							<span class="lng lng_es">Qué<br/>hacemos</span>
+							<span class="lng lng_ca">Que<br/>fem</span>						
 						</div>
+						
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 242">
+							<defs>
+					    		<style>.cls-1,.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-width:4px;}.cls-1{stroke-miterlimit:10;}.cls-2{stroke-linejoin:round;}
+       						</style>
+ 					  		</defs>
+ 						 	<g>
+				        		<path d="M196.62,212.89A119,119,0,0,1,27,194" class="cls-1" />
+        						<path d="M213.36,46a119.07,119.07,0,0,1,8.71,137.9" class="cls-1" />
+				        		<path	d="M6.82,154.65A119.05,119.05,0,0,1,178.58,16.83" class="cls-1" />
+        						<polyline points="10.29 185.79 13.17 166.93 31.43 173.38" class="cls-2" />
+				        		<polyline points="198.3 17.5 201.27 36.35 181.91 35.73" class="cls-2" />
+				        		<polyline points="223.94 200.94 205.11 204.03 205.61 184.66" class="cls-2" />
+			      		</g>
+						</svg>
 					</div>
-				</div>
-				<div class="col-md-8 col_service_right">
-					<h6>
-							The ​factory, which unfolds its wings on two streets in front of a green square, is adjacent 
-							to an amazing urban network of small wooded streets, which still retains plant and 
-							early-stage houses from the 20th century. 
-
-							In spite of this, SokoTech is located in one of the best connected points of the city, 
-							thanks to the neighborhood of subway and suburbs. The space consists of two open spaces: 
-							one of 300m2 and 180m2 of industrial style, which houses an office and a Manufacturing 
-							Laboratory.			
-					</h6>
-				</div>
-	 <div class="row row_services">
-    	<div class="acol-md-4 col_service_4">
-    		<img src="img/services/space/sokotech_space_06.jpg"/>
-		</div>
-		<div class="acol-md-4 col_service_4">
-   		<img src="img/services/space/sokotech_space_05.jpg"/>
-		</div>
-		<div class="acol-md-4 col_service_4">
-   		<img src="img/services/space/sokotech_space_03.jpg"/>
-		</div>
-	</div>   
-			</div>		
-		</div>	
+				</td>			
+					
+				<td class="col_service_right">
+					<div class="service_item">
+						<h4 class="service_title">Design Lab</h4>
+						<div class="hr"></div>
+						<p class="service_info">
+							Our design lab has a multidisciplinary team of designers, engineers and technologists who
+							develop projects from conceptualization to implementation with a human centered design
+							philosophy, co-creation and design thinking strategies in the fields of product, graphic and
+							spatial design.
+						</p>
+						<a href="#">
+							Check our design projectsa
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+						</a>	
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="col_service_left">
+					<div class="service_item nomargin">
+						<h4 class="service_title">Communication</h4>
+						<div class="hr"></div>
+						<p class="service_info">
+							Focusing on quality and care of detail, we offer integrated communication strategies 
+							to create a personalized product for each of the initiatives that entrust us. 
+							From the design and development of the web and the design and production of 
+							graphic material to the careful management of media and social networks.
+						</p>
+						<a href="#">
+							Check our design projects
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+						</a>												
+					</div>		
+				</td>			
 		
-			<div class="section_logos">
+				<td class="col_service_right nomargin">			
+					<div class="service_item">
+						<h4 class="service_title">Education</h4>
+						<div class="hr"></div>
+						<p class="service_info">
+							With our experience designing and developing technologic workshops, we offer 
+							ad hoc workshops to fit any need. Creative technology learning programs to any audience,
+							from kids to teachers.
+						</p>
+						<a href="#">
+							Check our education projects
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+						</a>											
+					</div>		
+				</td>			
+			</tr>		
+		  </table>
+		</div>
+		
+		
+		<div class="space_section">	
+			<div class="section_header">
+				<h2 class="section_title"> 
+					<span>  		
+   				<span class="lng lng_en">Our space, your space</span>
+   				<span class="lng lng_es">Nuestro espacio, vuestro espacio</span>
+	  	 			<span class="lng lng_ca">Nostre espai, vostre espai</span> 	
+	  	 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	  	 			<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+	  	 			</span>
+   			</h2>
+   		</div>	
+   		<div class="space_info header_dark_gradient">
+   			<img class="space_img" src="img/services/space/sokotech_space_05.jpg"/>
+   			<div class="space_content">
+	   		<h4 class="service_title">Sokotech Space</h4>
+				<div class="hr"></div>
+				<p class="service_info">
+						The ​factory, which unfolds its wings on two streets in front of a green square, is adjacent 
+						to an amazing urban network of small wooded streets, which still retains plant and 
+						early-stage houses from the 20th century. 
+						In spite of this, SokoTech is located in one of the best connected points of the city, 
+						thanks to the neighborhood of subway and suburbs. The space consists of two open spaces: 
+						one of 300m2 and 180m2 of industrial style, which houses an office and a Manufacturing 
+						Laboratory.			
+				</p>
+				</div>
+			</div>
+				<!--
+				<div class="row row_services">
+   	 			<div class="acol-md-4 col_service_4">
+   			 		<img src="img/services/space/sokotech_space_06.jpg"/>
+					</div>
+					<div class="acol-md-4 col_service_4">
+   					<img src="img/services/space/sokotech_space_05.jpg"/>
+					</div>
+					<div class="acol-md-4 col_service_4">
+			   		<img src="img/services/space/sokotech_space_03.jpg"/>
+					</div>
+				</div>
+				-->
+			<div class="section_header text-center">
+				<h2 class="section_title">   		
+					<a href="projects.html" id="btn_go_projects" class="link_go_projects">
+   				<span class="lng lng_en">Check out more</span>
+   				<span class="lng lng_es">Ver más</span>
+	  	 			<span class="lng lng_ca">Veure més</span> 	
+	  	 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+	  	 			</a>
+   			</h2>
+   		</div>	   
+		</div>		
+		
+		<div class="section_logos">
 				<h2 class="section_title">
 						<span class="lng lng_en">Companies that trust us</span>
 						<span class="lng lng_es">Compañías que confían en nosotros</span>
@@ -400,10 +367,10 @@
 
 	<div id="dummy" class="hidden">
 		<div class="item_4 project_item">
-			<div class="new_img_container">
+			<!--<div class="new_img_container">
 				<img class="new_img" src="">
-			</div>
-			<div class="new_info">
+			</div>-->
+			<div class="project_info">
 				<div>
 					<h4></h4>
 					<h5></h5>							

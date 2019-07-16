@@ -25,7 +25,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!--<script src="./js/bootstrap.min.js"></script>-->
-  <script src="js/soko.js?22"></script>
+  <script src="js/soko.js?23"></script>
 
 </head>
 
@@ -65,7 +65,7 @@
    		</div>
 			-->
 			<p>
-				Proyectos más destacados que hemos desarrollado en los últimos años.
+				Selecciona un tag para ver los proyectos específicos de cada área.
 			</p>
 			<div class="project_tag_container">
 					<a class="project_tag selected" aria-tag="all" href="#">Todos</a>
@@ -90,10 +90,10 @@
 
 	<div id="dummy" class="hidden">
 		<div class="item_4 project_item">
-			<div class="new_img_container">
+			<!--<div class="new_img_container">
 				<img class="new_img" src="">
-			</div>
-			<div class="new_info">
+			</div>-->
+			<div class="project_info">
 				<div>
 					<h4></h4>
 					<h5></h5>							

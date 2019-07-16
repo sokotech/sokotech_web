@@ -168,14 +168,14 @@ function show_projects(grid,data,func)
 					
 			prj.addClass("project_width_"+data[a].gsx$width.$t);				
 
-			prj.find(".new_info").find("h4").text(data[a].gsx$title.$t);
-			prj.find(".new_info").find("h5").text(data[a].gsx$date.$t+" - "+data[a].gsx$place.$t);
-			prj.find(".new_info").find("h6").text(data[a]["gsx$info"+lng].$t);
+			prj.find("h4").text(data[a].gsx$title.$t);
+			prj.find("h5").text(data[a].gsx$date.$t+" - "+data[a].gsx$place.$t);
+			prj.find("h6").text(data[a]["gsx$info"+lng].$t);
 			var desc="<span class='lng lng_en'>"+data[a]["gsx$infoen"].$t+"</span>";
 			desc+="<span class='lng lng_es'>"+data[a]["gsx$infoes"].$t+"</span>";
 			desc+="<span class='lng lng_ca'>"+data[a]["gsx$infoca"].$t+"</span>";
-			prj.find(".new_info").find("h6").html(desc);
-			prj.find(".new_info").css("background","rgba("+data[a].gsx$darkness.$t+")");
+			prj.find("h6").html(desc);
+			prj.find(".project_info").css("background","rgba("+data[a].gsx$darkness.$t+")");
 			
 		//prj.find(".project_link").attr("data-project",key);
 		//prj.find(".project_link").attr("href","project.html?id="+key);	
@@ -185,16 +185,6 @@ function show_projects(grid,data,func)
 			$(prj).css("background","url("+image+")");
 			$(prj).css("background-position",data[a].gsx$position.$t);
 			
-			var img=prj.find(".new_img_container").find("img");
-			$(img).hide();
-			/*img[0].onload=function()
-			{
-				$(this).fadeIn();
-				preload--;
-				if(preload==0) func();
-			};
-		
-			img.attr("src",image);		*/
 
 			last_prj=$(grid).children().last();			
 			

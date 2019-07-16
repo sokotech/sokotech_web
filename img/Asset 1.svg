@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 242 242"
+   version="1.1"
+   id="svg4610"
+   sodipodi:docname="Asset 1.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata4614">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Asset 1</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1223"
+     inkscape:window-height="779"
+     id="namedview4612"
+     showgrid="false"
+     inkscape:zoom="2.5123967"
+     inkscape:cx="121"
+     inkscape:cy="121"
+     inkscape:window-x="57"
+     inkscape:window-y="21"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_2" />
+  <defs
+     id="defs4575">
+    <style
+       id="style4573">.cls-1,.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-width:4px;}.cls-1{stroke-miterlimit:10;}.cls-2{stroke-linejoin:round;}</style>
+  </defs>
+  <title
+     id="title4577">Asset 1</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2"
+     style="display:inline">
+    <g
+       id="What_we_do"
+       data-name="What we do"
+       style="display:inline">
+      <g
+         id="text">
+        <path
+           class="cls-1"
+           d="M 196.62,212.89 A 119,119 0 0 1 27,194"
+           id="path4595"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:#000000;stroke-width:4px;stroke-linecap:round;stroke-miterlimit:10" />
+        <path
+           class="cls-1"
+           d="m 213.36,46 a 119.07,119.07 0 0 1 8.71,137.9"
+           id="path4597"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:#000000;stroke-width:4px;stroke-linecap:round;stroke-miterlimit:10" />
+        <path
+           class="cls-1"
+           d="M 6.82,154.65 A 119.05,119.05 0 0 1 178.58,16.83"
+           id="path4599"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:#000000;stroke-width:4px;stroke-linecap:round;stroke-miterlimit:10" />
+        <polyline
+           class="cls-2"
+           points="10.29 185.79 13.17 166.93 31.43 173.38"
+           id="polyline4601"
+           style="fill:none;stroke:#000000;stroke-width:4px;stroke-linecap:round;stroke-linejoin:round" />
+        <polyline
+           class="cls-2"
+           points="198.3 17.5 201.27 36.35 181.91 35.73"
+           id="polyline4603"
+           style="fill:none;stroke:#000000;stroke-width:4px;stroke-linecap:round;stroke-linejoin:round" />
+        <polyline
+           class="cls-2"
+           points="223.94 200.94 205.11 204.03 205.61 184.66"
+           id="polyline4605"
+           style="fill:none;stroke:#000000;stroke-width:4px;stroke-linecap:round;stroke-linejoin:round" />
+      </g>
+    </g>
+  </g>
+</svg>
