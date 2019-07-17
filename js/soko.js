@@ -168,18 +168,23 @@ function show_projects(grid,data,func)
 					
 			prj.addClass("project_width_"+data[a].gsx$width.$t);				
 
-			prj.find("h4").text(data[a].gsx$title.$t);
-			prj.find("h5").text(data[a].gsx$date.$t+" - "+data[a].gsx$place.$t);
-			prj.find("h6").text(data[a]["gsx$info"+lng].$t);
+			prj.find(".project_title").text(data[a].gsx$title.$t);
+			//prj.find("project_date").text(data[a].gsx$date.$t+" - "+data[a].gsx$place.$t);
+			//prj.find("project_info").text(data[a]["gsx$info"+lng].$t);
 			var desc="<span class='lng lng_en'>"+data[a]["gsx$infoen"].$t+"</span>";
 			desc+="<span class='lng lng_es'>"+data[a]["gsx$infoes"].$t+"</span>";
 			desc+="<span class='lng lng_ca'>"+data[a]["gsx$infoca"].$t+"</span>";
-			prj.find("h6").html(desc);
+			prj.find(".project_desc").html(desc);
+					
 			prj.find(".project_info").css("background","rgba("+data[a].gsx$darkness.$t+")");
 			
-		//prj.find(".project_link").attr("data-project",key);
-		//prj.find(".project_link").attr("href","project.html?id="+key);	
-
+			var link=data[a]["gsx$url"].$t;
+			if(link.length)		   
+			   prj.find(".project_link").attr("href",link);	
+			else 
+				prj.find(".project_link").hide();	
+				
+				
 			var image=data[a].gsx$image.$t.replace("open","uc");
 
 			$(prj).css("background","url("+image+")");
@@ -197,15 +202,14 @@ function show_projects(grid,data,func)
 			if((parseInt(count%4)!=0) && (parseInt(last_count/4)!=parseInt(count/4)))
 			{
 				var w=parseInt($(last_prj).attr("aria-width"));
-				var adjust=count-last_count; //5-parseInt(last_count%4);
+				var adjust=(4-parseInt(last_count%4))+w; //count-last_count; //5-parseInt(last_count%4);
 				last_prj.removeClass("project_width_"+w);
 				last_prj.addClass("project_width_"+adjust);				 
-				//alert("acambio:"+count+" - "+last_count+" adjust:"+adjust);
+				//alert("cambio:"+count+" - "+last_count+" adjust:"+adjust);
 				count-=w;
 				count+=adjust;
-				last_count-=w;
-				last_count+=adjust;
-							
+				//last_count-=w;
+				//last_count+=adjust;		
 			}
 				
 			if(count>=12)
@@ -218,10 +222,11 @@ function show_projects(grid,data,func)
 
 	if(parseInt(count%4)!=0)
 	{ 
-		//alert("ajustar")
+		//alert("ajustar final:"+count);
 		var w=parseInt($(prj).attr("aria-width"));
 		prj.removeClass("project_width_"+w);
-		prj.addClass("project_width_"+(5-parseInt(count%4)));				 
+		prj.addClass("project_width_"+(w+parseInt(count%4)));				 
+		//prj.addClass("project_width_"+(5-parseInt(count%4)));				 
 	}
 				
  	

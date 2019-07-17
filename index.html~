@@ -16,7 +16,7 @@
   <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="css/soko.css?38" rel="stylesheet">
+  <link href="css/soko.css?42" rel="stylesheet">
 
 
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
@@ -25,7 +25,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!--<script src="./js/bootstrap.min.js"></script>-->
-  <script src="js/soko.js?21"></script>
+  <script src="js/soko.js?24"></script>
 
 </head>
 
@@ -293,67 +293,72 @@
 		</div>		
 		
 		<div class="section_logos">
-				<h2 class="section_title">
-						<span class="lng lng_en">Companies that trust us</span>
-						<span class="lng lng_es">Compañías que confían en nosotros</span>
-						<span class="lng lng_ca">Companyíes que confien en nosaltres</span>				
-				</h2>
-				<br/><br/>
-				<div class="row row_logos">
-					<div class="col-md-2 col-sm-3">
+			<div class="section_header">
+				<h2 class="section_title"> 
+					<span>  		
+   				<span class="lng lng_en">We worked with</span>
+   				<span class="lng lng_es">Trabajamos con</span>
+	  	 			<span class="lng lng_ca">Treballem amb</span> 	
+	  	 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	  	 			<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+	  	 			</span>
+   			</h2>
+	   	</div>	
+			<div class="row row_logos">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_ajuntament_barcelona.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_barcelona_activa.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_la_caixa_foundation.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_carnegie_mellon.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_decode.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_decidim.svg"/>
 					</div>
 					
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_fira_barcelona.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_generalitat_de_catalunya.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_gigapan.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_mobile_world_congress.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_fablab_barcelona.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_maker_faire.svg"/>
 					</div>
 
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_mozilla_foundation.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_sonar_d.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_nasa.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_fundacion_telefonica.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_orange_foundation.svg"/>
 					</div>
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-2 col-sm-3 col_logos">
 							<img src="img/logos/sokotech_smashing_magazine.svg"/>
 					</div>
 				</div>
@@ -372,13 +377,11 @@
 			</div>-->
 			<div class="project_info">
 				<div>
-					<h4></h4>
-					<h5></h5>							
-					<h6></h6>	
-					<a href="#">
-						<span class="lng lng_es">Más info</span>
-						<span class="lng lng_en">More info</span>
-						<span class="lng lng_ca">Més info</span>
+					<h4 class="project_title"></h4>
+					<h5 class="project_date"></h5>							
+					<h6 class="project_desc"></h6>	
+					<a class="project_link" target="_new" href="#">
+		  	 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
 					</a>						
 				</div>
 			</div>
