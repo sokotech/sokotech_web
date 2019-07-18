@@ -1,8 +1,28 @@
-- Palabras hashtag.
-- About y History en la misma página?
+- Diseño: about, contact, projects, space? o popup?
+
+- Funcionalidad: contacto
+- Funcionalidad: suscripción
+
+- Suscripción: opciones, mínima suscripción
+
+- Navbar siempre visible
+
+- Cambiar sistema de idiomas por estilos?
+
+- Hacer link al pasar sobre proyecto? para que el usuario no tenga que ir al link de abajo.
+
+- Decidir si hacer aria-lng en páginas combinando ambos sistemas.s
+- Lngs: home, about, ¿space?
+- Foot con links: tel, map
+- Responsive: home, about, projects, contact, space
+
+- Traducción: home, about, contact, space, projects
+
+- Carga de proyectos que no aparezca el botón de mostrar más... que aparezca el loading... que ocupe toda la página
+
+- Listado de proyectos con sus fotografías
+
 - Un tamaño de fuente para página y establecer con em.
-- Suscripción con intereses... directo a formulario Mailchimp o nuestra propia página? página de contacto?
-  Hay que comprobar si el formulario de mailchimp permite varios idiomas.
 - OG tags
 
   

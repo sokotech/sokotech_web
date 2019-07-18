@@ -440,6 +440,7 @@ h1,h2,h3{
 
 .projects_section .btn_projects
 {
+	margin:20px 0;
 	background:transparent !important;
 	border:1px solid black !important;
 	border-radius:0 !important;
@@ -942,26 +943,45 @@ blockquote:before {
 
 
 /* ---- contact -------------- */
+.body_flex
+{
+	display:flex;
+	flex-direction:column;
+}
+/*.body_flex .navbar
+{
+	background:transparent !important;
+}*/
 #contact
 {
-	padding:25px 50px 25px 50px;
-	abackground:white;
-	margin:150px 50px;
-	aborder:1px solid #444;
+	background:#eee;
+	margin:0px 0px;
+	flex-grow:1;
+}
+.contact_wrapper
+{
+	abackground:#fff;
+	margin:25px 50px;
+	padding:50px 100px 50px 100px;
+	aborder-radius:10px;
 }
 #contact input, #contact textarea
 {
 	border:0;
 	border-bottom:1px solid black;
+	margin-bottom:15px;
 	outline:none;
 	border-radius: 0;
+	padding:0 0 0 5px;
+	transition: background 0.5s;
 }
 #contact input:focus, #contact textarea:focus
 {
 	border-color:orange;
 	outline:none;
-	shadow:none;
+	box-shadow:none;
 }
+
 #contact button
 {
 	background:transparent;
@@ -980,34 +1000,48 @@ blockquote:before {
 {
 	text-transform:uppercase;
 }
-.contact_wrapper
-{
-	background:#fff;
-	padding:50px 50px 50px 50px;
-	border-radius:10px;
-}
+
 .contact_info
 {
 	margin-bottom:30px;
+	padding-right:50px;
 }
-#contact_form input, #contact_form textarea
+
+.subscription_options
 {
-	padding:5px;
-	margin-bottom:15px;
-	aborder-radius:5px 5px 0 0;
+	margin-top:10px;
+	margin-left:7px;
+	padding-top:10px;
+	padding-left:20px;
+	border-left:1px dotted black;
 }
-#contact_form .custom-checkbox
+.subscription_options.disabled .subscription_option
 {
-	 margin-bottom:10px;
+	color:#aaa;
+}
+.subscription_options.disabled .custom-control-input:checked~.custom-control-label::before
+{
+	background:#aaa;
+}
+
+.custom-control-input:checked~.custom-control-label::before
+{
+	background:black;
+	border-color:inherit;
+}
+.custom-checkbox .custom-control-label::before
+{
+	border-radius:0;
 }
 .contact_result
 {
 	display:none;
-	margin-top:30px;
-	margin-right:40px;
-	padding:10px;
+	margin-top:20px;
+	margin-right:10px;
+	padding:5px 10px;
 	color:white;
-	border-radius:5px;
+	font-size:16px;
+	border-radius:0;
 }
 #btn_contact
 {
@@ -1017,31 +1051,6 @@ blockquote:before {
 {
 	abackground:white !important;
 }
-
-/*
-.row_impact img
-{
-	width:50%;
-	margin:auto;
-	display:block;
-}
-
-.icons_home_title 
-{
-  color: rgb(59, 59, 59);
-  font-size: 18px;
-  font-weight: 600;
-  text-align:center;
-}
-
-.icons_home_subtitle
-{
-  font-size: 18px;
-  font-weight: 400;
-  color: rgb(59, 59, 59);
-  text-align:center;
-}
-*/
 
 
 

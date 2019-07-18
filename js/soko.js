@@ -1,8 +1,11 @@
-var the_projects;
-
-var vars=getUrlVars();
 var lng="en";
-//if(vars["lng"]) lng=vars["lng"];
+var vars=getUrlVars();
+
+if(localStorage["soko_web_lng"])
+	lng=localStorage["soko_web_lng"];
+else
+	if(vars["lng"]) lng=vars["lng"];
+
 
 function getUrlVars() 
 {
@@ -18,6 +21,9 @@ function translate_page(lang)
 {
 	$(".lng").hide();
 	$(".lng_"+lang).show();	
+	var place=$("[placeholder_"+lang+"]");
+	for(a=0;a<place.length;a++)
+			$(place[a]).attr("placeholder",$(place[a]).attr("placeholder_"+lang));
 }
 
 function loadDone()
@@ -44,10 +50,11 @@ function loadDone()
 	$("a[data-lng]").click(function()
 	{
 		lng=$(this).attr("data-lng");
-		$(".lng").hide();
-		$(".lng_"+lng).show();
+		localStorage["soko_web_lng"]=lng;
+		translate_page(lng);
 		return(false);
 	});
+	
 	$(window).scroll(function(){
         if($(window).scrollTop()<=10)
             $("nav").removeClass("navbar_background");   
@@ -55,6 +62,112 @@ function loadDone()
             $("nav").addClass("navbar_background");   
     });
 
+	 if($("#contact").length)
+	 {
+	 	$("#check_subscription").click(function()
+    	{
+    			if($(this).prop("disabled")) return(false);
+    			
+				var checked=$(this).find("input").prop('checked');	
+			   $(".btn_lbl").removeClass("hidden");
+				if(checked)
+				{
+			    	$(this).find("input").prop('checked', false)
+			    	$("#contact_form .no_subscription").prop("disabled",false);
+			    	$(".btn_lbl_subscribe").addClass("hidden");
+			    	$(".subscription_options").addClass("disabled");
+				}else{
+			    	$(this).find("input").prop('checked', true)
+			    	$("#contact_form .no_subscription").prop("disabled",true);
+			    	$(".btn_lbl_send").addClass("hidden");
+			    	$(".subscription_options").removeClass("disabled");
+			    }	
+				return(false);
+   	});
+   	if($(".subscription_option").length)
+		{
+		 	$(".subscription_option").click(function()
+    		{
+    			if(!$("#check_subscription input").prop("checked")) return(false);
+    			
+				var checked=$(this).find("input").prop('checked');	
+				if(checked)
+			    	$(this).find("input").prop('checked', false)
+				else
+			    	$(this).find("input").prop('checked', true)
+				return(false);
+   		});
+  		}
+	   
+	   $("#contact input, #contact textarea").on('input',function()
+	   {
+   		$(".contact_result").hide();   
+  		});
+   
+   	$("#btn_contact").click(function()
+   	{	  
+   		$(".contact_result").hide();
+			var name=$("#contact_name").val().trim();
+			var email=$("#contact_email").val().trim();
+			var remail=$("#contact_remail").val().trim();
+			var msg=$("#contact_message").val().trim();
+			var comment=$("#contact_comment").val();
+			if((((email.length==0) || (remail.length==0)) || (name.length==0)) ||
+					((msg.length==0) && (!$("#check_subscription").find("input").prop('checked')))) 
+			{
+				$(".error_empty").show();
+				return(false);
+	      }		
+			if(!email_isvalid(email))
+			{
+				$(".error_email").show();
+				return(false);
+			}
+			if(email!=remail)
+			{
+				$(".error_remail").show();
+				return(false);
+			}
+		
+			$(this).addClass("hidden");
+			$(".sending").removeClass("hidden");
+					
+ 			var params={"function": "contact", "name":name, "email":email,"text":msg, "lng": lng,
+ 							 "comment":comment};		
+ 		   if($("#check_subscription").find("input").prop('checked')) params["subscribe"]=1;
+			$.post("https://2017.steamconf.com/mesh/email.php",params)
+			//$.post("gandi/mesh/email.php",params)
+				   .done(function(data)
+				   {
+				   	//alert(data);
+				   	var res=JSON.parse($.trim(data));
+				   	//console.log(res);
+			   	
+						if(res.result=="ok") 
+						{
+				   		$(".sending").addClass("hidden");
+							$(".result_ok").show();	
+						
+							$("#contact input, #contact textarea").prop('disabled', true);
+   						$("#check_subscription").prop('disabled', true);
+										
+						}else{				
+							$("#btn_contact").removeClass("hidden");
+				   		$(".sending").addClass("hidden");
+							$(".error_server").show();
+   			   	}
+				   }).fail(function(xhr, status, error)
+				     {
+							$("#btn_contact").removeClass("hidden");
+				   		$(".sending").addClass("hidden");
+							$(".error_server").show();
+   			     });
+   		return(false); 	     
+   	});
+		if(vars["subscription"]==1)	   	
+	   	$("#check_subscription").trigger("click");
+    	
+	}
 }
 
 
@@ -155,6 +268,8 @@ function show_projects(grid,data,func)
 	var count=0;	
 	var last_count=0;
 	
+	var lngs=Array("en","es","ca");
+	
 	for(a=start;a<data.length;a++) 
 	{
 		if(($(grid).attr("aria-home")==1) && (data[a].gsx$home.$t==0)) break;
@@ -171,9 +286,20 @@ function show_projects(grid,data,func)
 			prj.find(".project_title").text(data[a].gsx$title.$t);
 			//prj.find("project_date").text(data[a].gsx$date.$t+" - "+data[a].gsx$place.$t);
 			//prj.find("project_info").text(data[a]["gsx$info"+lng].$t);
-			var desc="<span class='lng lng_en'>"+data[a]["gsx$infoen"].$t+"</span>";
+			
+			var desc="";
+			for(l=0;l<lngs.length;l++)
+			{
+				desc+="<span class='lng lng_"+lngs[l]+"' style='display:";
+				if(lng!=lngs[l]) desc+="none' ";
+				else desc+="block' ";
+				desc+=">"+data[a]["gsx$info"+lngs[l]].$t+"</span>";
+				
+			}			
+			/*var desc="<span class='lng lng_en'>"+data[a]["gsx$infoen"].$t+"</span>";
 			desc+="<span class='lng lng_es'>"+data[a]["gsx$infoes"].$t+"</span>";
-			desc+="<span class='lng lng_ca'>"+data[a]["gsx$infoca"].$t+"</span>";
+			desc+="<span class='lng lng_ca'>"+data[a]["gsx$infoca"].$t+"</span>";*/
+			
 			prj.find(".project_desc").html(desc);
 					
 			prj.find(".project_info").css("background","rgba("+data[a].gsx$darkness.$t+")");
@@ -225,7 +351,7 @@ function show_projects(grid,data,func)
 		//alert("ajustar final:"+count);
 		var w=parseInt($(prj).attr("aria-width"));
 		prj.removeClass("project_width_"+w);
-		prj.addClass("project_width_"+(w+parseInt(count%4)));				 
+		prj.addClass("project_width_"+(w+(4-parseInt(count%4))));				 
 		//prj.addClass("project_width_"+(5-parseInt(count%4)));				 
 	}
 				
@@ -252,7 +378,7 @@ var iword=0;
 var header_text={
 	"en":"digital,social,innovation,projects,programs,events,arts,science,technology",
 	"es":"proyectos,digitales,innovación,social,programas,eventos,artes,ciencia,tecnología",
-	"ca":"proyectos,digitales,innovación,social,programas,eventos,artes,ciencia,tecnología"
+	"ca":"projectes,digitals,innovació,social,programes,events,arts,ciencia,tecnologia"
 	};
 
 function change_text()
