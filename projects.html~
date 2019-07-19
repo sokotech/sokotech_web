@@ -25,7 +25,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!--<script src="./js/bootstrap.min.js"></script>-->
-  <script src="js/soko.js?26"></script>
+  <script src="js/soko.js?27"></script>
 
 </head>
 
@@ -62,31 +62,34 @@
 						<span class="lng lng_es">Todos</span>
 						<span class="lng lng_ca">Tots</span>
 					</a>
-					<a class="project_tag" aria-tag="edu" href="#">
-						<span class="lng lng_en">Education</span>
-						<span class="lng lng_es">Educación</span>
-						<span class="lng lng_ca">Educació</span>					
+					<a class="project_tag" aria-tag="event" href="#">
+						<span class="lng lng_en">Events production</span>
+						<span class="lng lng_es">Producción de eventos</span>
+						<span class="lng lng_ca">Producció de events</span>
 					</a>
 					<a class="project_tag" aria-tag="com" href="#">
 						<span class="lng lng_en">Communication</span>
 						<span class="lng lng_es">comunicación</span>
 						<span class="lng lng_ca">Comunicació</span>
 					</a>
-					<a class="project_tag" aria-tag="event" href="#">
-						<span class="lng lng_en">Events</span>
-						<span class="lng lng_es">Eventos</span>
-						<span class="lng lng_ca">Events</span>
-					</a>
 					<a class="project_tag" aria-tag="fab" href="#">
 						<span class="lng lng_en">Design, development, fabrication</span>
 						<span class="lng lng_es">Diseño, desarrollo, fabricación</span>
 						<span class="lng lng_ca">Diseny, desenvolupament, fabricació</span>
 					</a>
+					<a class="project_tag" aria-tag="edu" href="#">
+						<span class="lng lng_en">Education</span>
+						<span class="lng lng_es">Educación</span>
+						<span class="lng lng_ca">Educació</span>					
+					</a>
+					
+					<!--
 					<a class="project_tag" aria-tag="space" href="#">
 						<span class="lng lng_en">Space</span>
 						<span class="lng lng_es">Espacio</span>
 						<span class="lng lng_ca">Espai</span>
-					</a>						
+					</a>
+					-->						
 			</div>
 			<div id="projects_grid" aria-start="0" aria-home="0" class="items_list"></div>
 			<button id="btn_more_projects" type="submit" class="btn btn-lg center btn_projects">

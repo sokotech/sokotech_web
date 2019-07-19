@@ -25,7 +25,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!--<script src="./js/bootstrap.min.js"></script>-->
-  <script src="js/soko.js?25"></script>
+  <script src="js/soko.js?26"></script>
 
 </head>
 
@@ -171,7 +171,7 @@
 			<tr>
 				<td class="col_service_left"> 			
 					<div class="service_item">
-						<h4 class="service_title">Producation & Events</h4>
+						<h4 class="service_title">Production & Events</h4>
 						<div class="hr"></div>
 						<p class="service_info">
 							Soko Events brings together an intersectoral team of expert curators in the set up of 
@@ -180,7 +180,7 @@
 							small to major events. In these years we have organized quality and impact conferences, 
 							local and international, that have brought together more than 100,000 people.							
 						</p>
-						<a href="#">
+						<a href="projects.html?tag=event">
 								Check our event projects
 							  	 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
 						</a>	
@@ -221,7 +221,7 @@
 							philosophy, co-creation and design thinking strategies in the fields of product, graphic and
 							spatial design.
 						</p>
-						<a href="#">
+						<a href="projects.html?tag=fab">
 							Check our design projectsa
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
 						</a>	
@@ -239,7 +239,7 @@
 							From the design and development of the web and the design and production of 
 							graphic material to the careful management of media and social networks.
 						</p>
-						<a href="#">
+						<a href="projects.html?tag=com">
 							Check our design projects
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
 						</a>												
@@ -255,7 +255,7 @@
 							ad hoc workshops to fit any need. Creative technology learning programs to any audience,
 							from kids to teachers.
 						</p>
-						<a href="#">
+						<a href="projects.html?tag=edu">
 							Check our education projects
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
 						</a>											

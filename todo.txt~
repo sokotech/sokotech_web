@@ -5,9 +5,13 @@
 
 - Suscripción: opciones, mínima suscripción
 
+- Links proyectos por tipo: events, communication, design, education
+
 - Navbar siempre visible
 
-- Proyectos al cargar siempre se ve en inglés
+- Cambiar sistema de idiomas por estilos?
+
+- Hacer link al pasar sobre proyecto? para que el usuario no tenga que ir al link de abajo.
 
 - Decidir si hacer aria-lng en páginas combinando ambos sistemas.s
 - Lngs: home, about, ¿space?

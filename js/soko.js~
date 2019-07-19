@@ -1,11 +1,10 @@
 var lng="en";
 var vars=getUrlVars();
 
-if(localStorage["soko_web_lng"])
-	lng=localStorage["soko_web_lng"];
+if(vars["lng"]) lng=vars["lng"];
 else
-	if(vars["lng"]) lng=vars["lng"];
-
+	if(localStorage["soko_web_lng"])
+		lng=localStorage["soko_web_lng"];
 
 function getUrlVars() 
 {
@@ -133,15 +132,13 @@ function loadDone()
 			$(".sending").removeClass("hidden");
 					
  			var params={"function": "contact", "name":name, "email":email,"text":msg, "lng": lng,
- 							 "comment":comment};		
+ 							 "comment":comment,"config":"soko"};		
  		   if($("#check_subscription").find("input").prop('checked')) params["subscribe"]=1;
-			$.post("https://2017.steamconf.com/mesh/email.php",params)
-			//$.post("gandi/mesh/email.php",params)
+			//$.post("https://2017.steamconf.com/soko/email.php",params)
+			$.post("http://localhost/gandi/email.php",params)
 				   .done(function(data)
 				   {
-				   	//alert(data);
 				   	var res=JSON.parse($.trim(data));
-				   	//console.log(res);
 			   	
 						if(res.result=="ok") 
 						{
@@ -158,6 +155,7 @@ function loadDone()
    			   	}
 				   }).fail(function(xhr, status, error)
 				     {
+				     		alert(error);
 							$("#btn_contact").removeClass("hidden");
 				   		$(".sending").addClass("hidden");
 							$(".error_server").show();
@@ -290,8 +288,9 @@ function show_projects(grid,data,func)
 			var desc="";
 			for(l=0;l<lngs.length;l++)
 			{
-				desc+="<span class='lng lng_"+lngs[l]+"'";
-				if(lng!=lngs[l]) desc+=" style='display:none' ";
+				desc+="<span class='lng lng_"+lngs[l]+"' style='display:";
+				if(lng!=lngs[l]) desc+="none' ";
+				else desc+="block' ";
 				desc+=">"+data[a]["gsx$info"+lngs[l]].$t+"</span>";
 				
 			}			
@@ -400,6 +399,18 @@ $(document).ready(function()
 	// events and projects
 	if($("#projects_grid").length)
 	{
+		
+		if($("#projects_grid").attr("aria-home")==0)
+		{
+			var tag="all";
+   		if(vars["tag"])
+   		{
+				$(".project_tag.selected").removeClass("selected");   		
+   			tag=vars["tag"];
+   		}
+   		$(".project_tag[aria-tag="+tag+"]").addClass("selected");	
+		}	
+		
 		var spreadsheetID = "1_5d26geyYz14Y-TUr6CQ1XIjT-4T1VEGUo-on083uHY";
  		var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
  		load_json(url,function (data) {
@@ -443,143 +454,6 @@ $(document).ready(function()
    	
    }
 
-	return;
-	
 	$("#contact_comment").hide();	
 	
-	if($(".projects_grid").length>0)
-		load_data(function()
-			{
-				show_projects($(".projects_grid"),function(){
-						setTimeout(function(){
-							$(".projects_grid").removeClass("hidden");
-							$(".projects_grid").parent().find(".loading").remove();
-						},1000);				
-				});
-			});
-	
-   if($(".project_info").length>0)
-   {
-   	if(vars["id"])
-   	{
-   		load_data(function(){
-				if(!projects[vars["id"]]) window.location.href=".";
-   			else show_project_info(vars["id"]);
-				});
-   	}else{
-   		window.location.href=".";
-   	}
-   }	
-   
-   /*$(".nav-link").click(function(event){
-			var parts = $(this).attr("href").split("#");   		
-			if(parts.length==1) return;
-			
-   		var target = $("#"+parts[1]);   		
-   		if($(target).length) 
-			{
-				if($(target).length)
-				{
-					event.preventDefault();
-			   	$('html, body').stop().animate({
-            		scrollTop: $(target).offset().top
-        			},500);
-        		}
-        	}
-   });*/
-
-   $("#check_subscription").click(function()
-    {
-    			if($(this).prop("disabled")) return(false);
-    			
-				var checked=$(this).find("input").prop('checked');	
-			   $(".btn_lbl").removeClass("hidden");
-				if(checked)
-				{
-			    	$(this).find("input").prop('checked', false)
-			    	$("#contact_form").find(".no_subscription").prop("disabled",false);
-			    	$(".btn_lbl_subscribe").addClass("hidden");
-				}else{
-			    	$(this).find("input").prop('checked', true)
-			    	$("#contact_form").find(".no_subscription").prop("disabled",true);
-			    	$(".btn_lbl_send").addClass("hidden");
-			    }	
-				return(false);
-   	});
-
-   $("#contact input, #contact textarea").on('input',function()
-   {
-   	$(".contact_result").hide();   
-   });
-   $("#btn_contact").click(function()
-   {	  
-   
-   	$(".contact_result").hide();
-		var name=$("#contact_name").val().trim();
-		var email=$("#contact_email").val().trim();
-		var remail=$("#contact_remail").val().trim();
-		var msg=$("#contact_message").val().trim();
-		var comment=$("#contact_comment").val();
-		if((((email.length==0) || (remail.length==0)) || (name.length==0)) ||
-					((msg.length==0) && (!$("#check_subscription").find("input").prop('checked')))) 
-		{
-			$(".error_empty").show();
-			return(false);
-      }		
-		if(!email_isvalid(email))
-		{
-			$(".error_email").show();
-			return(false);
-		}
-		if(email!=remail)
-		{
-			$(".error_remail").show();
-			return(false);
-		}
-		
-		$(this).addClass("hidden");
-		$(".sending").removeClass("hidden");
-				
- 		var params={"function": "contact", "name":name, "email":email,"text":msg, "lng": lng,
- 						 "comment":comment};		
- 	   if($("#check_subscription").find("input").prop('checked')) params["subscribe"]=1;
-		$.post("https://2017.steamconf.com/mesh/email.php",params)
-		//$.post("gandi/mesh/email.php",params)
-			   .done(function(data)
-			   {
-			   	//alert(data);
-			   	var res=JSON.parse($.trim(data));
-			   	//console.log(res);
-			   	
-					if(res.result=="ok") 
-					{
-			   		$(".sending").addClass("hidden");
-						$(".result_ok").show();	
-						
-						$("#contact input, #contact textarea").prop('disabled', true);
-   					$("#check_subscription").prop('disabled', true);
-										
-					}else{				
-						$("#btn_contact").removeClass("hidden");
-			   		$(".sending").addClass("hidden");
-						$(".error_server").show();
-   		   	}
-			   }).fail(function(xhr, status, error)
-			     {
-						$("#btn_contact").removeClass("hidden");
-			   		$(".sending").addClass("hidden");
-						$(".error_server").show();
-   		     });
-   	return(false); 	     
-   });
-
-   var svg_mesh=document.getElementById("mesh-hero-bg-graphic");
-   if(svg_mesh)
-   {
-   	svg_mesh.onload=function()
-   	{
-   		animate_mesh($(this.contentDocument));
-   	};
-   	$("#mesh-hero-bg-graphic").attr("data",$("#mesh-hero-bg-graphic").attr("data-svg"));
-   }
 });

@@ -5,6 +5,8 @@
 
 - Suscripción: opciones, mínima suscripción
 
+- Fuentes en local porque a veces no se cargan por red lenta.
+
 - Navbar siempre visible
 
 - Cambiar sistema de idiomas por estilos?

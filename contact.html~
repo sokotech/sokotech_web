@@ -25,7 +25,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!--<script src="./js/bootstrap.min.js"></script>-->
-  <script src="js/soko.js?19"></script>
+  <script src="js/soko.js?21"></script>
 
 </head>
 
@@ -64,13 +64,13 @@
 					<div class="custom-control custom-checkbox" id="check_subscription">
   						<input type="checkbox" class="custom-control-input">
   						<label class="custom-control-label" for="customCheck1">
-  							<span class="lng lng_es">Sólo suscribirse a la newsletter.</span>
+  							<span class="lng lng_es">Suscribirse a la newsletter.</span>
   							<span class="lng lng_en">Just subscribe to the newsletter.</span>
   							<span class="lng lng_ca">sólosuscribirse a la newsletter.</span>  							
   						</label>
 					</div>
 					<div class="subscription_options disabled">
-						<div class="custom-control custom-checkbox subscription_option" id="subscription_soko">
+						<!--<div class="custom-control custom-checkbox subscription_option" id="subscription_soko">
   							<input type="checkbox" class="custom-control-input">
   							<label class="custom-control-label" for="customCheck1">
   								<span class="lng lng_es">Noticias de Soko</span>
@@ -78,20 +78,20 @@
   								<span class="lng lng_ca">Noticies de Soko</span>  							
 	  						</label>
 						</div>					
-				
+				-->
 						<div class="custom-control custom-checkbox subscription_option" id="subscription_events" >
   							<input type="checkbox" class="custom-control-input">
   							<label class="custom-control-label" for="customCheck1">
-  								<span class="lng lng_es">Producciones y eventos</span>
-  								<span class="lng lng_en">Productions & events</span>
+  								<span class="lng lng_es">Incluir noticias de eventos</span>
+  								<span class="lng lng_en">Include Productions & events</span>
   								<span class="lng lng_ca">Produccions i events</span>  							
 	  						</label>
 						</div>					
 						<div class="custom-control custom-checkbox subscription_option" id="subscription_education" >
   							<input type="checkbox" class="custom-control-input">
   							<label class="custom-control-label" for="customCheck1">
-  								<span class="lng lng_es">Educaión</span>
-  								<span class="lng lng_en">Education</span>
+  								<span class="lng lng_es">Incluir noticia de educaión</span>
+  								<span class="lng lng_en">Include Education</span>
   								<span class="lng lng_ca">Educació</span>  							
 	  						</label>
 						</div>					
@@ -114,6 +114,8 @@
     						placeholder_es="reescribir email" 
     						placeholder_ca="reescriure email" 
     						autocomplete="on">
+    					<input type="text" class="form-control position-static" id="contact_comment" 
+    						placeholder="comement" autocomplete="on">	
     					<textarea class="form-control position-static no_subscription" id="contact_message" rows="3" 
     						placeholder_en="message" 
     						placeholder_es="mensaje" 
