@@ -1,31 +1,46 @@
-- Diseño: about, contact, projects, space? o popup?
+/* DISEÑO */
 
-- Funcionalidad: contacto
-- Funcionalidad: suscripción
+	- About
+	- Contact
+	- Projects
+	- Space... o popup?
 
-- Suscripción: opciones, mínima suscripción
+/* SUSCRIPCIÓN */
 
-- Links proyectos por tipo: events, communication, design, education
+	- Crear lista en mailchimp
+	- Concretar campos
+	- Funcionalidad
+	
+/* ESTÉTICA */
 
-- Navbar siempre visible
+	- Fuentes en local porque a veces no se cargan por red lenta.
+	- Navbar siempre visible.
+	- Hacer link al pasar sobre proyecto? para que el usuario no tenga que ir al link de abajo.
 
-- Cambiar sistema de idiomas por estilos?
 
-- Hacer link al pasar sobre proyecto? para que el usuario no tenga que ir al link de abajo.
+/* IDIOMAS */
 
-- Decidir si hacer aria-lng en páginas combinando ambos sistemas.s
-- Lngs: home, about, ¿space?
-- Foot con links: tel, map
-- Responsive: home, about, projects, contact, space
+	- Decidir si hacer aria-lng en páginas combinando ambos sistemas.
+	- Comprobar mensajes es: index, about, contact, projects
+	- Traducir mensajes en: index, about, contact, projects
+	- Traducir mensajes ca: index, about, contact, projects
 
-- Traducción: home, about, contact, space, projects
+/* RESPONSIVE */
 
-- Carga de proyectos que no aparezca el botón de mostrar más... que aparezca el loading... que ocupe toda la página
+	- Home, about, projects, contact, space
 
-- Listado de proyectos con sus fotografías
 
-- Un tamaño de fuente para página y establecer con em.
-- OG tags
+/* PROYECTOS */
+
+	- Concretar listado de proyectos con sus fotografías y links.
+
+
+/* MEJORAS */
+	
+		- Limpiar código html, css y js: index, about, contact, projects.
+		- Un tamaño de fuente para página y establecer con em.
+		- OG tags
+		- Loading projects
 
   
 

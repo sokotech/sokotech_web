@@ -1,31 +1,46 @@
-- Diseño: about, contact, projects, space? o popup?
+/* SUSCRIPCIÓN */
 
-- Funcionalidad: contacto
-- Funcionalidad: suscripción
+	- Funcionalidad TAGS
+	- Deshabilitar checkbox... y quedna en azul
 
-- Suscripción: opciones, mínima suscripción
 
-- Fuentes en local porque a veces no se cargan por red lenta.
+/* DISEÑO */
 
-- Navbar siempre visible
+	- About
+	- Contact
+	- Projects
+	- Space... o popup?
+	
+/* ESTÉTICA */
 
-- Cambiar sistema de idiomas por estilos?
+	- Fuentes en local porque a veces no se cargan por red lenta.
+	- Navbar siempre visible.
+	- Hacer link al pasar sobre proyecto? para que el usuario no tenga que ir al link de abajo.
 
-- Hacer link al pasar sobre proyecto? para que el usuario no tenga que ir al link de abajo.
 
-- Decidir si hacer aria-lng en páginas combinando ambos sistemas.s
-- Lngs: home, about, ¿space?
-- Foot con links: tel, map
-- Responsive: home, about, projects, contact, space
+/* IDIOMAS */
 
-- Traducción: home, about, contact, space, projects
+	- Decidir si hacer aria-lng en páginas combinando ambos sistemas.
+	- Comprobar mensajes es: index, about, contact, projects
+	- Traducir mensajes en: index, about, contact, projects
+	- Traducir mensajes ca: index, about, contact, projects
 
-- Carga de proyectos que no aparezca el botón de mostrar más... que aparezca el loading... que ocupe toda la página
+/* RESPONSIVE */
 
-- Listado de proyectos con sus fotografías
+	- Home, about, projects, contact, space
 
-- Un tamaño de fuente para página y establecer con em.
-- OG tags
+
+/* PROYECTOS */
+
+	- Concretar listado de proyectos con sus fotografías y links.
+
+
+/* MEJORAS */
+	
+		- Limpiar código html, css y js: index, about, contact, projects.
+		- Un tamaño de fuente para página y establecer con em.
+		- OG tags
+		- Loading projects
 
   
 

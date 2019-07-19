@@ -133,11 +133,25 @@ function loadDone()
 					
  			var params={"function": "contact", "name":name, "email":email,"text":msg, "lng": lng,
  							 "comment":comment,"config":"soko"};		
- 		   if($("#check_subscription").find("input").prop('checked')) params["subscribe"]=1;
-			$.post("https://2017.steamconf.com/soko/email.php",params)
-			//$.post("http://localhost/gandi/email.php",params)
+ 		   if($("#check_subscription").find("input").prop('checked'))
+ 		   {
+ 		   	params["subscribe"]=1;
+ 		   	var ops=$(".subscription_option");
+ 		   	for(m=0;m<ops.length;m++)
+ 		   	{
+ 		   		var val=$(ops[m]).find("input").prop("checked");
+ 		   		if(val)
+ 		   			params[$(ops[m]).attr("aria-mergetag")]=1;
+					else
+ 		   			params[$(ops[m]).attr("aria-mergetag")]=0;
+ 		   	}
+ 		   }
+ 		   //return(false);
+			//$.post("https://2017.steamconf.com/soko/email.php",params)
+			$.post("http://localhost/gandi/email.php",params)
 				   .done(function(data)
 				   {
+				   	alert(data);
 				   	var res=JSON.parse($.trim(data));
 			   	
 						if(res.result=="ok") 
@@ -153,13 +167,13 @@ function loadDone()
 				   		$(".sending").addClass("hidden");
 							$(".error_server").show();
    			   	}
-				   }).fail(function(xhr, status, error)
+				   }); /*.fail(function(xhr, status, error)
 				     {
-				     		alert(error);
+				     		//alert(error);
 							$("#btn_contact").removeClass("hidden");
 				   		$(".sending").addClass("hidden");
 							$(".error_server").show();
-   			     });
+   			     });*/
    		return(false); 	     
    	});
 		if(vars["subscription"]==1)	   	
@@ -239,9 +253,7 @@ function show_more_projects(data)
  				//alert("fin carga");
  			});
 }
-function show_project(grid,data)
-{
-}
+
 
 function show_projects(grid,data,func)
 {
@@ -353,10 +365,13 @@ function show_projects(grid,data,func)
 		//prj.addClass("project_width_"+(5-parseInt(count%4)));				 
 	}
 				
- 	
- 	if(a>=data.length)
- 	 	$("#btn_more_projects").hide();
- 	
+ 	if($(grid).attr("aria-home")==1)
+ 	{
+ 		if(a>=data.length)
+ 	 		$("#btn_more_projects").hide();
+ 		else
+ 	 		$("#btn_more_projects").show();
+	}
 }
 
 function load_json(file,func)

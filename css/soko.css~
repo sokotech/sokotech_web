@@ -267,7 +267,7 @@ h1,h2,h3{
 	display:flex;
 	align-items: center;
 }
-.foot span
+.foot a, .foot span
 {
 	display:inline-block;
 	border-right:1px solid gray;
@@ -275,7 +275,12 @@ h1,h2,h3{
 	padding:0 10px;
 	line-height: 1;
 }
-.foot span:last-child
+.foot a:hover
+{
+	text-decoration:none;
+	color:inherit;
+}
+.foot a:last-child
 {
 	border:0!important;
 	padding-right:0 !important;
@@ -954,7 +959,7 @@ blockquote:before {
 }*/
 #contact
 {
-	background:#eee;
+	abackground:#eee;
 	margin:0px 0px;
 	flex-grow:1;
 }
