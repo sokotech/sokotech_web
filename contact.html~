@@ -16,7 +16,7 @@
   <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="css/soko.css?24" rel="stylesheet">
+  <link href="css/soko.css?25" rel="stylesheet">
 
 
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
@@ -84,7 +84,7 @@
 								aria-mergetag="edu" id="subscription_education" >
   							<input type="checkbox" class="custom-control-input">
   							<label class="custom-control-label" for="customCheck1">
-  								<span class="lng lng_es">Incluir noticias de educaión.</span>
+  								<span class="lng lng_es">Incluir noticias de educación.</span>
   								<span class="lng lng_en">Include Education</span>
   								<span class="lng lng_ca">Educació</span>  							
 	  						</label>
@@ -119,23 +119,35 @@
   						<div class="col-md-auto">
   							<div class="contact_result result_ok bg-success">
 								<span class="btn_lbl btn_lbl_send">
-									Mensaje recibido! Gracias.
+									<span class="lng lng_en">Message received! Thanks.</span>
+									<span class="lng lng_es">Mensaje recibido! Gracias.</span>
+									<span class="lng lng_ca">Missatge rebut! Gràcies.</span>
 								</span>	
 								<span class="btn_lbl btn_lbl_subscribe hidden">
-									Suscripción realizada. Gracias.
+									<span class="lng lng_en">Susbcription done! Thanks.</span>
+									<span class="lng lng_es">Suscripción realizada! Gracias.</span>
+									<span class="lng lng_ca">Subscripció feta! Graàcies.</span>
 								</span>	
 							</div>
 							<div class="contact_result bg-warning error_empty">
-								Faltan datos por rellenar.
+									<span class="lng lng_en">Missing data to be filled.</span>
+									<span class="lng lng_es">Faltan datos por rellenar.</span>
+									<span class="lng lng_ca">Falten dades per omplir.</span>
 							</div>
 							<div class="contact_result bg-warning error_email">
-								El email no es correcto.
+									<span class="lng lng_en">Wrong email.</span>
+									<span class="lng lng_es">El email no es correcto.</span>
+									<span class="lng lng_ca">L'email no és correcte.</span>
 							</div>  		
 							<div class="contact_result bg-warning error_remail">
-								Los emails no coinciden.
+									<span class="lng lng_en">The emails are different.</span>
+									<span class="lng lng_es">Los emails son diferentes.</span>
+									<span class="lng lng_ca">Els emails són diferents.</span>
 							</div>  		
 							<div class="contact_result error_server bg-danger">
-								Error inesperado, por favor <br/>inténtalo de nuevo.
+									<span class="lng lng_en">Unexpected problem, please <br/>try again.</span>
+									<span class="lng lng_es">Problema inesperado, por favor <br/>prueba de nuevo.</span>
+									<span class="lng lng_ca">Problema inesperat, si us plau <br/>prova un altra vegada.</span>
 							</div>  	
 							<div class="loading sending text-left hidden"><div class="lds-facebook"><div></div><div></div><div></div></div></div>	
    					</div>

@@ -273,8 +273,6 @@ function show_projects(grid,data,func)
 		$("#btn_more_projects").show();
    }
 
-   //var preload=data.l;
-
 	var last_prj=0;
 	var count=0;	
 	var last_count=0;
@@ -289,14 +287,10 @@ function show_projects(grid,data,func)
 		{
 			var prj=$("#dummy .project_item").clone();			
 			
-			//last_prj=prj;
 			$(prj).attr("aria-width",data[a].gsx$width.$t);	
 					
 			prj.addClass("project_width_"+data[a].gsx$width.$t);				
-
 			prj.find(".project_title").text(data[a].gsx$title.$t);
-			//prj.find("project_date").text(data[a].gsx$date.$t+" - "+data[a].gsx$place.$t);
-			//prj.find("project_info").text(data[a]["gsx$info"+lng].$t);
 			
 			var desc="";
 			for(l=0;l<lngs.length;l++)
@@ -307,12 +301,7 @@ function show_projects(grid,data,func)
 				desc+=">"+data[a]["gsx$info"+lngs[l]].$t+"</span>";
 				
 			}			
-			/*var desc="<span class='lng lng_en'>"+data[a]["gsx$infoen"].$t+"</span>";
-			desc+="<span class='lng lng_es'>"+data[a]["gsx$infoes"].$t+"</span>";
-			desc+="<span class='lng lng_ca'>"+data[a]["gsx$infoca"].$t+"</span>";*/
-			
 			prj.find(".project_desc").html(desc);
-					
 			prj.find(".project_info").css("background","rgba("+data[a].gsx$darkness.$t+")");
 			
 			var link=data[a]["gsx$url"].$t;
@@ -330,7 +319,6 @@ function show_projects(grid,data,func)
 
 			last_prj=$(grid).children().last();			
 			
-			
 			$(grid).append(prj);
 			
 			last_count=count;
@@ -342,31 +330,31 @@ function show_projects(grid,data,func)
 				var adjust=(4-parseInt(last_count%4))+w; //count-last_count; //5-parseInt(last_count%4);
 				last_prj.removeClass("project_width_"+w);
 				last_prj.addClass("project_width_"+adjust);				 
-				//alert("cambio:"+count+" - "+last_count+" adjust:"+adjust);
 				count-=w;
 				count+=adjust;
-				//last_count-=w;
-				//last_count+=adjust;		
+				
+				last_count-=w;
+				last_count+=adjust;		
 			}
 				
 			if(count>=12)
 			{
+				//alert(a);
 				$(grid).attr("aria-start",a+1);
 				break;
 			}			
 		}
 	}
-
+	//$(grid).attr("aria-start",a+1);
+	
 	if(parseInt(count%4)!=0)
 	{ 
-		//alert("ajustar final:"+count);
 		var w=parseInt($(prj).attr("aria-width"));
 		prj.removeClass("project_width_"+w);
 		prj.addClass("project_width_"+(w+(4-parseInt(count%4))));				 
-		//prj.addClass("project_width_"+(5-parseInt(count%4)));				 
 	}
-				
- 	if($(grid).attr("aria-home")==1)
+	
+ 	if($(grid).attr("aria-home")==0)
  	{
  		if(a>=data.length)
  	 		$("#btn_more_projects").hide();

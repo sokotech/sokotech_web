@@ -1,33 +1,13 @@
-/* SUSCRIPCIÓN */
-
-	- Funcionalidad TAGS
-	- Deshabilitar checkbox... y quedna en azul
-
-
-/* DISEÑO */
-
-	- About
-	- Contact
-	- Projects
-	- Space... o popup?
-	
-/* ESTÉTICA */
-
-	- Fuentes en local porque a veces no se cargan por red lenta.
-	- Navbar siempre visible.
-	- Hacer link al pasar sobre proyecto? para que el usuario no tenga que ir al link de abajo.
-
-
-/* IDIOMAS */
-
-	- Decidir si hacer aria-lng en páginas combinando ambos sistemas.
-	- Comprobar mensajes es: index, about, contact, projects
-	- Traducir mensajes en: index, about, contact, projects
-	- Traducir mensajes ca: index, about, contact, projects
-
-/* RESPONSIVE */
-
-	- Home, about, projects, contact, space
+1. Comprobar sistema multidioma en: about
+2. Cómo mostramos Space? popup?
+3. Limpieza de clases: home, projects, about, contact.
+4. Comprobar diseño: projects, contact, about
+5. Responsive: home, projects, about, contact.
+6. Traducciones es: home, projects, about, contact
+6. Traducciones en: home, projects, about, contact
+6. Traducciones ca: home, projects, about, contact
+7. Fuentes en local porque a veces no se cargan.
+8. Hacer link al pasar por el proyecto y que no tenga que ir a las flechas.
 
 
 /* PROYECTOS */

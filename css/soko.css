@@ -44,15 +44,18 @@ h1,h2,h3{
 	background:transparent !important;
 	color:white;
 	fill:white;
-	position:absolute !important;
+	aposition:absolute !important;
 	left:0;
 	top:0;
 	width:100%;
-	z-index:200;
+	z-index:300;
+	transition:padding 0.5s;
 }
 .navbar_background
 {
-	background:rgba(0,0,0,0.5) !important;*/
+	background:rgba(0,0,0,0.6) !important;
+	padding-top:10px !important;
+	transition:padding 0.5s;
 }
 .navbar_background a
 {
@@ -63,7 +66,7 @@ h1,h2,h3{
 	background:white !important;
 	fill:black !important;
 	color:black !important;
-	position:relative !important;
+	aposition:relative !important;
 }
 
 .nav_white .navbar_background
@@ -87,6 +90,12 @@ h1,h2,h3{
 .logo_black
 {
 	display:none;
+}
+.nav_white::after
+{
+	content:"";
+	margin-top:100px;
+	display:block;
 }
 .nav_white .logo_white
 {
@@ -446,7 +455,7 @@ h1,h2,h3{
 
 .projects_section .btn_projects
 {
-	margin:20px 0;
+	margin:40px 0 20px 0;
 	background:transparent !important;
 	border:1px solid black !important;
 	border-radius:0 !important;
