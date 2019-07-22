@@ -105,6 +105,7 @@ function loadDone()
    
    	$("#btn_contact").click(function()
    	{	  
+   		
    		$(".contact_result").hide();
 			var name=$("#contact_name").val().trim();
 			var email=$("#contact_email").val().trim();
@@ -135,23 +136,24 @@ function loadDone()
  							 "comment":comment,"config":"soko"};		
  		   if($("#check_subscription").find("input").prop('checked'))
  		   {
+ 		   	params["tags"]=new Array();
  		   	params["subscribe"]=1;
- 		   	var ops=$(".subscription_option");
+ 		   	var ops=$("[aria-mergetag]"); //.subscription_option");
  		   	for(m=0;m<ops.length;m++)
  		   	{
  		   		var val=$(ops[m]).find("input").prop("checked");
  		   		if(val)
- 		   			params[$(ops[m]).attr("aria-mergetag")]=1;
-					else
- 		   			params[$(ops[m]).attr("aria-mergetag")]=0;
+ 		   		{
+ 		   			params["tags"].push($(ops[m]).attr("aria-mergetag"));
+ 		   		}	
  		   	}
  		   }
- 		   //return(false);
-			//$.post("https://2017.steamconf.com/soko/email.php",params)
-			$.post("http://localhost/gandi/email.php",params)
+ 		   
+			$.post("https://2017.steamconf.com/soko/email.php",params)
+			//$.post("http://localhost/gandi/email.php",params)
 				   .done(function(data)
 				   {
-				   	alert(data);
+				   	//alert(data); 
 				   	var res=JSON.parse($.trim(data));
 			   	
 						if(res.result=="ok") 
@@ -167,13 +169,12 @@ function loadDone()
 				   		$(".sending").addClass("hidden");
 							$(".error_server").show();
    			   	}
-				   }); /*.fail(function(xhr, status, error)
+				   }).fail(function(xhr, status, error)
 				     {
-				     		//alert(error);
 							$("#btn_contact").removeClass("hidden");
 				   		$(".sending").addClass("hidden");
 							$(".error_server").show();
-   			     });*/
+   			     });
    		return(false); 	     
    	});
 		if(vars["subscription"]==1)	   	

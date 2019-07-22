@@ -25,7 +25,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!--<script src="./js/bootstrap.min.js"></script>-->
-  <script src="js/soko.js?23"></script>
+  <script src="js/soko.js?28"></script>
 
 </head>
 
@@ -61,7 +61,8 @@
       			</span>
       		</p>
 	  			<div class="form-group">
-					<div class="custom-control custom-checkbox" id="check_subscription">
+					<div class="custom-control custom-checkbox" 
+							id="check_subscription" aria-mergetag="news">
   						<input type="checkbox" class="custom-control-input">
   						<label class="custom-control-label" for="customCheck1">
   							<span class="lng lng_es">Suscribirse a la newsletter.</span>
@@ -70,15 +71,6 @@
   						</label>
 					</div>
 					<div class="subscription_options disabled">
-						<!--<div class="custom-control custom-checkbox subscription_option" id="subscription_soko">
-  							<input type="checkbox" class="custom-control-input">
-  							<label class="custom-control-label" for="customCheck1">
-  								<span class="lng lng_es">Noticias de Soko</span>
-  								<span class="lng lng_en">Soko news</span>
-  								<span class="lng lng_ca">Noticies de Soko</span>  							
-	  						</label>
-						</div>					
-				-->
 						<div class="custom-control custom-checkbox subscription_option" 
 								aria-mergetag="events" id="subscription_events" >
   							<input type="checkbox" class="custom-control-input">
@@ -89,7 +81,7 @@
 	  						</label>
 						</div>					
 						<div class="custom-control custom-checkbox subscription_option" 
-								aria-mergetag="education" id="subscription_education" >
+								aria-mergetag="edu" id="subscription_education" >
   							<input type="checkbox" class="custom-control-input">
   							<label class="custom-control-label" for="customCheck1">
   								<span class="lng lng_es">Incluir noticias de educaión.</span>
