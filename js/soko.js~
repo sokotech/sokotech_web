@@ -88,6 +88,7 @@ function loadDone()
 		 	$(".subscription_option").click(function()
     		{
     			if(!$("#check_subscription input").prop("checked")) return(false);
+    			if($("#check_subscription").prop("disabled")) return(false);
     			
 				var checked=$(this).find("input").prop('checked');	
 				if(checked)
@@ -105,6 +106,14 @@ function loadDone()
    
    	$("#btn_contact").click(function()
    	{	  
+   	
+   		alert("pasa");
+   		$("#contact input, #contact textarea").prop('disabled', true);
+   						
+   		$("#check_subscription").prop('disabled', true);
+   		//$("#check_subscription").addClass("disabled");
+			//$(".subscription.option").addClass("disabled");
+			return(false);   		
    		
    		$(".contact_result").hide();
 			var name=$("#contact_name").val().trim();
@@ -162,7 +171,10 @@ function loadDone()
 							$(".result_ok").show();	
 						
 							$("#contact input, #contact textarea").prop('disabled', true);
+   						
    						$("#check_subscription").prop('disabled', true);
+   						$("#check_subscription").addClass("disabled");
+							$(".subscription.option").addClass("disabled");
 										
 						}else{				
 							$("#btn_contact").removeClass("hidden");
@@ -171,7 +183,6 @@ function loadDone()
    			   	}
 				   }).fail(function(xhr, status, error)
 				     {
-				     		//alert(error);
 							$("#btn_contact").removeClass("hidden");
 				   		$(".sending").addClass("hidden");
 							$(".error_server").show();

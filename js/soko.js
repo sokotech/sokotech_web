@@ -88,6 +88,7 @@ function loadDone()
 		 	$(".subscription_option").click(function()
     		{
     			if(!$("#check_subscription input").prop("checked")) return(false);
+    			if($("#check_subscription").prop("disabled")) return(false);
     			
 				var checked=$(this).find("input").prop('checked');	
 				if(checked)
@@ -104,8 +105,7 @@ function loadDone()
   		});
    
    	$("#btn_contact").click(function()
-   	{	  
-   		
+   	{	     		
    		$(".contact_result").hide();
 			var name=$("#contact_name").val().trim();
 			var email=$("#contact_email").val().trim();
@@ -161,9 +161,9 @@ function loadDone()
 				   		$(".sending").addClass("hidden");
 							$(".result_ok").show();	
 						
-							$("#contact input, #contact textarea").prop('disabled', true);
+							$("#contact input, #contact textarea").prop('disabled', true);   						
    						$("#check_subscription").prop('disabled', true);
-										
+ 										
 						}else{				
 							$("#btn_contact").removeClass("hidden");
 				   		$(".sending").addClass("hidden");

@@ -1,6 +1,5 @@
 /* SUSCRIPCIÓN */
 
-	- Funcionalidad TAGS
 	- Deshabilitar checkbox... y quedna en azul
 
 
