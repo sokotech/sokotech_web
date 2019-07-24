@@ -396,6 +396,15 @@ $(document).ready(function()
 	// home animation
 	if($("#header_word").length)
 	{
+		var back=$(".header").attr("aria-background");
+		var img=new Image();
+		img.onload=function()
+		{
+			$(".header").css("background-image","url('"+back+"')");
+			$(".header_dark_gradient").css("opacity",1);
+		};
+		img.src=back;	
+			
    	change_text();
 		setInterval(change_text,1000);
 	}

@@ -354,10 +354,8 @@ function show_projects(grid,data,func)
 		prj.addClass("project_width_"+(w+(4-parseInt(count%4))));				 
 	}
 	
-	alert($(grid).attr("aria-home"));
- 	if($(grid).attr("aria-home")==1)
+ 	if($(grid).attr("aria-home")==0)
  	{
- 		alert(a+" - "+data-length);
  		if(a>=data.length)
  	 		$("#btn_more_projects").hide();
  		else
@@ -398,6 +396,15 @@ $(document).ready(function()
 	// home animation
 	if($("#header_word").length)
 	{
+		alert($(".header").css("background-image"));
+		var img=new Image();
+		img.onload=function()
+		{
+			$(".header").css("background-image","url('"+"img/sokotech_home_header.jpg"+"')");
+			$(".header_dark_gradient").css("opacity",1);
+		};
+		img.src="img/sokotech_home_header.jpg";	
+			
    	change_text();
 		setInterval(change_text,1000);
 	}

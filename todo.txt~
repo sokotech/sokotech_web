@@ -1,15 +1,13 @@
 
-1. About: cambiar texto de timeline sokotech queda repetitivo.
-2. Home: Descripción de Education, en la página actual no hay.
-3. Qué hacemos con Space... va a contacto?
-4. Projects: Listado de proyectos.
-5. Revisar textos es: home, projects, about, contact.
+1. Revisar textos en inglés.
+2. Qué hacemos con Space... va a contacto?
+3. Projects: Listado de proyectos.
 
 
 /* CONTENIDO */
 
-6. Traducciones en: home, projects, about, contact.
-7. Traducciones ca: home, projects, about, contact.
+4. Traducciones es: home, projects, about, contact.
+5. Traducciones ca: home, projects, about, contact.
 
 
 /* IMÁGENES */
@@ -30,3 +28,4 @@
  - Link en toda la imagen de cada proyecto.
  - Mostrar en hover en móvil al hacer scroll.
  - Mostrar loading projects.
+ - Loading header se muestra antes el degradado que la imagen.

@@ -22,7 +22,7 @@
   	<!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
   
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  	<link href="css/soko.css?47" rel="stylesheet">
+  	<link href="css/soko.css?49" rel="stylesheet">
 
 
   	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
@@ -31,7 +31,7 @@
   	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   	<!--<script src="./js/bootstrap.min.js"></script>-->
-  	<script src="js/soko.js?28"></script>
+  	<script src="js/soko.js?29"></script>
 </head>
 
 <body id="home">
@@ -130,11 +130,11 @@
 				<h5>Design Lab</h5>
 				<h6>
 					<span class="lng lng_en">
-						Product design<br/>
-						Graphic design<br/>
-						Space design<br/>
+						Product Design<br/>
+						Graphic Design<br/>
+						Space Design<br/>
 						Prototyping<br/>
-						Software development<br/>
+						Software Development<br/>
 						Digital Fabrication
 					</span>
 					<span class="lng lng_es">
@@ -249,7 +249,7 @@
 						<div class="hr"></div>
 						<p class="service_info">
 							<span class="lng lng_en">
-								Soko Events brings together an intersectoral team of expert curators in the set up of 
+								Sokotech brings together an intersectoral team of expert curators in the set up of 
 								events related to science, technology and innovation. From the conception of the 
 								program to the final implementation, we cover all phases of the organization of 
 								small to major events. In these years we have organized quality and impact conferences, 
@@ -386,9 +386,9 @@
 						<div class="hr"></div>
 						<p class="service_info">
 							<span class="lng lng_en">						
-							With our experience designing and developing technologic workshops, we offer 
-							ad hoc workshops to fit any need. Creative technology learning programs to any audience,
-							from kids to teachers.
+							With our experience designing and developing STEAM workshops, we offer 
+							ad hoc workshops and creative technology learning programs to fit any need 
+							and any audience, from kids to teachers.
 							</span>
 							<span class="lng lng_es">						
 							Con nuestra experiencia diseñando y desarrollando talleres tecnológicos, ofrecemos 
@@ -566,6 +566,24 @@
 		<script>includeHTML();</script>
 	</div>	
 
+<!--
+   <div class="cookies_msg">
+		<p>
+			<span class="lng lng_en">
+				Esta web utiliza cookies para obtener estadísticas de navegación. Si estás de acuerdo pulsa
+			</span>
+			<span class="lng lng_es">
+				Esta web utiliza cookies para obtener estadísticas de navegación. Si estás de acuerdo pulsa
+			</span>
+			<span class="lng lng_ca">
+				Esta web fa servir cookies per obtenir estadísticas de navegación. Si estás de acuerdo pulsa
+			</span>
+			
+		<a class="cookies_accept" href="#">Aceptar</a><br/>Obtén información sobre las cookies   
+		<a target="_new" href="https://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-">aquí</a>.
+		</p>   
+   </div>
+-->
 	<div id="dummy" class="hidden">
 		<div class="item_4 project_item">
 			<!--<div class="new_img_container">
