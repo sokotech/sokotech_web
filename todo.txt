@@ -1,32 +1,32 @@
-/* CONTENIDO */
 
 1. About: cambiar texto de timeline sokotech queda repetitivo.
 2. Home: Descripción de Education, en la página actual no hay.
 3. Qué hacemos con Space... va a contacto?
-3. Projects: Listado de proyectos.
-4. Revisar textos en.
-5. Traducciones es: home, projects, about, contact.
-6. Traducciones ca: home, projects, about, contact.
+4. Projects: Listado de proyectos.
+5. Revisar textos en: home, projects, about, contact.
+
+
+/* CONTENIDO */
+
+6. Traducciones es: home, projects, about, contact.
+7. Traducciones ca: home, projects, about, contact.
+
 
 /* IMÁGENES */
-1. Favicon
-2. Share image 1200x630
-3. Limpiar imágenes de recursos no utilizadas.
-4. Imagen de header con los cables colgando NO.
-5. Imagen de about.
+
+- Cambiar imagen home header
+- Mejorar imagen share
 
 
-/* PROGRAMACIÓN */
+/* DESPUÉS DE CAMBIAR DNS */
 
-1. Limpieza de clases: home, projects, about, contact.
-4. Fuentes en local porque a veces no se cargan.
-5. Hacer link al pasar por el proyecto y que no tenga que ir a las flechas.
-6. En móvil mostrar en naranja al hacer scroll.
-9. Loading projects.
-10. Mensaje de cookies.
-
-
-Después de DNS
-5. Google Analytics
+ - Google Analytics
+ - Mensaje Cookies
   
+ 
+/* MEJORAS */
 
+ - Optimización estilos: home, projects, about, contact.
+ - Link en toda la imagen de cada proyecto.
+ - Mostrar en hover en móvil al hacer scroll.
+ - Mostrar loading projects.

@@ -165,7 +165,7 @@ h1,h2,h3{
 	position:relative;
 	left:0;
 	top:0;	
-	background-image: url("../img/sokotech_home_space.jpg"); 
+	background-image: url("../img/sokotech_home_header.jpg?2"); 
 	background-size: cover;
 	abackground-position: center bottom;
 	width:100%;
@@ -698,11 +698,15 @@ h1,h2,h3{
 .space_img
 {
 	position:absolute;
+	background-image:url("../img/sokotech_home_space.jpg?4");
+	background-size: cover;
+	background-position: left 15%;
+	background-repeat: no-repeat;
 	left:0;
 	top:0;
 	width:100%;
+	height:100%;
 	z-index:0;
-	aheight:100%;
 }
 
 /*----------- Companies -----------------*/
@@ -759,7 +763,7 @@ h1,h2,h3{
 }
 .page_title
 {
-	font-size:1.3em;
+	font-size:1.4em;
 	text-transform:none;
 	font-weight:600;
 	line-height:1;
@@ -781,7 +785,7 @@ h1,h2,h3{
 .page_text
 {
 	line-height:1.4;
-	font-size:1.1em;
+	font-size:1.2em;
 }
 blockquote
 {
@@ -856,9 +860,14 @@ blockquote:before {
 {
 	padding:50px;
 }
-.about_info img
+.about_img
 {
 	width:100%;
+	background-image: url("../img/about/sokotech_about_main_description.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height:100%;
 }
 .team_img
 {
@@ -882,6 +891,11 @@ blockquote:before {
 	width:20% !important;
 	height:auto !important;
 }
+.team_info p
+{
+	font-size:1.2em;
+	line-height:1.3;
+}
 
 .history_timeline
 {
@@ -894,6 +908,12 @@ blockquote:before {
 {
 	padding:20px 25% 0px 50px;
 	position:relative;
+}
+.timeline_info p
+{
+	font-size:1.2em;
+	line-height:1.3;
+	padding-top:5px;
 }
 .timeline_year
 {
