@@ -16,7 +16,7 @@
   <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="css/soko.css?45" rel="stylesheet">
+  <link href="css/soko.css?46" rel="stylesheet">
 
 
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
@@ -233,6 +233,181 @@
 		
 				
 		<div id="services" class="section_services">
+		  <div class="services_grid">
+				<div class="col_service_left"> 			
+					<div class="service_item">
+						<h4 class="service_title">
+							<span class="lng lng_en">Production & Events</span>
+							<span class="lng lng_es">Producción & Eventos</span>
+							<span class="lng lng_ca">Production & Events</span>
+						</h4>
+						<div class="hr"></div>
+						<p class="service_info">
+							<span class="lng lng_en">
+								Soko Events brings together an intersectoral team of expert curators in the set up of 
+								events related to science, technology and innovation. From the conception of the 
+								program to the final implementation, we cover all phases of the organization of 
+								small to major events. In these years we have organized quality and impact conferences, 
+								local and international, that have brought together more than 100,000 people.
+							</span>	
+							<span class="lng lng_es">
+								Soko reúne un equipo multi sectorial en la organización de eventos relacionados con 
+								ciencia, tecnología e innovación. Desde el concepto del programa hasta la implementación 
+								final, cubrimos todas las fases de la organización desde pequeños a grandes eventos. 
+								En los últimos años hemos organizado eventos de calidad e impacto, tanto locales como internacionales, 
+								que han atraído más de 100.000 personas.
+							</span>	
+							<span class="lng lng_ca">
+								Soko Events brings together an intersectoral team of expert curators in the set up of 
+								events related to science, technology and innovation. From the conception of the 
+								program to the final implementation, we cover all phases of the organization of 
+								small to major events. In these years we have organized quality and impact conferences, 
+								local and international, that have brought together more than 100,000 people.
+							</span>	
+						</p>
+						<a href="projects.html?tag=event">
+								<span class="lng lng_en">Check our event projects</span>
+								<span class="lng lng_es">Echa un vistazo a los eventos</span>
+								<span class="lng lng_ca">Check our event projects</span>
+							  	 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+						</a>	
+					</div>
+				</div>
+				<div class="col_service_center"> 
+					<div class="services_spinner">
+						<div class="text">
+							<span class="lng lng_en">What<br/>we do</span>
+							<span class="lng lng_es">Qué<br/>hacemos</span>
+							<span class="lng lng_ca">Que<br/>fem</span>						
+						</div>
+						
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 242">
+							<defs>
+					    		<style>.cls-1,.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-width:4px;}.cls-1{stroke-miterlimit:10;}.cls-2{stroke-linejoin:round;}
+       						</style>
+ 					  		</defs>
+ 						 	<g>
+				        		<path d="M196.62,212.89A119,119,0,0,1,27,194" class="cls-1" />
+        						<path d="M213.36,46a119.07,119.07,0,0,1,8.71,137.9" class="cls-1" />
+				        		<path	d="M6.82,154.65A119.05,119.05,0,0,1,178.58,16.83" class="cls-1" />
+        						<polyline points="10.29 185.79 13.17 166.93 31.43 173.38" class="cls-2" />
+				        		<polyline points="198.3 17.5 201.27 36.35 181.91 35.73" class="cls-2" />
+				        		<polyline points="223.94 200.94 205.11 204.03 205.61 184.66" class="cls-2" />
+			      		</g>
+						</svg>
+					</div>
+				</div>			
+					
+				<div class="col_service_right">
+					<div class="service_item">
+						<h4 class="service_title">
+							<span class="lng lng_en">Design Lab</span>
+							<span class="lng lng_es">Diseño & Desarrollo</span>
+							<span class="lng lng_ca">Design Lab</span>
+						</h4>
+						<div class="hr"></div>
+						<p class="service_info">
+							<span class="lng lng_en">						
+							Our design lab has a multidisciplinary team of designers, engineers and technologists who
+							develop projects from conceptualization to implementation with a human centered design
+							philosophy, co-creation and design thinking strategies in the fields of product, graphic and
+							spatial design.
+							</span>
+							<span class="lng lng_es">						
+							Nuestro equipo de diseño compuesto de diseñadores, ingenieros y tecnólogos desarrollan 
+							proyectos desde la conceptualización hasta la implementación con la filosofía de diseño 
+							centrada en las personas, co-creación y estrategias de design thinking en los campos de 
+							producto, diseño y espacio.
+							</span>
+							<span class="lng lng_ca">						
+							Our design lab has a multidisciplinary team of designers, engineers and technologists who
+							develop projects from conceptualization to implementation with a human centered design
+							philosophy, co-creation and design thinking strategies in the fields of product, graphic and
+							spatial design.
+							</span>
+						</p>
+						<a href="projects.html?tag=fab">
+							<span class="lng lng_en">Check our design projects</span>
+							<span class="lng lng_es">Echa un vistazo a los proyectos de diseño</span>
+							<span class="lng lng_ca">Check our design projects</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+						</a>	
+					</div>
+				</div>
+			
+				<div class="col_service_left nomargin">
+					<div class="service_item">
+						<h4 class="service_title">
+							<span class="lng lng_en">Communication</span>
+							<span class="lng lng_es">Comunicación</span>
+							<span class="lng lng_ca">Comunicació</span>
+						</h4>
+						<div class="hr"></div>
+						<p class="service_info">
+							<span class="lng lng_en">						
+							Focusing on quality and care of detail, we offer integrated communication strategies 
+							to create a personalized product for each of the initiatives that entrust us. 
+							From the design and development of the web and the design and production of 
+							graphic material to the careful management of media and social networks.
+							</span>
+							<span class="lng lng_es">						
+							Enfocados en la calidad y cuidando los detalles, ofrecemos una estrategia de comunicación 
+							integral para crear un producto personalizado para cada iniciativa. Diseño y 
+							desarrollo web, diseño y producción de material gráfico y administración de redes sociales.
+							</span>
+							<span class="lng lng_ca">						
+							Focusing on quality and care of detail, we offer integrated communication strategies 
+							to create a personalized product for each of the initiatives that entrust us. 
+							From the design and development of the web and the design and production of 
+							graphic material to the careful management of media and social networks.
+							</span>
+						</p>
+						<a href="projects.html?tag=com">
+							<span class="lng lng_en">Check our communication projects</span>
+							<span class="lng lng_es">Echa un vistazo a nuestros proyectos de comunicación</span>
+							<span class="lng lng_ca">Check our communication projects</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+						</a>												
+					</div>		
+				</div>			
+				<div class="col_service_center services_spinner"> </div>
+				<div class="col_service_right nomargin">			
+					<div class="service_item">
+						<h4 class="service_title">
+							<span class="lng lng_en">Education</span>
+							<span class="lng lng_es">Educación</span>
+							<span class="lng lng_ca">Educació</span>
+						</h4>
+						<div class="hr"></div>
+						<p class="service_info">
+							<span class="lng lng_en">						
+							With our experience designing and developing technologic workshops, we offer 
+							ad hoc workshops to fit any need. Creative technology learning programs to any audience,
+							from kids to teachers.
+							</span>
+							<span class="lng lng_es">						
+							Con nuestra experiencia diseñando y desarrollando talleres tecnológicos, ofrecemos 
+							talleres personalizados para cualquier necesidad, programas para cualquier audiencia, desde 
+							niños a adultos.
+							</span>
+							<span class="lng lng_ca">						
+							With our experience designing and developing technologic workshops, we offer 
+							ad hoc workshops to fit any need. Creative technology learning programs to any audience,
+							from kids to teachers.
+							</span>
+						</p>
+						<a href="projects.html?tag=edu">
+								<span class="lng lng_en">Check our education projects</span>
+								<span class="lng lng_es">Echa un vistazo a los proyectos de educación</span>
+								<span class="lng lng_ca">Check our education projects</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+						</a>											
+					</div>		
+				</div>				
+		  </div>
+		</div>
+	<!--	
+		<div id="services" class="section_services">
 		  <table>
 			<tr>
 				<td class="col_service_left"> 			
@@ -254,8 +429,8 @@
 							<span class="lng lng_es">
 								Soko reúne un equipo multi sectorial en la organización de eventos relacionados con 
 								ciencia, tecnología e innovación. Desde el concepto del programa hasta la implementación 
-								final, cubrimos todas las fases de la organización desde pequeño a grandes eventos. 
-								en estos años hemos organizado eventos de calidad e impacto, locales e internacionales, 
+								final, cubrimos todas las fases de la organización desde pequeños a grandes eventos. 
+								En los últimos años hemos organizado eventos de calidad e impacto, tanto locales como internacionales, 
 								que han atraído más de 100.000 personas.
 							</span>	
 							<span class="lng lng_ca">
@@ -409,7 +584,7 @@
 			</tr>		
 		  </table>
 		</div>
-		
+-->
 		
 		<div class="space_section">	
 			<div class="section_header">
@@ -426,7 +601,11 @@
    		<div class="space_info header_dark_gradient">
    			<img class="space_img" src="img/services/space/sokotech_space_05.jpg"/>
    			<div class="space_content">
-	   		<h4 class="service_title">Sokotech Space</h4>
+	   		<h4 class="service_title">
+					<span class="lng lng_en">Sokotech Space</span>
+					<span class="lng lng_es">Espacio Sokotech</span>
+					<span class="lng lng_eca">Espai Sokotech</span>
+				</h4>
 				<div class="hr"></div>
 				<p class="service_info">
 						<span class="lng lng_en">						
