@@ -37,7 +37,7 @@
 <body id="home">
     <div include-HTML="nav.html"></div>
    
-   <section class="header header_dark_gradient">
+   <section class="header header_dark_gradient" aria-background="img/sokotech_home_header.jpg">
 			<div class="header_row">
 					<h1 id="header_word" class="header_text">&nbsp</h1>
 					<h2 class="header_subtext">   		
@@ -478,10 +478,10 @@
 				-->
 			<div class="section_header text-center">
 				<h2 class="section_title">   		
-					<a href="projects.html" id="btn_go_projects" class="link_go_projects">
-   				<span class="lng lng_en">Check out more</span>
-   				<span class="lng lng_es">Ver más</span>
-	  	 			<span class="lng lng_ca">Veure més</span> 	
+					<a href="contact.html" id="btn_go_projects" class="link_go_projects">
+   				<span class="lng lng_en">Get in touch for more information</span>
+   				<span class="lng lng_es">Contacta para más información</span>
+	  	 			<span class="lng lng_ca">contacta per més informació</span> 	
 	  	 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
 	  	 			</a>
    			</h2>

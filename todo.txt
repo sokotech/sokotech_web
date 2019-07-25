@@ -1,7 +1,6 @@
 
 1. Revisar textos en inglés.
-2. Qué hacemos con Space... va a contacto?
-3. Projects: Listado de proyectos.
+2. Projects: Listado de proyectos.
 
 
 /* CONTENIDO */
@@ -28,3 +27,4 @@
  - Link en toda la imagen de cada proyecto.
  - Mostrar en hover en móvil al hacer scroll.
  - Mostrar loading projects.
+ - Link de descarga de dossier de espacio. 
