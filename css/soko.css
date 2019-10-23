@@ -214,6 +214,7 @@ h1,h2,h3{
 {
 	width:100%;
 	z-index:101;
+	margin-top:100px;
 }
 .header_text
 {
@@ -237,6 +238,7 @@ h1,h2,h3{
 
 .row_telling
 {
+	display:none;
 	width:100% !important;
 	margin:0;
 	position:absolute;
@@ -489,7 +491,7 @@ h1,h2,h3{
 .project_info:hover svg
 {
 	fill:white !important;
-	height:25px !important;
+	height:19px !important;
 }
 .project_info
 {
@@ -515,7 +517,7 @@ h1,h2,h3{
 	display:inline-block;
 	transition: height 0.5s;
 }
-.project_info a
+.project_link
 {
 	position:absolute;
 	bottom:0;
@@ -726,11 +728,13 @@ h1,h2,h3{
 .col_logos
 {
 	padding-left:0;
+	padding-right:0;
 }
 .row_logos img
 {
-	width:70%;
-	max-width:200px;
+	margin:auto;
+	width:50%;
+	max-width:120px;
 	amargin:auto;
 	display:block;
 }
@@ -772,7 +776,6 @@ h1,h2,h3{
 	font-weight:600;
 	line-height:1;
 	padding-bottom:10px;
-	width:75%;
 	border-bottom:1px solid black;
 	margin-bottom:5px;
 	color:#000;
@@ -870,7 +873,7 @@ blockquote:before {
 	background-image: url("../img/about/sokotech_about_main_description.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: left bottom;
+	background-position: center center;
 	height:100%;
 }
 .team_img
@@ -1055,7 +1058,24 @@ blockquote:before {
 	margin-bottom:30px;
 	padding-right:50px;
 }
-
+.contact_map_wrapper
+{
+	position:relative;
+}
+.contact_map
+{
+	width:100%;
+	height:25vw;
+	min-height:350px;
+}
+.contact_open_map
+{
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding:5px 10px;
+	background:#eee;
+}
 .subscription_options
 {
 	margin-top:10px;

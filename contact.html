@@ -22,7 +22,7 @@
   <!--<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">-->
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="css/soko.css?27" rel="stylesheet">
+  <link href="css/soko.css?28" rel="stylesheet">
 
 
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
@@ -35,7 +35,7 @@
 
 </head>
 
-<body class="body_flex">
+<body class="abody_flex">
     <div class="nav_white" include-HTML="nav.html"></div>
     
     <div id="contact">
@@ -177,8 +177,20 @@
 		</div>
     </div>
 	</div>
-
-  
+	<div class="contact_map_wrapper">
+		<iframe class="contact_map" frameborder="0" scrolling="no" 
+			marginheight="0" marginwidth="0" 
+			src="https://www.openstreetmap.org/export/embed.html?bbox=2.1875292062759404%2C41.42367284898949%2C2.190184593200684%2C41.425265716984605&layer=mapnik&marker=41.424469287871325%2C2.1888568997383118"
+			>
+		</iframe>
+		<div class="contact_open_map">
+			<a target="_new" href="https://www.openstreetmap.org/?mlat=41.42451&amp;mlon=2.18889#map=18/41.42451/2.18888">
+				<span class="lng lng_en">Open the map view</span>
+  				<span class="lng lng_es">Ver mapa más grande</span>
+  				<span class="lng lng_ca">Veure mapa més gran</span>
+			</a>
+	  	</div>
+  	</div>
 
 	<div include-HTML="foot.html"></div>
 	<script>includeHTML();</script>
