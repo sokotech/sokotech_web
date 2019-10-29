@@ -183,7 +183,7 @@ function loadDone()
 	}
 }
 
-function loadHTML_fetch(items, i)
+function loadHTML(items, i)
 {
 	fetch($(items[i]).attr("include-HTML")+"?"+new Date().getTime())
 		.then(function(response) {
@@ -198,7 +198,7 @@ function loadHTML_fetch(items, i)
 		});
 }
 
-function loadHTML(items, i)
+function loadHTML_get(items, i)
 {
 	$.get($(items[i]).attr("include-HTML")+"?"+new Date().getTime(), function(text){
 		$(items[i]).html(text);
