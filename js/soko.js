@@ -183,8 +183,7 @@ function loadDone()
 	}
 }
 
-
-function loadHTML(items, i)
+function loadHTML_fetch(items, i)
 {
 	fetch($(items[i]).attr("include-HTML")+"?"+new Date().getTime())
 		.then(function(response) {
@@ -197,6 +196,18 @@ function loadHTML(items, i)
 				else 
 					loadDone();
 		});
+}
+
+function loadHTML(items, i)
+{
+	$.get($(items[i]).attr("include-HTML")+"?"+new Date().getTime(), function(text){
+		$(items[i]).html(text);
+		i++;
+		if(i<items.length)
+			loadHTML(items,i);
+		else 
+			loadDone();		
+	},"text");
 }
 function includeHTML()
 {
@@ -305,9 +316,16 @@ function show_projects(grid,data,func)
 			prj.find(".project_info").css("background","rgba("+data[a].gsx$darkness.$t+")");
 			
 			var link=data[a]["gsx$url"].$t;
-			if(link.length)		   
-			   prj.find(".project_link").attr("href",link);	
-			else 
+			if(link.length)
+			{	   
+			   prj.find(".project_link").attr("href",link);
+			   prj.css("cursor","pointer");
+			   prj.click(function()
+			   {
+			   	window.open(link,"_blank");
+			   	return(false);
+			   });	
+			}else 
 				prj.find(".project_link").hide();	
 				
 				
