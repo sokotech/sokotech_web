@@ -77,16 +77,23 @@ h1,h2,h3{
 .navbar_parent
 {
 	width:100%;
-	border-bottom:1px solid white;
+	aborder-bottom:1px solid white;
 	display:flex;
 }
-
+.navbar-nav
+{
+	margin-bottom:10px;
+}
 .navbar-brand
 {
 	width:150px;
 	margin-right:80px;
 }
-
+.navbar_block
+{
+	flex-direction:column;
+	align-items:right;
+}
 .logo_black
 {
 	display:none;
@@ -112,7 +119,7 @@ h1,h2,h3{
 
 .nav_white .navbar_parent
 {
-	border-color:black;
+	aborder-color:black;
 }
 
 .nav-item a
@@ -135,7 +142,19 @@ h1,h2,h3{
 	border:0;
 }
 
-.nav_language a
+.nav_social
+{
+	padding-bottom:5px;
+	border-bottom:1px solid white;	
+	width:100%;
+	justify-content:right;
+}
+
+.nav_white .nav_social
+{
+	border-color:black;
+}
+.nav_language a, .nav_social a
 {
 	border:0;
 	padding:0 5px !important;
