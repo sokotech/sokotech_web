@@ -28,6 +28,20 @@ function translate_page(lang)
 function loadDone()
 {
 	translate_page(lng);
+	
+	if($(".service_tab").length)
+	{
+		$(".service_tab").click(function()
+		{
+			$(".service_tab.selected").removeClass("selected");
+			$(this).addClass("selected");
+			$(".service_tab_content.tab_active").removeClass("tab_active");
+			$("."+$(this).attr("aria-tab")).addClass("tab_active");;
+
+			return(false);
+		});
+	}	
+	
 	$(".test_landing_text").click(function()
    {
    	$(".header_text").removeClass("header_text_white");
