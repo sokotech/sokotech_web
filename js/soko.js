@@ -327,7 +327,7 @@ function show_projects(grid,data,func)
 				
 			}			
 			prj.find(".project_desc").html(desc);
-			prj.find(".project_info").css("background","rgba("+data[a].gsx$darkness.$t+")");
+			//prj.find(".project_info").css("background","rgba("+data[a].gsx$darkness.$t+")");
 			
 			var link=data[a]["gsx$url"].$t;
 			if(link.length)
