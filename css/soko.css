@@ -37,10 +37,34 @@ h1,h2,h3{
 
 /* ---- navbar OK -------------- */
 
+.main-social-nav
+{
+    background-color:#D2D0CE;
+    width: 100%;
+    height: 33px;
+    border: none;
+}
+.main-social-nav-icons
+{
+    float: right;
+    padding: 0.5%;
+    padding-right: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+.top-bar-social-share-icon
+{
+  padding-right: 5px;
+}
+.nav-social-icon {
+    color: white;
+    font-size: 1.1em;
+}
 .navbar
 {
 	margin:0;
-	padding:33px 50px 10px 50px !important;
+	padding:45px 50px 10px 50px !important;
 	background:transparent !important;
 	color:white;
 	fill:white;
@@ -145,7 +169,7 @@ h1,h2,h3{
 .nav_social
 {
 	padding-bottom:5px;
-	border-bottom:1px solid white;	
+	border-bottom:1px solid white;
 	width:100%;
 	justify-content:right;
 }
@@ -531,15 +555,14 @@ h1,h2,h3{
 	transition: background 0.5s;
 	color:white;
 	/*padding:5px 25% 5px 25px;*/
-	padding:10px;
 	width:100%;
 	height:100%;
 	display:flex;
 	align-items: center;
 	text-align:center;
 	background-repeat: no-repeat;
-   justify-content: center;
-   color: #fff9
+  justify-content: center;
+  color: #fff9
 }
 .project_info svg
 {
@@ -615,18 +638,38 @@ h1,h2,h3{
 	padding:10px 50px 10px 50px;
 	margin:0 0 50px 0;
 }
+
+.services-container-logos
+{
+  padding: 24px 0 0 0;
+
+}
 .service_tab
 {
-	border:1px solid black;
 	padding: 5px 10px;
-	text-transform: uppercase;
-	font-size:0.9em;
+	font-size:21px;
 	background:transparent;
 	color:black;
 	text-decoration: none;
-	margin:0 5px 0 0;
+	margin:0 auto;
 	atransition: background 0.5s;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  font-family: 'Montserrat', sans-sans-serif;
+  height: 190px;
 }
+
+.services_check_more
+{
+  padding: 15px 0 0 0;
+}
+
+.services-tab-logo
+{
+  width: 110px;
+}
+
 .service_tab:hover
 {
 	text-decoration: none;
@@ -635,15 +678,14 @@ h1,h2,h3{
 }
 .service_tab.selected
 {
-	background:black;
-	color:white;
 	transition: background 0.5s;
 	transition: color 0.2s;
+  border-bottom: 3px solid #F27324;
 }
 .service_tabs_container
 {
-	padding:0 50px;
-	display:relative;
+	padding: 80px 145px 20px 111px;
+  background-color:#ececec;
 }
 .service_row
 {
@@ -675,7 +717,7 @@ h1,h2,h3{
 
 .section_services
 {
-	padding: 71px 0;
+	padding: 13px 0;
 }
 .section_services .hr
 {
@@ -689,10 +731,6 @@ h1,h2,h3{
 {
 	margin-bottom:60px;
 	color:black;
-	aposition:absolute;
-	aleft:0;
-	atop:0;
-	awidth:100%;
 }
 .nomargin
 {
@@ -709,19 +747,23 @@ h1,h2,h3{
 {
 	font-size: 17px;
   line-height: 1.5;
-  margin-bottom: 3px;
+  margin-bottom: 11px;
 }
 
 .service_item a
 {
-	color:inherit;
+  color:#F27324;
 	text-decoration:none;
 	font-size:14px;
+  font-weight: 600;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 .service_item a:hover
 {
-	color:#666;
-	fill:#666;
+	color:#F2955B;
 }
 .service_item svg
 {
