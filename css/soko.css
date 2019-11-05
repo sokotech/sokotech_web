@@ -22,6 +22,7 @@ h1,h2,h3{
 	min-height:100%;
 	position:relative;
 }
+
 .hidden
 {
 	 display:none !important;
@@ -43,6 +44,8 @@ h1,h2,h3{
     width: 100%;
     height: 33px;
     border: none;
+    z-index:301;
+    position:relative;
 }
 .main-social-nav-icons
 {
@@ -61,10 +64,18 @@ h1,h2,h3{
     color: white;
     font-size: 1.1em;
 }
+
+.top_navbar
+{
+	position:fixed;
+	width:100%;
+	z-index:300;
+} 
+
 .navbar
 {
 	margin:0;
-	padding:45px 50px 10px 50px !important;
+	padding:15px 50px 10px 50px !important;
 	background:transparent !important;
 	color:white;
 	fill:white;
@@ -72,13 +83,14 @@ h1,h2,h3{
 	left:0;
 	top:0;
 	width:100%;
-	z-index:300;
+	az-index:300;
 	transition:padding 0.5s;
 }
 .navbar_background
 {
 	background:rgba(0,0,0,0.6) !important;
-	padding-top:10px !important;
+   padding-top:5px !important;
+   padding-bottom:5px !important;
 	transition:padding 0.5s;
 }
 .navbar_background a
@@ -122,7 +134,7 @@ h1,h2,h3{
 {
 	display:none;
 }
-.nav_white::after
+.anav_white::after
 {
 	content:"";
 	margin-top:100px;
@@ -554,7 +566,7 @@ h1,h2,h3{
 	font-weight:700;
 	transition: background 0.5s;
 	color:white;
-	/*padding:5px 25% 5px 25px;*/
+	padding:10px;
 	width:100%;
 	height:100%;
 	display:flex;
@@ -1000,9 +1012,15 @@ h1,h2,h3{
 /* -------  pages ----------------*/
 .page_container
 {
-	padding: 50px 50px 30px 50px;
+	padding: 200px 50px 30px 50px;
 	font-size:14px;
 }
+.page_container_top
+{
+	padding: 130px 0 0 0;
+	font-size:14px;
+}
+
 .page_title
 {
 	font-size:1.4em;
@@ -1099,7 +1117,7 @@ blockquote:before {
 /* -------  about page ----------------*/
 .about_info
 {
-	padding:50px;
+	padding:150px 50px 50px 50px;
 }
 .about_img
 {
