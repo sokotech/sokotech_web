@@ -1516,6 +1516,11 @@ blockquote:before {
 	padding:10px 0 !important;
 	border:0;
 }
+
+.nav-item active
+{
+  color: #F27324;
+}
 .nav_white .navbar-collapse
 {
 	background:rgba(255,255,255,0.8);
