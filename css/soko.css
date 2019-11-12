@@ -75,7 +75,7 @@ h1,h2,h3{
 .navbar
 {
 	margin:0;
-	padding:29px 41px 10px 50px !important;
+	padding:15px 41px 10px 50px !important;
 	background:transparent !important;
 	color:white;
 	fill:white;
@@ -88,11 +88,11 @@ h1,h2,h3{
 }
 .navbar_background
 {
-	background:rgba(23, 23, 23, 0.96) !important;
+  background:rgba(23, 23, 23, 0.96) !important;
   color: white;
   fill: white;
-  padding-top:19px !important;
-  padding-bottom:11px !important;
+  padding-top:5px !important;
+  padding-bottom:5px !important;
 	transition:padding 0.5s;
 }
 .navbar_background a
@@ -170,7 +170,10 @@ h1,h2,h3{
 	font-size:19px;
 	line-height:1;
 }
-
+.navbar_menu, .nav_language
+{
+	align-self: flex-end;
+}
 .navbar_menu :first-child a
 {
 	padding-left:0 !important;
@@ -400,7 +403,7 @@ h1,h2,h3{
 }
 .section_title
 {
-	display:inline-flex;
+	display:block;
 	color:black;
 	font-weight:800;
 	text-transform:none;
@@ -744,7 +747,7 @@ justify-content: center;
 {
   width: 150px;
   height: 350px;
-  background-image: url("https://drive.google.com/uc?id=1K1f67Ih6lWlJhjrgqdvJ-gQH7-6FxKgV");
+  background-image: url("../img/soko_events.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -754,7 +757,7 @@ justify-content: center;
 {
   width: 150px;
   height: 350px;
-  background-image: url("https://drive.google.com/uc?id=14f0pFqiuGzZGljDb68zvQY2hnMZ06uTc");
+  background-image: url("../img/soko_communication.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -764,7 +767,7 @@ justify-content: center;
 {
   width: 150px;
   height: 350px;
-  background-image: url("https://drive.google.com/uc?id=1LwNSrH7jVq0r4paX7z4_D0GcF1zHifG-");
+  background-image: url("../img/soko_lab.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -774,7 +777,7 @@ justify-content: center;
 {
   width: 150px;
   height: 350px;
-  background-image: url("https://drive.google.com/uc?id=1MAKS1afgkVjdq5pjCrhsybyDob0h21Cu");
+  background-image: url("../img/soko_education.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1387,7 +1390,7 @@ blockquote:before {
   padding-top: 20px;
 }
 #contact_phone_icon {
-  display: block;
+  display: inline-block;
   width: 59px;
 }
 .contact-menu-container
@@ -1439,11 +1442,13 @@ blockquote:before {
 
 #contact h2
 {
+	display:inline;
 	text-transform:uppercase;
 }
 
 .contact_info
 {
+	font-size:1rem;
 	margin-bottom:30px;
 	padding-right:50px;
 }
