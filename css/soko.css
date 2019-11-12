@@ -403,7 +403,8 @@ h1,h2,h3{
 }
 .section_title
 {
-	display:inline;
+	display:inline-block;
+	width:100%;
 	color:black;
 	font-weight:800;
 	text-transform:none;
